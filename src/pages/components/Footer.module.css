@@ -1,0 +1,33 @@
+.footer {
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.location {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
