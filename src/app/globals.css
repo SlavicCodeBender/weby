@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #1a1a18;
+  --ink-muted: #6b6b66;
+  --surface: #f5f3ee;
+  --white: #ffffff;
+  --primary: #529cbe;
+  --primary-light: #eaf3f7;
+  --primary-dark: #3d7d99;
+  --primary-hover: #6badcb;
+  --primary-text: #34718b;
+  --secondary: #3eda8c;
+  /* Traka je zamućeno staklo iznad sadržaja. Tamnija je nego prije i bliža
+     gumbu, ali dovoljno svjetlija da se gumb od nje jasno odvaja. */
+  --nav-bg: rgba(92, 146, 171, 0.9);
+  --border: rgba(26, 26, 24, 0.12);
+  --deep: #23404d;
+  --deep-accent: #7fc0dd;
+  --danger: #b23b3b;
+  --danger-light: #fbeceb;
+  /* Visina navigacije. Naslovni dio se odmiče za tocno toliko, pa izmedu
+     njih ne moze ostati praznina. */
+  --nav-h: 72px;
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 64px;
+  }
+}

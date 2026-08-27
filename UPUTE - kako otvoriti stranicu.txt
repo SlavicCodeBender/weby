@@ -1,0 +1,179 @@
+﻿===========================================================
+  ILAN - WEB STRANICA
+  Kako otvoriti stranicu na bilo kojem racunalu
+===========================================================
+
+Zadnja izmjena: 26.08.2026.
+
+
+-----------------------------------------------------------
+  UKRATKO
+-----------------------------------------------------------
+
+Stranica se NE otvara dvoklikom kao slika ili Word dokument.
+Ona je program koji se prvo pokrene, pa se onda gleda u
+pregledniku. Zvuci gore nego sto jest - prvi put traje par
+minuta, svaki sljedeci put desetak sekundi.
+
+Treba vam:
+  - racunalo s Windowsima
+  - internet (samo prvi put, za instalaciju)
+  - ovaj USB
+
+
+-----------------------------------------------------------
+  KORAK 1 - KOPIRAJTE MAPU S USB-a NA RACUNALO
+-----------------------------------------------------------
+
+Otvorite USB, uzmite mapu "weby" i kopirajte je na Radnu
+povrsinu (Desktop) ili bilo kamo na disk.
+
+VAZNO: nemojte pokretati stranicu izravno s USB-a.
+USB je prespor za ovo - ono sto na disku traje 20 sekundi,
+na USB-u traje satima. Provjereno.
+
+
+-----------------------------------------------------------
+  KORAK 2 - INSTALIRAJTE NODE.JS (samo prvi put)
+-----------------------------------------------------------
+
+Node.js je program koji pokrece web stranicu. Besplatan je.
+
+  1. Otvorite  https://nodejs.org
+  2. Preuzmite verziju koja pise "LTS"
+     (mora biti verzija 20 ili novija)
+  3. Pokrenite preuzetu datoteku i klikajte Next / Dalje
+     do kraja, nista ne treba mijenjati
+  4. Kad zavrsi, ponovno pokrenite racunalo
+
+Ovo se radi SAMO JEDNOM po racunalu. Ako je Node vec
+instaliran, preskocite ovaj korak.
+
+
+-----------------------------------------------------------
+  KORAK 3 - OTVORITE NAREDBENI REDAK U MAPI
+-----------------------------------------------------------
+
+  1. Otvorite mapu "weby" koju ste kopirali na disk
+  2. Kliknite u ADRESNU TRAKU na vrhu prozora
+     (ondje gdje pise putanja, npr. C:\Users\...\weby)
+  3. Obrisite sto pise i upisite:   cmd
+  4. Pritisnite Enter
+
+Otvorit ce se crni prozor. To je naredbeni redak.
+Vazno je da je otvoren BAS U TOJ mapi.
+
+
+-----------------------------------------------------------
+  KORAK 4 - INSTALIRAJTE POTREBNE DIJELOVE (samo prvi put)
+-----------------------------------------------------------
+
+U crni prozor upisite tocno ovo i pritisnite Enter:
+
+     npm install
+
+Cekajte. Traje oko 20 sekundi. Ispisat ce se puno teksta,
+to je normalno. Gotovo je kad se pojavi nesto poput
+"added 342 packages".
+
+Ovo se radi samo prvi put na svakom racunalu.
+Poslije se preskace.
+
+
+-----------------------------------------------------------
+  KORAK 5 - POKRENITE STRANICU
+-----------------------------------------------------------
+
+U isti crni prozor upisite:
+
+     npm run dev
+
+Nakon par sekundi ispisat ce se nesto poput:
+
+     - Local:  http://localhost:3000
+
+CRNI PROZOR MORA OSTATI OTVOREN dok gledate stranicu.
+Ako ga zatvorite, stranica se gasi.
+
+
+-----------------------------------------------------------
+  KORAK 6 - OTVORITE U PREGLEDNIKU
+-----------------------------------------------------------
+
+Otvorite Chrome, Edge ili koji vec koristite i upisite u
+adresnu traku:
+
+     localhost:3000
+
+Stranica bi se trebala otvoriti.
+
+
+-----------------------------------------------------------
+  KAKO ZAUSTAVITI
+-----------------------------------------------------------
+
+U crnom prozoru pritisnite:   Ctrl + C
+Ili jednostavno zatvorite crni prozor.
+
+
+-----------------------------------------------------------
+  SLJEDECI PUT NA ISTOM RACUNALU
+-----------------------------------------------------------
+
+Preskacete korake 1, 2 i 4. Radite samo:
+
+     Korak 3  (otvorite cmd u mapi)
+     Korak 5  (npm run dev)
+     Korak 6  (localhost:3000 u pregledniku)
+
+
+-----------------------------------------------------------
+  AKO NESTO NE RADI
+-----------------------------------------------------------
+
+"npm nije prepoznat kao naredba"
+     Node.js nije instaliran ili racunalo nije ponovno
+     pokrenuto nakon instalacije. Vratite se na korak 2.
+
+"Cannot find module" ili slicna greska
+     Preskocili ste korak 4. Upisite  npm install
+
+Stranica se ne otvara na localhost:3000
+     Provjerite je li crni prozor jos otvoren i pise li u
+     njemu "Local: http://localhost:3000". Ako je prozor
+     zatvoren, stranica ne radi - ponovite korak 5.
+
+Port 3000 je zauzet
+     Nesto drugo vec koristi taj broj. Zatvorite ostale
+     crne prozore i pokusajte ponovno. Ili ce Next sam
+     ponuditi drugi broj, npr. 3001 - onda u pregledniku
+     upisite taj.
+
+Sve je jako sporo
+     Vjerojatno pokrecete izravno s USB-a. Kopirajte mapu
+     na disk (korak 1).
+
+
+-----------------------------------------------------------
+  NAPOMENA O JEZIKU
+-----------------------------------------------------------
+
+Stranica pamti koji je jezik zadnji odabran, u pregledniku.
+Ako vam se otvori na engleskom, prebacite na HR gore desno.
+
+
+-----------------------------------------------------------
+  KAD STRANICA BUDE GOTOVA ZA OBJAVU
+-----------------------------------------------------------
+
+Ovo gore je nacin da se stranica gleda i mijenja.
+Za pravu objavu na internetu, da bude dostupna svima na
+svojoj adresi, upisuje se:
+
+     npm run build
+
+Rezultat se predaje hostingu. To je posao za nekoga tko se
+time bavi - nije nesto sto se radi iz ove upute.
+
+
+===========================================================

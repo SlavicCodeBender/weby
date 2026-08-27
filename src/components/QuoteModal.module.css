@@ -1,0 +1,110 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(26, 26, 24, 0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  overflow-y: auto;
+  animation: fade 0.18s ease-out;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  background: var(--surface);
+  border-top: 3px solid var(--primary);
+  padding: 2.5rem 2.25rem 2.25rem;
+  outline: none;
+  animation: rise 0.22s ease-out;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.close:hover {
+  color: var(--ink);
+  background: var(--primary-light);
+}
+
+.eyebrow {
+  color: var(--primary-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* Kad se pojavi potvrda, uputa „ispuni u pola minute" više nema smisla —
+   obrasca više nema. Prepoznaje se po tome što je potvrda role="status". */
+.panel:has([role='status']) .subtitle {
+  display: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop,
+  .panel {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+  .panel {
+    max-width: none;
+    max-height: 92vh;
+    padding: 2.25rem 1.5rem 2rem;
+  }
+}

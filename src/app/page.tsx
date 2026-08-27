@@ -1,14 +1,16 @@
-import Navbar from '../pages/components/Navbar'
-import Hero from '../pages/components/Hero'
-import Stats from '../pages/components/Stats'
-import Services from '../pages/components/Services'
-import Gallery from '../pages/components/Gallery'
-import Contact from '../pages/components/Contact'
-import Footer from '../pages/components/Footer'
+import SiteProvider from '../components/SiteProvider'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Stats from '../components/Stats'
+import Services from '../components/Services'
+import Gallery from '../components/Gallery'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+import QuoteModal from '../components/QuoteModal'
 
 export default function Home() {
   return (
-    <>
+    <SiteProvider>
       <Navbar />
       <main>
         <Hero />
@@ -18,6 +20,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+      <QuoteModal />
+    </SiteProvider>
   )
 }

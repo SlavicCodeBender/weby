@@ -1,0 +1,120 @@
+/* Tamna ploha na dnu — jasno odvaja podnožje od bijelog kontakta iznad.
+   Ista dublja plava kao traka s brojkama i traka za popravke. */
+.footer {
+  background: var(--deep);
+  padding: 2.5rem 4rem 2rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Godina osnutka — mali naglasak, ne sitni otisak. Dvadeset godina rada
+   je argument, pa se ne skriva među pravnim podacima. */
+.since {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--deep-accent);
+  letter-spacing: 0.04em;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.85);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.icon:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--ink);
+}
+
+/* Facebook dok nema adrese — vidi se, ali ne reagira */
+.iconOff {
+  opacity: 0.4;
+}
+
+.iconOff:hover {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Podaci o tvrtki — sitni otisak, ali prisutni */
+.legal {
+  padding-top: 0.9rem;
+  /* engleski redak treba 79 znakova; 82 daje malo zraka */
+  max-width: 82ch;
+  margin: 0 auto;
+  text-align: center;
+  /* retci se raspodijele ravnomjerno, bez kratkog repa u zadnjem redu */
+  text-wrap: balance;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.25rem 1.5rem 1.75rem;
+  }
+  .top {
+    gap: 1.1rem;
+  }
+}
+
+/* Poveznice na impressum i pravila privatnosti — po zakonu moraju biti
+   dostupne u dva klika s bilo koje stranice. */
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 1.4rem;
+  font-size: 0.85rem;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.links a:hover {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+
+.links span {
+  color: rgba(255, 255, 255, 0.4);
+}

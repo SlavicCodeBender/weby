@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ILAN — web stranica
 
-## Getting Started
+Jednostranična web stranica za ILAN (aluminijski i PVC prozori, vrata i fasade).
+Izrađena u Next.js-u 16, hrvatski je zadani jezik, engleski se bira prekidačem u navigaciji.
 
-First, run the development server:
+## Pokretanje na drugom računalu
+
+Treba samo Node.js (verzija 20 ili novija). U mapi projekta:
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Stranica se zatim otvara na `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> `node_modules` se namjerno **ne** nosi na USB — to je nekoliko tisuća sitnih
+> datoteka i kopiranje traje satima. `npm install` ih na disku napravi za dvadesetak sekundi.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Objava na internetu
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Rezultat je statična stranica koju može poslužiti bilo koji hosting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Gdje se što mijenja
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Što | Datoteka |
+| --- | --- |
+| Svi tekstovi, hrvatski i engleski | `src/lib/i18n.ts` |
+| Broj telefona, e-mail, lokacija | `src/lib/i18n.ts` → `contact` |
+| Način slanja upita | `src/lib/inquiry.ts` |
+| Boje i fontovi | `src/app/globals.css` |
+| Fotografije projekata | `src/components/Gallery.tsx` |
+| Slike koje stranica koristi | `public/` |
+| Izvorne slike u punoj veličini | `originali/` — čuva se, ali ne ide na web |
 
-## Deploy on Vercel
+### Broj telefona
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Broj stoji u `src/lib/i18n.ts` → `contact.phone`, odvojeno za svaki jezik
+(`091 949 1580` na hrvatskom, `+385 91 949 1580` na engleskom). Na stranici je
+klikabilan za pozivanje. Ako se polje ostavi prazno, cijeli red s telefonom se sakrije.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Forma za upite
+
+Obrazac „Brzi upit" stoji na dva mjesta — u skočnom prozoru (gumb *Zatraži ponudu*)
+i na dnu stranice. Oba koriste istu komponentu, pa se izmjena radi samo jednom.
+
+Trenutno je namješteno da forma otvori mail program posjetitelja s ispunjenom porukom.
+Upute kako prebaciti da mail stiže sam, preko servisa za forme, stoje na vrhu
+datoteke `src/lib/inquiry.ts`.

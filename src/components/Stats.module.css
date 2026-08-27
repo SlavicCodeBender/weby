@@ -1,0 +1,90 @@
+/* Tamna traka koja presijeca svijetlu stranicu. Ton je dublja plava iz palete,
+   ne crno — tako se odvaja od stranice, a ne tuče se s njom. */
+.stats {
+  background: var(--deep);
+  padding: 3rem 4rem 4rem;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 3.25rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+  padding: 0.75rem 2.75rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.num {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 4.5vw, 3.5rem);
+  line-height: 1;
+  color: var(--white);
+}
+
+/* Znak + odnosno % u boji marke. Serifni font ima pretanak i preblizak znak,
+   pa se uzima font teksta: čvršći potez, malo manji, podignut i s razmakom. */
+.accent {
+  color: var(--primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.62em;
+  /* Izmjereno: sredina znamenki je 18px iznad osnovne crte, pa znak treba podići
+     ~7px (+ traži 8, % traži 6). Pazi: vertical-align u em se računa prema
+     veličini samog znaka (0.62em), pa 0.2em ovdje daje tih 7px. */
+  vertical-align: 0.2em;
+  margin-left: 0.12em;
+}
+
+.label {
+  margin-top: 1.15rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+  text-wrap: balance;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+  .stat {
+    padding: 0.75rem 1.25rem;
+  }
+  .title {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 1.6rem 0;
+  }
+  .stat:last-child {
+    border-bottom: none;
+  }
+}

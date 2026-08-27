@@ -1,0 +1,112 @@
+.hero {
+  min-height: 100vh;
+  display: grid;
+  /* Tekst dobiva nešto više od pola širine da naslov u jednom redu zadrži veličinu. */
+  grid-template-columns: 1.15fr 0.85fr;
+  padding-top: var(--nav-h);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 4rem;
+  /* Naslov se mjeri prema širini ovog stupca, ne prema širini ekrana. */
+  container-type: inline-size;
+}
+
+/* Raste zajedno s naslovom, prema širini stupca — da odnos ostane isti
+   na svakoj širini ekrana. */
+.eyebrow {
+  font-size: clamp(0.95rem, 2.4cqi, 1.2rem);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1.25rem;
+}
+
+/* Veličina se računa iz širine stupca, pa naslov stane u jedan red na svakoj
+   širini na kojoj ima mjesta. Kad padne na donju granicu (mobitel), prelomi se
+   u ravnomjerne retke umjesto da ostavi usamljenu riječ. */
+.text h1 {
+  font-family: var(--font-display);
+  /* 8cqi je izmjereno: hrvatski naslov na toj velicini stane u jedan red
+     s malo zraka. Vise od toga i lomi se. */
+  font-size: clamp(2.25rem, 8cqi, 4rem);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  text-wrap: balance;
+}
+
+.sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 420px;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--ink);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  padding: 0.85rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Right panel */
+.visual {
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slika je vodoravna, okvir uspravan, pa se lijevi dio (prazan zid) odsijeca.
+   80% je izmjereno: zid otpadne, oba montera i stup vrata ostaju u kadru. */
+.photo {
+  object-fit: cover;
+  object-position: 80% center;
+}
+
+/* Ispod ~1200px dva stupca postanu preuska da naslov stane u jedan red, pa se
+   slaže jedno ispod drugog i tekst dobije punu širinu. */
+@media (max-width: 1199px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .text {
+    padding: 4rem 3rem;
+  }
+  .visual {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    padding: 3rem 1.5rem;
+  }
+  .visual {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,0 +1,148 @@
+/* Traka s pozivom na akciju — ista dublja plava kao traka s brojkama. */
+.strip {
+  background: var(--deep);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 3rem 4rem;
+}
+
+/* Naslov na velikom ekranu mora stati u jedan red: hrvatskom treba 729px,
+   engleskom 786px. 51rem pokriva oba. Kad se ekran suzi, i naslov se smanjuje
+   i prostora je manje, pa se sam prelomi u dva retka na tabletu i vise na mobitelu. */
+.stripText {
+  max-width: 51rem;
+}
+
+.strip h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.stripSub {
+  margin-top: 0.7rem;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.stripBtn {
+  display: inline-block;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  padding: 0.85rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.stripBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--white);
+}
+
+/* Kontakt mreža */
+.inner {
+  padding: 7rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  scroll-margin-top: 6rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.info h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--ink-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.detail span:first-child {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+.detail span:last-child {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.detail a {
+  font-size: 1rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  align-self: flex-start;
+  transition: color 0.2s, border-color 0.2s;
+  word-break: break-word;
+}
+
+.detail a:hover {
+  color: var(--primary-text);
+  border-bottom-color: var(--primary-dark);
+}
+
+/* Okvir oko brzog upita. Flex je zato da potvrda nakon slanja ispuni okvir
+   do dna, jer lijevi stupac s kontakt podacima diktira visinu reda. */
+.formWrap {
+  background: var(--surface);
+  border-top: 3px solid var(--primary);
+  padding: 2.25rem;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .strip {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+  .strip h3 {
+    font-size: 1.5rem;
+  }
+  .inner {
+    grid-template-columns: 1fr;
+    padding: 4rem 1.5rem;
+    gap: 3rem;
+  }
+  .formWrap {
+    padding: 1.5rem;
+  }
+}

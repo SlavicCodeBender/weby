@@ -1,0 +1,108 @@
+.section {
+  background: var(--white);
+  padding: 7rem 4rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 3rem;
+}
+
+/* Ravnomjerna mreža, sve pločice iste veličine — ništa ne skače u oko više
+   od ostalog, pa je pregledno i kad slika bude dvadesetak. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 1.75rem;
+}
+
+.item {
+  margin: 0;
+}
+
+.thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.placeholder {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.4s ease;
+}
+
+/* Jedva vidljiva podjela stakla, da ploha bez fotografije ne bude prazan pravokutnik */
+.placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0 2px, transparent 2px 33.333%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.22) 0 2px, transparent 2px 50%);
+}
+
+.item:hover .placeholder {
+  transform: scale(1.04);
+}
+
+/* Natpis stoji ispod slike, ne preko nje — slika ostaje čitava, tekst čitljiv. */
+.caption {
+  padding-top: 1rem;
+}
+
+.caption h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.caption p {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .placeholder {
+    transition: none;
+  }
+  .item:hover .placeholder {
+    transform: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 5rem 2.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.25rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

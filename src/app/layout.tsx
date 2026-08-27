@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
+import { dict, DEFAULT_LANG } from '../lib/i18n'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ILAN – Windows & Doors',
-  description: 'Custom aluminium and PVC windows, doors, and facades — designed, manufactured and installed.',
+  title: dict[DEFAULT_LANG].meta.title,
+  description: dict[DEFAULT_LANG].meta.description,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang={DEFAULT_LANG}>
       <body>{children}</body>
     </html>
   )

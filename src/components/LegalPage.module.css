@@ -1,0 +1,170 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: var(--nav-h);
+  padding: 0 4rem;
+  background: var(--nav-bg);
+  border-bottom: 3px solid var(--border);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.langs {
+  display: flex;
+  gap: 0.15rem;
+}
+
+.lang {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.45rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  opacity: 0.55;
+  border-bottom: 2px solid transparent;
+  transition: opacity 0.2s;
+}
+
+.lang:hover {
+  opacity: 0.85;
+}
+
+.langActive {
+  opacity: 1;
+  border-bottom-color: var(--ink);
+}
+
+.back {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+}
+
+.main {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 5rem 4rem 6rem;
+}
+
+.main h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+}
+
+.uvod {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  max-width: 60ch;
+  margin-bottom: 3rem;
+}
+
+.odjeljak {
+  margin-bottom: 2.75rem;
+  max-width: 68ch;
+}
+
+.odjeljak h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.odjeljak p {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--ink-muted);
+  margin-bottom: 0.7rem;
+}
+
+.redci {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.redak {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.redak dt {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  padding-top: 0.15rem;
+}
+
+.redak dd {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+/* Podatak koji tek treba upisati — namjerno se vidi da nije gotov */
+.dopuniti {
+  color: var(--danger);
+  font-style: italic;
+}
+
+.natuknice {
+  margin: 0.4rem 0 0 1.1rem;
+}
+
+.natuknice li {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1.25rem;
+    gap: 0.75rem;
+  }
+  .back {
+    display: none;
+  }
+  .main {
+    padding: 3rem 1.5rem 4rem;
+  }
+  .redak {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
