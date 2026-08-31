@@ -8,7 +8,7 @@ export interface Dict {
   gallery: {
     eyebrow: string
     title: string
-    items: { title: string; meta: string }[]
+    items: { title: string; meta: string; image: string }[]
   }
   contact: {
     strip: string
@@ -131,12 +131,12 @@ const hr: Dict = {
     eyebrow: 'Naši radovi',
     title: 'Odabrani projekti',
     items: [
-      { title: 'Obiteljska kuća, Rijeka', meta: 'Aluminijski prozori · 2023.' },
-      { title: 'Ulazna vrata', meta: 'PVC · 2024.' },
-      { title: 'Klizna terasna vrata', meta: 'Aluminij · 2024.' },
-      { title: 'Poslovna fasada', meta: 'Ostakljenje izloga · 2024.' },
-      { title: 'Stambena zgrada', meta: 'Vanjske rolete' },
-      { title: 'Klizni komarnici', meta: 'Prozori i balkonska vrata' },
+      { title: 'Aparman, Krk', meta: 'Veranda · 2025.', image:'/ApartmanKrk.jpg' },
+      { title: 'Obiteljska Kuća, Rijeka', meta: 'Dvokrilni prozor · 2024.', image:'/DvokrilniProzorRijeka.jpg' },
+      { title: 'Kuća za odmor, Fužine', meta: 'Nadstrešnica · 2026.', image:'/NatsresnicaFuzine.jpg' },
+      { title: 'Obiteljska Kuća, Krk', meta: 'Nadstrešnica · 2025.', image:'/NatsresnicaKrk.jpg' },
+      { title: 'Čeka Montažu', meta: 'Otklopno Zaklopni Prozor · 2026.', image:'/OtklopniZatvorniProzor.jpg' },
+      { title: 'Apartman, Istra', meta: 'Plise Komarnici · 2026.', image:'/PliseKomarnici.jpg' },
     ],
   },
   contact: {
@@ -279,12 +279,12 @@ const en: Dict = {
     eyebrow: 'Our work',
     title: 'Selected Projects',
     items: [
-      { title: 'Family house, Rijeka', meta: 'Aluminium windows · 2023' },
-      { title: 'Entrance door', meta: 'PVC · 2024' },
-      { title: 'Sliding terrace door', meta: 'Aluminium · 2024' },
-      { title: 'Commercial facade', meta: 'Shop front glazing · 2024' },
-      { title: 'Apartment building', meta: 'Exterior roller shutters' },
-      { title: 'Sliding insect screens', meta: 'Windows and balcony doors' },
+      { title: 'Family house, Rijeka', meta: 'Aluminium windows · 2023', image:'' },
+      { title: 'Entrance door', meta: 'PVC · 2024', image:'' },
+      { title: 'Sliding terrace door', meta: 'Aluminium · 2024', image:'' },
+      { title: 'Commercial facade', meta: 'Shop front glazing · 2024', image:'' },
+      { title: 'Apartment building', meta: 'Exterior roller shutters', image:'' },
+      { title: 'Sliding insect screens', meta: 'Windows and balcony doors', image:'' },
     ],
   },
   contact: {

@@ -28,6 +28,11 @@
   gap: 2.5rem 1.75rem;
 }
 
+.grid_photo {
+  object-fit: contain;
+  object-position: center;
+}
+
 .item {
   margin: 0;
 }
@@ -36,7 +41,7 @@
   position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--surface);
+  background: #00000050;
 }
 
 .placeholder {
