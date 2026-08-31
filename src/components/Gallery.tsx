@@ -18,7 +18,7 @@ export default function Gallery() {
       <h2>{t.gallery.title}</h2>
 
       <div className={styles.grid}>
-        {t.gallery.items.map((item, i) => (
+        {t.gallery.items.map((item) => (
           <figure key={item.title} className={styles.item}>
             <div className={styles.thumb}>
               <Image
