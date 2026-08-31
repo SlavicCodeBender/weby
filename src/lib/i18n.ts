@@ -49,7 +49,16 @@ export interface Dict {
     close: string
     errors: { name: string; reach: string; service: string; consent: string }
   }
+  faq: {
+    eyebrow: string
+    title: string
+    intro: string
+    readMore: string
+    back: string
+    toTop: string
+  }
   footer: {
+    faqLink: string
     since: string
     impressumLink: string
     privacyLink: string
@@ -76,7 +85,7 @@ const hr: Dict = {
     eyebrow: 'Od 2006. u Rijeci · Vlastita proizvodnja i ugradnja',
     title: 'PVC i ALU stolarija po mjeri',
     sub: 'Izmjera i ponuda su besplatne.',
-    btn: 'Zatraži ponudu',
+    btn: 'Zatraži izmjeru',
     badge: 'Est. ILAN Co.',
     photoAlt: 'Montažeri ugrađuju kliznu terasnu stijenu',
   },
@@ -134,7 +143,7 @@ const hr: Dict = {
     strip: 'Zapinje prozor, popustila kvaka? Dolazimo i za sitnice.',
     stripSub:
       'Popravci i zamjene prozora, kvaka, komarnika i ostale PVC i ALU stolarije — javite nam se!',
-    stripBtn: 'Zatraži besplatnu ponudu',
+    stripBtn: 'Opiši kvar',
     eyebrow: 'Kontakt',
     title: 'Razgovarajmo o vašem projektu',
     intro:
@@ -184,7 +193,17 @@ const hr: Dict = {
       consent: 'Potrebna je vaša privola.',
     },
   },
+  faq: {
+    eyebrow: 'Česta pitanja',
+    title: 'Pitanja koja najčešće čujemo',
+    intro:
+      'Kratki odgovori na ono što nas ljudi pitaju prije izmjere. Ako vaše pitanje nije ovdje, slobodno nazovite.',
+    readMore: 'Pročitaj',
+    back: 'Natrag na česta pitanja',
+    toTop: 'Na vrh',
+  },
   footer: {
+    faqLink: 'FAQ',
     since: 'Od 2006.',
     impressumLink: 'Impressum',
     privacyLink: 'Pravila privatnosti',
@@ -214,7 +233,7 @@ const en: Dict = {
     eyebrow: 'Since 2006 in Rijeka · Our own production and installation',
     title: 'PVC & aluminium joinery',
     sub: 'Made to measure. Measuring and quotation are free.',
-    btn: 'Request a quote',
+    btn: 'Request a measurement',
     badge: 'Est. ILAN Co.',
     photoAlt: 'Fitters installing a sliding terrace door',
   },
@@ -272,7 +291,7 @@ const en: Dict = {
     strip: 'Sticking window, loose handle? We come out for those too.',
     stripSub:
       'Repairs and replacement of windows, handles, insect screens and all other PVC and aluminium joinery — get in touch!',
-    stripBtn: 'Get a free quote',
+    stripBtn: 'Describe the problem',
     eyebrow: 'Get in touch',
     title: 'Let’s talk about your project',
     intro:
@@ -323,7 +342,17 @@ const en: Dict = {
       consent: 'Your consent is required.',
     },
   },
+  faq: {
+    eyebrow: 'FAQ',
+    title: 'The questions we hear most',
+    intro:
+      'Short answers to what people ask us before the measuring visit. If your question is not here, just give us a call.',
+    readMore: 'Read',
+    back: 'Back to the questions',
+    toTop: 'Back to top',
+  },
   footer: {
+    faqLink: 'FAQ',
     since: 'Since 2006',
     impressumLink: 'Company details',
     privacyLink: 'Privacy policy',

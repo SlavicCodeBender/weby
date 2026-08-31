@@ -1,0 +1,120 @@
+.main {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 5rem 4rem 6rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.main h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+}
+
+.uvod {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  max-width: 60ch;
+  margin-bottom: 3rem;
+}
+
+.popis {
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+
+.popis li {
+  border-bottom: 1px solid var(--border);
+}
+
+.veza {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.5rem 0.75rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.veza:hover {
+  background: var(--primary-light);
+}
+
+/* Okvir sličice. Omjer je stalan da svi redci ostanu iste visine. */
+.slika {
+  position: relative;
+  flex: none;
+  width: 11rem;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.foto {
+  object-fit: cover;
+}
+
+.tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.naslov {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.sazetak {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 62ch;
+}
+
+.vise {
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+}
+
+.veza:hover .vise {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 3rem 1.5rem 4rem;
+  }
+  .veza {
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 0;
+  }
+  .slika {
+    width: 6.5rem;
+  }
+  .naslov {
+    font-size: 1.15rem;
+  }
+}

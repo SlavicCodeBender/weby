@@ -1,41 +1,18 @@
 'use client'
-import Link from 'next/link'
 import { useSite } from './SiteProvider'
+import SubHeader from './SubHeader'
 import Footer from './Footer'
 import type { LegalDokument } from '../lib/legal'
 import type { Lang } from '../lib/i18n'
 import styles from './LegalPage.module.css'
 
 export default function LegalPage({ dokument }: { dokument: Record<Lang, LegalDokument> }) {
-  const { lang, setLang } = useSite()
+  const { lang } = useSite()
   const d = dokument[lang]
 
   return (
     <>
-      <header className={styles.header}>
-        <Link href="/" className={styles.logo}>
-          ILAN
-        </Link>
-
-        <div className={styles.right}>
-          <div className={styles.langs} role="group" aria-label="Jezik / Language">
-            {(['hr', 'en'] as Lang[]).map((code) => (
-              <button
-                key={code}
-                type="button"
-                className={`${styles.lang} ${lang === code ? styles.langActive : ''}`}
-                aria-pressed={lang === code}
-                onClick={() => setLang(code)}
-              >
-                {code.toUpperCase()}
-              </button>
-            ))}
-          </div>
-          <Link href="/" className={styles.back}>
-            {lang === 'hr' ? 'Natrag na stranicu' : 'Back to the site'}
-          </Link>
-        </div>
-      </header>
+      <SubHeader />
 
       <main className={styles.main}>
         <h1>{d.naslov}</h1>

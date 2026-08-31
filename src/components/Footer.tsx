@@ -110,6 +110,8 @@ export default function Footer() {
       </div>
 
       <nav className={styles.links}>
+        <Link href="/faq">{t.footer.faqLink}</Link>
+        <span aria-hidden="true">·</span>
         <Link href="/impressum">{t.footer.impressumLink}</Link>
         <span aria-hidden="true">·</span>
         <Link href="/privatnost">{t.footer.privacyLink}</Link>

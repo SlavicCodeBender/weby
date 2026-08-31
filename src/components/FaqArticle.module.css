@@ -1,0 +1,164 @@
+.main {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 5rem 4rem 6rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.main h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+  max-width: 22ch;
+}
+
+.uvod {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  max-width: 60ch;
+  margin-bottom: 2.5rem;
+}
+
+/* Slika članka. Kad je nema, ovaj blok se uopće ne ispisuje. */
+.slika {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+  margin-bottom: 2.5rem;
+}
+
+.foto {
+  object-fit: cover;
+}
+
+.tijelo {
+  max-width: 68ch;
+}
+
+.tijelo p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink-muted);
+  margin-bottom: 1.1rem;
+}
+
+/* Prvi odjeljak je izravan odgovor na pitanje — krupniji je i tamniji od ostatka. */
+.odgovor {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.odgovor p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.odjeljak {
+  margin-bottom: 2.25rem;
+}
+
+.odjeljak h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+
+.natuknice {
+  margin: 0.2rem 0 0 1.1rem;
+}
+
+.natuknice li {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-muted);
+  margin-bottom: 0.55rem;
+  padding-left: 0.25rem;
+}
+
+.natuknice li::marker {
+  color: var(--primary-text);
+}
+
+/* Crta iznad poveznice ide preko cijele širine teksta, a ne samo ispod natpisa. */
+.podnozje {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  max-width: 68ch;
+}
+
+.natrag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.natrag:hover span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Tiša je od poveznice na popis — ovdje je glavna radnja povratak na članke. */
+.naVrh {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.naVrh:hover {
+  color: var(--primary-text);
+}
+
+@media (max-width: 768px) {
+  .natrag,
+  .naVrh {
+    padding: 0.7rem 0;
+  }
+  .naVrh span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 3rem 1.5rem 4rem;
+  }
+}
