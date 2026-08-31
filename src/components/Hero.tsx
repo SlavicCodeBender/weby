@@ -25,7 +25,7 @@ export default function Hero() {
           priority
           /* Uspravan izrez iz vodoravne slike traži puno širu datoteku nego što
              je sam okvir, inače je Next pošalje premalu i slika je mutna. */
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
           className={styles.photo}
         />
       </div>
