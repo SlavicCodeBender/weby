@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import styles from './Gallery.module.css'
-import imageKrk from '../../public/gallery/ApartmanKrk.jpg'
 
 /**
  * Plohe stoje umjesto fotografija dok ih ne bude.
