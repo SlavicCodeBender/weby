@@ -209,13 +209,13 @@ const hr: FaqClanak[] = [
     naslov: 'Alu ili PVC prozori — razlike, cijena i što odabrati',
     seoNaslov: 'Alu ili PVC prozori — što odabrati',
     sazetak:
-      'PVC je povoljniji i bolje izolira po uloženom novcu, a aluminij nosi velike otvore i tanje je na pogled. Za stan je u pravilu PVC, za velike stijene i izloge aluminij.',
+      'PVC bolje izolira po uloženom novcu, a aluminij je načelno povoljniji, nosi velike otvore i tanje je na pogled. Za stan su PVC i aluminij, za velike stijene i izloge aluminij.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
-          'Za standardni stan ili kuću PVC prozor daje bolju izolaciju po uloženom novcu i u pravilu je osjetno jeftiniji od aluminijskog iste veličine. Aluminij se bira kad je otvor velik, kad se traže tanki okviri i puno stakla, ili kad je riječ o izlogu i poslovnom prostoru.',
+          'Za standardni stan ili kuću PVC prozor daje bolju izolaciju po uloženom novcu od aluminijskog iste veličine. Aluminij je jeftiniji i koristi se kada je otvor velik, kad se traže tanki okviri i puno stakla, ili kad je riječ o izlogu i poslovnom prostoru.',
           'Oba materijala mogu biti vrlo dobra i oba mogu biti loša. Razlika između jeftinog i kvalitetnog sustava unutar istog materijala često je veća od razlike između materijala.',
         ],
       },
@@ -224,22 +224,22 @@ const hr: FaqClanak[] = [
         odlomci: [
           'PVC profil je šupalj i podijeljen na komore. Više komora znači više pregrada koje usporavaju prolaz topline, pa se danas najčešće ugrađuju peterokomorni i šesterokomorni profili. Uz broj komora jednako je važna ugradbena dubina profila — dublji profil ima više mjesta za izolaciju i za deblje staklo.',
           'Unutar profila je čelično ojačanje jer sam PVC nije dovoljno krut. Kutevi se zavaruju, pa je okvir jedan komad bez spojeva koji propuštaju.',
-          'Slabost PVC-a je krutost. Velika krila i široke stijene traže sve više čelika i profil postaje težak i debeo, pa se u nekom trenutku aluminij isplati i konstrukcijski i cjenovno.',
+          'Slabost PVC-a je krutost. Velika krila i široke stijene traže sve više čelika i profil postaje težak i debeo, pa se u nekom trenutku aluminij isplati konstrukcijski.',
         ],
       },
       {
         naslov: 'Zašto aluminij mora imati prekinuti toplinski most',
         odlomci: [
-          'Aluminij odlično provodi toplinu, što je za prozor loše. Zato se kvalitetni aluminijski profil radi iz dva odvojena dijela, vanjskog i unutarnjeg, spojena poliamidnim trakama koje ne provode toplinu. To je prekinuti toplinski most.',
-          'Aluminijski profil bez prekinutog toplinskog mosta danas se ugrađuje samo tamo gdje izolacija nije bitna — u negrijane prostore, na garažna i podrumska vrata, na pregrade. U stanu ili kući nema smisla.',
+          'Aluminij provodi toplinu, što je za prozor loše. Zato se skuplji i kvalitetniji aluminijski profil radi iz dva odvojena dijela, vanjskog i unutarnjeg, spojena poliamidnim trakama koje ne provode toplinu. To je prekinuti toplinski most.',
+          'Unatoč tome aluminijski profil bez prekinutog toplinskog mosta danas se još uvijek ugrađuje — u grijane i negrijane prostore, na garažna i podrumska vrata, na pregrade, u stanu ili kući.',
           'Aluminijski okvir u pravilu ostaje nešto lošiji izolator od dobrog PVC profila, ali zato podnosi puno veća krila uz tanji vidljivi okvir, pa u prostoriju ulazi više svjetla.',
         ],
       },
       {
         naslov: 'Izgled, boja i primorska klima',
         odlomci: [
-          'Aluminij se plastificira u bilo koji ton po RAL karti i boja je dio površine, pa je postojana i lako se obnavlja. Za objekte uz more traži se plastifikacija predviđena za priobalje, jer sol ubrzava propadanje slabijih premaza.',
-          'PVC se boji folijom. Izbor dekora je velik, uključujući imitacije drva, ali tamne folije se na jakom suncu znatno zagriju, pa takvi profili traže dodatno ojačanje i pažljiviji odabir sustava.',
+          'Aluminij se plastificira u bilo koji ton po RAL karti i boja je dio površine, pa je postojana i lako se obnavlja. Za objekte uz more preporuča se plastifikacija predviđena za priobalje, jer sol ubrzava propadanje slabijih premaza.',
+          'PVC se boji folijom. Izbor dekora je isti kao kod aluminija, uključujući imitacije drva, ali tamne folije se na jakom suncu znatno zagriju, pa takvi profili traže dodatno ojačanje i pažljiviji odabir sustava.',
           'Postoji i kombinacija drvo-aluminij, gdje je iznutra drvo, a izvana aluminijska ljuska koja štiti od kiše i sunca. To je najskuplja, ali i najizdržljivija kombinacija za kuće.',
         ],
       },
@@ -256,9 +256,8 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kako odlučiti',
         odlomci: [
-          'Ako se mijenjaju prozori u stanu ili obiteljskoj kući standardnih dimenzija, PVC je gotovo uvijek razumniji izbor. Novac koji bi otišao na aluminij bolje je uložiti u bolji profil, bolje staklo i kvalitetnu ugradnju.',
+          'Ako se mijenjaju prozori u stanu ili obiteljskoj kući standardnih dimenzija, PVC ili aluminij su ok izbori. Koji izabarti? Odgovor ovisi o prisutnosti soli, sunca i temperaturnim razlikama',
           'Ako se radi klizna terasna stijena, veliki fiksni otvor, izlog ili ulazna vrata poslovnog prostora, aluminij je pravi izbor jer PVC na tim dimenzijama traži previše ojačanja.',
-          'U praksi se često kombinira: PVC na prozorima, aluminij na velikim stijenama i ulaznim vratima. To je uredno rješenje i cjenovno i tehnički.',
         ],
       },
     ],
@@ -329,20 +328,20 @@ const hr: FaqClanak[] = [
     naslov: 'Vrste komarnika za prozore i vrata — koji odabrati',
     seoNaslov: 'Vrste komarnika za prozore i vrata',
     sazetak:
-      'Za prozore se najčešće rade komarnici na fiksnom okviru ili rolo komarnici, a za balkonska i terasna vrata klizni, plise ili komarnici na šarke.',
+      'Za prozore se najčešće rade komarnici na fiksnom okviru, rolo komarnici, ili plise komarnici, a za balkonska i terasna vrata klizni, plise ili komarnici na šarke.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
-          'Izbor ovisi o tome prolazi li se kroz otvor. Na prozoru kroz koji se ne prolazi najjeftiniji i najbolje zabrtvljen je komarnik na fiksnom okviru. Na balkonskim i terasnim vratima treba nešto što se otvara: klizni komarnik, plise ili komarnik na šarke.',
-          'Svi se rade po mjeri jer se mjeri konkretan otvor. Kod PVC prozora se većina izvedbi montira kukicama na okvir, bez bušenja profila.',
+          'Izbor ovisi o tome prolazi li se kroz otvor. Na prozoru kroz koji se ne prolazi najjeftiniji i najbolje je komarnik na fiksnom okviru. Na balkonskim i terasnim vratima treba nešto što se otvara: klizni komarnik, plise ili komarnik na šarke.',
+          'Svi se rade po mjeri jer se mjeri konkretan otvor. Kod PVC prozora se kod nekih izvedbi montira kukicama na okvir, bez bušenja profila.',
         ],
       },
       {
         naslov: 'Komarnik na fiksnom okviru',
         odlomci: [
-          'Aluminijski okvir s razapetom mrežicom koji se kukicama objesi s vanjske strane prozora. Najjeftinija izvedba, najbolje brtvi jer nema pokretnih dijelova, i zimi se može skinuti i spremiti.',
+          'Aluminijski okvir s razapetom mrežicom koji se kukicama objesi s vanjske strane prozora. Najjeftinija izvedba, najbolje brtvi jer nema pokretnih dijelova.',
           'Nedostatak je što se za otvaranje krila mora skinuti, pa nije za otvore kroz koje se prolazi ni za prozore koji se često otvaraju širom.',
         ],
       },
@@ -350,7 +349,7 @@ const hr: FaqClanak[] = [
         naslov: 'Rolo komarnik',
         odlomci: [
           'Mrežica je namotana na oprugu u kazeti i izvlači se po potrebi, kao roleta. Ostaje na prozoru cijele godine, a kad je namotana mrežica je zaštićena od sunca i prljavštine, pa duže traje.',
-          'Radi se u okomitoj izvedbi za prozore i u bočnoj za vrata. Skuplji je od fiksnog i ima mehanizam koji se s vremenom troši, ali je najpraktičniji za prozore koji se stalno otvaraju.',
+          'Radi se u okomitoj izvedbi za prozore i u bočnoj za vrata. Skuplji je od fiksnog i ima mehanizam koji se s vremenom troši.',
         ],
       },
       {
@@ -362,7 +361,7 @@ const hr: FaqClanak[] = [
         ],
       },
       {
-        naslov: 'Vrsta mrežice',
+        naslov: 'Vrsta mrežice za fiksne komarnike',
         odlomci: [
           'Standardna je mrežica od staklenih vlakana. Elastična je, ne ostaje ulubljena i dobro podnosi vjetar. Aluminijska mrežica je čvršća i trajnija, ali se od udarca ulubi i ostane tako.',
           'Za kućne ljubimce postoji ojačana mrežica koja podnosi kandže. Postoji i finija protupeludna mrežica, ali njezino gušće tkanje smanjuje protok zraka i propušta manje svjetla, pa se stavlja samo tamo gdje je alergija razlog.',
@@ -380,7 +379,7 @@ const hr: FaqClanak[] = [
       },
     ],
   },
-  {
+  /*{
     slug: 'termalni-zid',
     naslov: 'Što je termalni zid i zašto je dobra investicija',
     seoNaslov: 'Što je termalni zid',
@@ -427,7 +426,7 @@ const hr: FaqClanak[] = [
         ],
       },
     ],
-  },
+  },*/
 ]
 
 const en: FaqClanak[] = [
@@ -593,7 +592,7 @@ const en: FaqClanak[] = [
     naslov: 'Aluminium or PVC windows — differences, cost and how to choose',
     seoNaslov: 'Aluminium or PVC windows',
     sazetak:
-      'PVC costs less and insulates better per euro spent, while aluminium carries large openings with slimmer sightlines. Flats generally suit PVC, large screens and shopfronts suit aluminium.',
+      'PVC insulates better per euro spent, while aluminium costs less, carries large openings with slimmer sightlines. Flats suit both PVC and alumunium, large screens and shopfronts suit aluminium more.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
@@ -614,8 +613,8 @@ const en: FaqClanak[] = [
       {
         naslov: 'Why aluminium needs a thermal break',
         odlomci: [
-          'Aluminium conducts heat extremely well, which is bad for a window. A quality aluminium profile is therefore made from two separate halves, outer and inner, joined by polyamide strips that do not conduct heat. That is the thermal break.',
-          'An aluminium profile without a thermal break is only used today where insulation does not matter — unheated spaces, garage and cellar doors, partitions. In a home it makes no sense.',
+          'Aluminium conducts heat , which is bad for a window. A quality aluminium profile is therefore made from two separate halves, outer and inner, joined by polyamide strips that do not conduct heat. That is the thermal break.',
+          'An aluminium profile without a thermal break is still used today where insulation does not matter — heated and unheated spaces, garage and cellar doors, partitions.',
           'An aluminium frame generally remains a slightly poorer insulator than a good PVC profile, but it carries far larger sashes with a slimmer visible frame, so more daylight reaches the room.',
         ],
       },
@@ -623,7 +622,7 @@ const en: FaqClanak[] = [
         naslov: 'Looks, colour and coastal air',
         odlomci: [
           'Aluminium is powder coated in any RAL shade and the colour is part of the surface, so it holds up and can be renewed. For buildings near the sea, ask for a coating rated for coastal exposure, because salt accelerates the failure of weaker finishes.',
-          'PVC is coloured with foil. The choice of decors is wide, including wood effects, but dark foils heat up considerably in strong sun, so those profiles need extra reinforcement and a more careful choice of system.',
+          'PVC is coloured with foil. The choice of decors is wide, but dark foils heat up considerably in strong sun, so those profiles need extra reinforcement and a more careful choice of system.',
           'There is also a timber-aluminium combination, with wood inside and an aluminium shell outside protecting against rain and sun. It is the most expensive but also the most durable option for houses.',
         ],
       },
@@ -640,9 +639,8 @@ const en: FaqClanak[] = [
       {
         naslov: 'How to decide',
         odlomci: [
-          'If you are replacing windows of standard size in a flat or family house, PVC is almost always the sounder choice. Money that would go into aluminium is better spent on a better profile, better glass and a proper installation.',
+          'If you are replacing windows of standard size in a flat or family house, PVC or aluminium an ok choice. What to choose? The answer lies in the presence of salt, sun, and temperature differences.',
           'For a sliding terrace screen, a large fixed opening, a shopfront or the entrance doors of commercial premises, aluminium is the right call, because PVC at those dimensions needs too much reinforcement.',
-          'In practice the two are often combined: PVC on the windows, aluminium on large screens and entrance doors. That is a tidy answer both technically and on price.',
         ],
       },
     ],
@@ -720,7 +718,7 @@ const en: FaqClanak[] = [
       {
         odlomci: [
           'The choice comes down to whether people walk through the opening. On a window nobody passes through, a fixed-frame screen is the cheapest and seals best. Balcony and terrace doors need something that opens: a sliding screen, a pleated one, or one on hinges.',
-          'All of them are made to size, because the actual opening is measured. On PVC windows most versions clip onto the frame with hooks, without drilling the profile.',
+          'All of them are made to size, because the actual opening is measured. On PVC windows some versions clip onto the frame with hooks, without drilling the profile.',
         ],
       },
       {
@@ -746,7 +744,7 @@ const en: FaqClanak[] = [
         ],
       },
       {
-        naslov: 'Mesh types',
+        naslov: 'Mesh types for fixed-frame screens',
         odlomci: [
           'The standard mesh is fibreglass. It is flexible, does not stay dented and copes well with wind. Aluminium mesh is stiffer and more durable, but a knock leaves a dent that stays.',
           'For households with pets there is a reinforced mesh that stands up to claws. There is also a finer pollen mesh, but its tighter weave reduces airflow and lets in less light, so it is fitted only where allergy is the reason.',
@@ -764,7 +762,7 @@ const en: FaqClanak[] = [
       },
     ],
   },
-  {
+  /*{
     slug: 'termalni-zid',
     naslov: 'What a thermal wall is, and why it pays off',
     seoNaslov: 'What a thermal wall is',
@@ -811,7 +809,7 @@ const en: FaqClanak[] = [
         ],
       },
     ],
-  },
+  },*/
 ]
 
 export const faqClanci: Record<Lang, FaqClanak[]> = { hr, en }
