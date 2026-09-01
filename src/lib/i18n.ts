@@ -152,7 +152,7 @@ const hr: Dict = {
     emailLabel: 'E-mail',
     locationLabel: 'Lokacija',
     phone: '091 949 1580',
-    email: 'leopold.ivesic.ilan@gmail.com',
+    email: 'ilan.leopold.ivesic@gmail.com',
     emailSubject: 'Upit sa stranice',
     location: 'Rijeka, Hrvatska',
   },
@@ -301,7 +301,7 @@ const en: Dict = {
     locationLabel: 'Location',
     // Međunarodni zapis, jer engleska verzija cilja i strane posjetitelje.
     phone: '+385 91 949 1580',
-    email: 'leopold.ivesic.ilan@gmail.com',
+    email: 'ilan.leopold.ivesic@gmail.com',
     emailSubject: 'Website enquiry',
     location: 'Rijeka, Croatia',
   },

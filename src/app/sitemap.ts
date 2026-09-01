@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next'
 import { SITE_URL } from '../lib/site'
 import { faqSlugovi } from '../lib/faq'
 
+export const dynamic = "force-static"
+
 /** Popis svih adresa. Novi članak se ovdje pojavi sam, čim se doda u faq.ts. */
 export default function sitemap(): MetadataRoute.Sitemap {
   const stalne = [

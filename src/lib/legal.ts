@@ -67,7 +67,7 @@ const impressumHr: LegalDokument = {
       naslov: 'Kontakt',
       redci: [
         { oznaka: 'Telefon', vrijednost: '091 949 1580' },
-        { oznaka: 'E-mail', vrijednost: 'leopold.ivesic.ilan@gmail.com' },
+        { oznaka: 'E-mail', vrijednost: 'ilan.leopold.ivesic@gmail.com' },
       ],
     },
   ],
@@ -114,7 +114,7 @@ const impressumEn: LegalDokument = {
       naslov: 'Contact',
       redci: [
         { oznaka: 'Phone', vrijednost: '+385 91 949 1580' },
-        { oznaka: 'Email', vrijednost: 'leopold.ivesic.ilan@gmail.com' },
+        { oznaka: 'Email', vrijednost: 'ilan.leopold.ivesic@gmail.com' },
       ],
     },
   ],
@@ -128,7 +128,7 @@ const privatnostHr: LegalDokument = {
       naslov: 'Tko obrađuje vaše podatke',
       odlomci: [
         'Voditelj obrade je I. L. A. N. d. o. o., Ivana Luppisa 7, 51000 Rijeka, OIB 96998412691.',
-        'Za sva pitanja o svojim podacima javite se na leopold.ivesic.ilan@gmail.com.',
+        'Za sva pitanja o svojim podacima javite se na ilan.leopold.ivesic@gmail.com.',
       ],
     },
     {
@@ -198,7 +198,7 @@ const privatnostEn: LegalDokument = {
       naslov: 'Who processes your data',
       odlomci: [
         'The controller is I. L. A. N. d. o. o., Ivana Luppisa 7, 51000 Rijeka, Croatia, VAT ID 96998412691.',
-        'For any question about your data, write to leopold.ivesic.ilan@gmail.com.',
+        'For any question about your data, write to ilan.leopold.ivesic@gmail.com.',
       ],
     },
     {

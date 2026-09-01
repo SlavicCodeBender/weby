@@ -42,7 +42,7 @@ import type { Lang } from './i18n'
  */
 
 /** Adresa na koju stižu upiti kad je uključen način 'mailto'. */
-export const INQUIRY_EMAIL = 'leopold.ivesic.ilan@gmail.com'
+export const INQUIRY_EMAIL = 'ilan.leopold.ivesic@gmail.com'
 
 export const INQUIRY_MODE: 'mailto' | 'endpoint' = 'mailto'
 export const INQUIRY_ENDPOINT = ''

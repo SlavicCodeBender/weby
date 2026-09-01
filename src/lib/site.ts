@@ -21,7 +21,7 @@ export const TVRTKA = {
   drzava: 'HR',
   oib: '96998412691',
   telefon: '+385919491580',
-  email: 'leopold.ivesic.ilan@gmail.com',
+  email: 'ilan.leopold.ivesic@gmail.com',
   osnovano: '2006',
   djelatnost: 'Proizvodnja i ugradnja aluminijske i PVC stolarije',
 } as const
