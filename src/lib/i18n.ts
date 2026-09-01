@@ -84,7 +84,7 @@ const hr: Dict = {
   hero: {
     eyebrow: 'Od 2006. u Rijeci · Vlastita proizvodnja i ugradnja',
     title: 'PVC i ALU stolarija po mjeri',
-    sub: 'Izmjera i ponuda su besplatne.',
+    sub: 'Izmjera i ponuda su besplatne. u Rijeci i okolici',
     btn: 'Zatraži izmjeru',
     badge: 'Est. ILAN Co.',
     photoAlt: 'Montažeri ugrađuju kliznu terasnu stijenu',
@@ -147,7 +147,7 @@ const hr: Dict = {
     eyebrow: 'Kontakt',
     title: 'Razgovarajmo o vašem projektu',
     intro:
-      'Rado ćemo čuti više o vašem projektu. Javite nam se i vraćamo vam se s besplatnim savjetom i ponudom.',
+      'Rado ćemo čuti više o vašem projektu. Javite nam se i vraćamo vam se s savjetom i ponudom.',
     phoneLabel: 'Telefon',
     emailLabel: 'E-mail',
     locationLabel: 'Lokacija',
@@ -158,7 +158,7 @@ const hr: Dict = {
   },
   form: {
     title: 'Brzi upit',
-    subtitle: 'Ispuni u pola minute — javljamo se s ponudom.',
+    subtitle: 'Javljamo se s ponudom.',
     name: 'Ime i prezime',
     namePh: 'Ivan Horvat',
     reach: 'Telefon ili e-mail',
