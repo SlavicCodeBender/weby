@@ -47,7 +47,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.formWrap}>
-          <QuoteForm source={t.contact.eyebrow} />
+          <QuoteForm />
         </div>
       </div>
     </section>

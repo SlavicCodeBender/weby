@@ -1,7 +1,6 @@
 'use client'
 import { useId, useState } from 'react'
 import { useSite } from './SiteProvider'
-import { sendInquiry } from '../lib/inquiry'
 import styles from './QuoteForm.module.css'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
@@ -11,8 +10,8 @@ type Errors = Partial<Record<'name' | 'reach' | 'service' | 'consent', string>>
  * Brzi upit — ista forma se koristi u skočnom prozoru i u odjeljku Kontakt.
  * `source` samo označava odakle je upit stigao, da se to vidi u mailu.
  */
-export default function QuoteForm({ source }: { source: string }) {
-  const { t, lang } = useSite()
+export default function QuoteForm() {
+  const { t } = useSite()
   const uid = useId()
 
   const [name, setName] = useState('')
@@ -22,8 +21,6 @@ export default function QuoteForm({ source }: { source: string }) {
   const [consent, setConsent] = useState(false)
   const [errors, setErrors] = useState<Errors>({})
   const [status, setStatus] = useState<Status>('idle')
-  // Zamka za robote: polje je skriveno, pa ga stvarni posjetitelj nikad ne ispuni.
-  const [trap, setTrap] = useState('')
 
   function validate(): Errors {
     const next: Errors = {}
@@ -35,31 +32,17 @@ export default function QuoteForm({ source }: { source: string }) {
   }
 
   async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    // Ako je zamka ispunjena, upit je robotski — prikaži uspjeh, ali ne šalji ništa.
-    if (trap) {
-      setStatus('success')
+    const found = validate()
+
+    if (Object.keys(found).length > 0) {
+      e.preventDefault()
+      setErrors(found)
+      setStatus('error')
       return
     }
 
-    const found = validate()
-    setErrors(found)
-    if (Object.keys(found).length > 0) return
-
     setStatus('sending')
-    try {
-      await sendInquiry({
-        name: name.trim(),
-        reach: reach.trim(),
-        service,
-        message: message.trim(),
-        source,
-        lang,
-      })
-      setStatus('success')
-    } catch {
-      setStatus('error')
-    }
+
   }
 
   if (status === 'success') {
@@ -82,8 +65,6 @@ export default function QuoteForm({ source }: { source: string }) {
         </div>
         <h3>{t.form.successTitle}</h3>
         <p>{t.form.successText}</p>
-
-        {/* Obrazac je nestao, pa kome se žuri treba broj pred sobom. */}
         <p className={styles.hurry}>
           {t.form.hurry}
           <a href={`tel:${t.contact.phone.replace(/\s/g, '')}`}>{t.contact.phone}</a>
@@ -93,29 +74,20 @@ export default function QuoteForm({ source }: { source: string }) {
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} noValidate>
-      <input
-        className={styles.trap}
-        type="text"
-        name="_honey"
-        value={trap}
-        tabIndex={-1}
-        autoComplete="off"
-        aria-hidden="true"
-        onChange={(e) => setTrap(e.target.value)}
-      />
-
+    <form className={styles.form} action="https://formsubmit.co/ilan.leopold.ivesic@gmail.com" onSubmit={handleSubmit} method="POST">
       <div className={styles.group}>
         <label htmlFor={`${uid}-name`}>{t.form.name}</label>
         <input
           id={`${uid}-name`}
           type="text"
           value={name}
+          name='Ime i Prezime'
           placeholder={t.form.namePh}
           autoComplete="name"
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? `${uid}-name-err` : undefined}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         {errors.name && (
           <span className={styles.error} id={`${uid}-name-err`}>
@@ -130,11 +102,13 @@ export default function QuoteForm({ source }: { source: string }) {
           id={`${uid}-reach`}
           type="text"
           value={reach}
+          name='Email ili broj telefona'
           placeholder={t.form.reachPh}
           autoComplete="tel"
           aria-invalid={!!errors.reach}
           aria-describedby={errors.reach ? `${uid}-reach-err` : undefined}
           onChange={(e) => setReach(e.target.value)}
+          required
         />
         {errors.reach && (
           <span className={styles.error} id={`${uid}-reach-err`}>
@@ -148,6 +122,7 @@ export default function QuoteForm({ source }: { source: string }) {
         <select
           id={`${uid}-service`}
           value={service}
+          name='Trebaju'
           aria-invalid={!!errors.service}
           aria-describedby={errors.service ? `${uid}-service-err` : undefined}
           onChange={(e) => setService(e.target.value)}
@@ -173,6 +148,7 @@ export default function QuoteForm({ source }: { source: string }) {
         <textarea
           id={`${uid}-message`}
           value={message}
+          name='Poruka'
           placeholder={t.form.messagePh}
           rows={3}
           onChange={(e) => setMessage(e.target.value)}
