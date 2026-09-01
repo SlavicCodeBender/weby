@@ -52,7 +52,7 @@ const hr: FaqClanak[] = [
     naslov: 'Koliko traje ugradnja prozora — od demontaže do čišćenja',
     seoNaslov: 'Koliko traje ugradnja prozora',
     sazetak:
-      'Ugradnja jednog prozora traje otprilike dva do tri sata, a prosječan stan se u pravilu završi u jednom do dva radna dana.',
+      'Ugradnja jednog prozora traje otprilike 2-3 sata, a prosječan stan se u pravilu završi u 1-2 dana, uz uključivanje demontažei i čiščenja',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
@@ -101,8 +101,7 @@ const hr: FaqClanak[] = [
     slug: 'dvostruko-ili-trostruko-staklo',
     naslov: 'Dvostruko ili trostruko staklo na prozorima — što se isplati',
     seoNaslov: 'Dvostruko ili trostruko staklo',
-    sazetak:
-      'Trostruko staklo izolira otprilike dvostruko bolje od dvostrukog, ali se na primorju često ne isplati jer su zime blage, a staklo je skuplje i teže.',
+    sazetak: 'Trostruko staklo bolje izolira, no na Kvarneru se zbog blagih zima često više isplati dvostruko staklo koje nudi odličan omjer cijene i uštede.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
@@ -150,7 +149,7 @@ const hr: FaqClanak[] = [
     naslov: 'Zamjena brtvi na prozorima — kad se prepozna i koliko traje',
     seoNaslov: 'Zamjena brtvi na prozorima',
     sazetak:
-      'Brtve na prozorima traju otprilike deset do petnaest godina. Kad otvrdnu, javlja se propuh uz rub krila, zvižduk na vjetru i rošenje po okviru.',
+      'Dotrajale brtve stvaraju propuh i rošenje, što u Rijeci tjekom bure dolazi do izražaja; brza zamjena rješava problem u jednom danu.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
