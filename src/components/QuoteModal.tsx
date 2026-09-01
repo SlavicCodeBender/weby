@@ -56,7 +56,7 @@ export default function QuoteModal() {
         </h2>
         <p className={styles.subtitle}>{t.form.subtitle}</p>
 
-        <QuoteForm source={t.form.title} />
+        <QuoteForm />
       </div>
     </div>
   )
