@@ -75,6 +75,7 @@ export default function QuoteForm() {
 
   return (
     <form className={styles.form} action="https://formsubmit.co/ilan.leopold.ivesic@gmail.com" onSubmit={handleSubmit} method="POST">
+      <input type="hidden" name="_next" value="https://ilanprozori.com" />
       <div className={styles.group}>
         <label htmlFor={`${uid}-name`}>{t.form.name}</label>
         <input
