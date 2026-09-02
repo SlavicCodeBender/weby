@@ -84,7 +84,7 @@ const hr: Dict = {
   hero: {
     eyebrow: 'Od 2006. u Rijeci · Vlastita proizvodnja i ugradnja',
     title: 'PVC i ALU stolarija po mjeri',
-    sub: 'Izmjera i ponuda su besplatne. u Rijeci i okolici',
+    sub: 'Izmjera i ponuda su besplatne u Rijeci i okolici',
     btn: 'Zatraži izmjeru',
     badge: 'Est. ILAN Co.',
     photoAlt: 'Montažeri ugrađuju kliznu terasnu stijenu',
