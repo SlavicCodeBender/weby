@@ -93,7 +93,7 @@ const hr: Dict = {
     title: 'ILAN u brojkama',
     items: [
       { num: '20+', label: 'Godina iskustva' },
-      { num: '500+', label: 'Završenih projekata' },
+      { num: '2500+', label: 'Završenih projekata' },
       { num: '100%', label: 'Po mjeri i s ugradnjom' },
     ],
   },
@@ -241,7 +241,7 @@ const en: Dict = {
     title: 'ILAN in numbers',
     items: [
       { num: '20+', label: 'Years of experience' },
-      { num: '500+', label: 'Projects completed' },
+      { num: '2500+', label: 'Projects completed' },
       { num: '100%', label: 'Custom made & installed' },
     ],
   },
