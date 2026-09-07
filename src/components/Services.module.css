@@ -40,18 +40,32 @@
   box-shadow: 0 14px 30px rgba(26, 26, 24, 0.1);
 }
 
+/* Ikona i naslov u istom retku — kraća kartica, manje praznog prostora
+   nego kad je ikona sama iznad naslova. */
+.head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
 /* Ikona u punom tamnoplavom kvadratu — ista boja kao traka s brojkama,
    pa dvije sekcije djeluju kao dio istog sustava. */
 .icon {
-  width: 54px;
-  height: 54px;
+  width: 44px;
+  height: 44px;
+  flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--deep);
   color: var(--white);
-  margin-bottom: 1.5rem;
   transition: background 0.22s ease;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .card:hover .icon {
@@ -61,7 +75,6 @@
 .card h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
-  margin-bottom: 0.55rem;
   color: var(--ink);
   font-weight: 400;
 }

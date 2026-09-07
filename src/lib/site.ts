@@ -1,12 +1,12 @@
 /**
  * Podaci koje traže tražilice i AI asistenti kad čitaju stranicu.
  *
- * VAŽNO: `SITE_URL` je adresa na kojoj će stranica živjeti. Dok domena nije
- * kupljena ovdje stoji pretpostavka. Kad se domena odluči, mijenja se SAMO
- * ovdje — iz nje se računaju sitemap.xml, robots.txt i canonical adrese.
- * Može se preskočiti i bez diranja koda, varijablom NEXT_PUBLIC_SITE_URL.
+ * VAŽNO: `SITE_URL` je adresa na kojoj stranica živi (https://ilanprozori.com) —
+ * iz nje se računaju sitemap.xml, robots.txt i canonical adrese. Ako se domena
+ * ikad promijeni, mijenja se SAMO ovdje. Može se preskočiti i bez diranja koda,
+ * varijablom NEXT_PUBLIC_SITE_URL na hostingu (za lokalni razvoj i sl.).
  */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.ilan.hr').replace(
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ilanprozori.com').replace(
   /\/$/,
   '',
 )

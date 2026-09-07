@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import styles from './Lightbox.module.css'
 
@@ -44,9 +43,8 @@ export default function Lightbox({
         </svg>
       </button>
 
-      <div className={styles.frame} onClick={(e) => e.stopPropagation()}>
-        <Image src={src} alt={alt} fill sizes="90vw" className={styles.photo} />
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element -- prirodna veličina umjesto next/image "fill" jer klik izvan stvarnih piksela slike mora zatvoriti lightbox, a "fill" bi razvukao klikabilnu površinu preko cijelog okvira. */}
+      <img src={src} alt={alt} className={styles.photo} onClick={(e) => e.stopPropagation()} />
     </div>
   )
 }

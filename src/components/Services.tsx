@@ -70,8 +70,10 @@ export default function Services() {
       <div className={styles.grid}>
         {t.services.items.map((s, i) => (
           <div key={s.title} className={styles.card}>
-            <div className={styles.icon}>{icons[i]}</div>
-            <h3>{s.title}</h3>
+            <div className={styles.head}>
+              <div className={styles.icon}>{icons[i]}</div>
+              <h3>{s.title}</h3>
+            </div>
             <p>{s.desc}</p>
           </div>
         ))}
