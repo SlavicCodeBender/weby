@@ -378,6 +378,59 @@ const hr: FaqClanak[] = [
       },
     ],
   },
+  {
+    slug: 'izmjera-i-montaza-izvan-rijeke',
+    naslov: 'Izmjera i montaža izvan Rijeke i Primorsko-goranske županije',
+    seoNaslov: 'Izmjera i montaža izvan PGŽ',
+    sazetak:
+      'Izmjera i ponuda su besplatne u Rijeci i okolici, a montiramo i izvan Primorsko-goranske županije — na Krku i Cresu, u Istarskoj županiji i povremeno u Zadru, uz naplatu putnih troškova za izmjeru na udaljenijim lokacijama.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Da, radimo izmjere i montažu i izvan Rijeke i Primorsko-goranske županije. U Rijeci i bližoj okolici izmjera i ponuda su u potpunosti besplatne; za udaljenije lokacije, poput otoka, naplaćujemo putne troškove dolaska na izmjeru, dok samu izradu ponude ne naplaćujemo dodatno.',
+          'Dugogodišnja nam je praksa montirati i po otocima, pa udaljenost sama po sebi rijetko bude razlog da se ne javite.',
+        ],
+      },
+      {
+        naslov: 'Gdje smo do sada montirali',
+        natuknice: [
+          'Cijela Primorsko-goranska županija.',
+          'Otoci Krk i Cres.',
+          'Cijela Istarska županija.',
+          'Zadar i okolica.',
+        ],
+      },
+      {
+        naslov: 'Rab, Pag i Lošinj — na upit',
+        odlomci: [
+          'Osim Krka i Cresa, dolazimo i na otoke Rab, Pag i Lošinj, ovisno o dogovoru i opsegu posla. Javite nam se s lokacijom i opisom posla pa provjeravamo detalje zajedno.',
+        ],
+      },
+      {
+        naslov: 'Možete li nam sami poslati mjere',
+        odlomci: [
+          'Da. Možete nam poslati vlastite mjere i opis onoga što trebate, na temelju čega izradimo okvirnu ponudu. Ako vam ponuda odgovara, tek tada dolazimo na izmjeru radi potvrde mjera prije same izrade prozora ili vrata.',
+          'Ta izmjera se naplaćuje, ali je dobar način da unaprijed znate okvirnu cijenu prije nego prihvatite trošak dolaska na teren — posebno korisno ako ste udaljeniji od Rijeke.',
+        ],
+      },
+      {
+        naslov: 'Kako se naplaćuje izmjera izvan Rijeke',
+        odlomci: [
+          'Za Rijeku i najbližu okolicu izmjera i ponuda ne koštaju ništa. Za lokacije koje traže dulji put ili trajekt naplaćujemo putni trošak za dolazak na samu izmjeru — to pokriva gorivo, vrijeme i, kod otoka, kartu za trajekt.',
+          'Ponuda koju nakon izmjere dobijete ostaje besplatna bez obzira na udaljenost; naplaćuje se isključivo dolazak na teren.',
+        ],
+      },
+      {
+        naslov: 'Vrijedi li se javiti ako ste izvan županije',
+        odlomci: [
+          'Da. Kod većih projekata — cijele kuće, apartmana ili više otvora odjednom — putni trošak je zanemariv u odnosu na ukupnu vrijednost posla, pa se izmjera gotovo uvijek isplati organizirati.',
+          'Najbolje je jednostavno nas kontaktirati s lokacijom i opisom posla; javit ćemo vam konkretno vrijedi li doći na izmjeru i koliki bi bio putni trošak.',
+        ],
+      },
+    ],
+  },
   /*{
     slug: 'termalni-zid',
     naslov: 'Što je termalni zid i zašto je dobra investicija',
@@ -757,6 +810,59 @@ const en: FaqClanak[] = [
           'Check there is room for a roller cassette if there is already a shutter or canopy outside.',
           'For doors in constant use, choose a version with a lower bottom track.',
           'Match the frame colour to the window; aluminium is finished to the RAL chart.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'izmjera-i-montaza-izvan-rijeke',
+    naslov: 'Measuring and installation outside Rijeka and Primorje-Gorski Kotar County',
+    seoNaslov: 'Installation outside the county',
+    sazetak:
+      'Measuring and quotes are free in Rijeka and the surrounding area, and we also install outside Primorje-Gorski Kotar County — on Krk and Cres, in Istria County, and occasionally in Zadar, with travel costs charged only for measuring at more distant locations.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Yes, we carry out measuring and installation outside Rijeka and Primorje-Gorski Kotar County as well. In Rijeka and the immediate area, measuring and the quote are completely free; for more distant locations, such as the islands, we charge travel costs for the visit to measure, while preparing the quote itself is never charged extra.',
+          'We have long-standing experience installing on the islands too, so distance alone is rarely a reason not to get in touch.',
+        ],
+      },
+      {
+        naslov: 'Where we have installed so far',
+        natuknice: [
+          'The whole of Primorje-Gorski Kotar County.',
+          'The islands of Krk and Cres.',
+          'The whole of Istria County.',
+          'Zadar and the surrounding area.',
+        ],
+      },
+      {
+        naslov: 'Rab, Pag and Lošinj — on request',
+        odlomci: [
+          'Besides Krk and Cres, we also come to the islands of Rab, Pag and Lošinj, depending on arrangement and the scope of the job. Get in touch with your location and a description of the job and we will work out the details together.',
+        ],
+      },
+      {
+        naslov: 'Can you send us your own measurements',
+        odlomci: [
+          'Yes. You can send us your own measurements and a description of what you need, and we prepare an indicative quote based on that. If the quote works for you, only then do we come out to measure and confirm everything before the windows or doors are made.',
+          'That measuring visit is charged, but it is a good way to know the approximate price upfront before committing to the cost of a site visit — especially useful if you are further from Rijeka.',
+        ],
+      },
+      {
+        naslov: 'How measuring outside Rijeka is charged',
+        odlomci: [
+          'For Rijeka and the immediate area, measuring and the quote cost nothing. For locations that require a longer drive or a ferry crossing, we charge a travel fee for the visit itself — this covers fuel, time and, for the islands, the ferry ticket.',
+          'The quote you receive after measuring stays free regardless of distance; only the site visit is charged.',
+        ],
+      },
+      {
+        naslov: 'Is it worth getting in touch if you are outside the county',
+        odlomci: [
+          'Yes. For larger projects — a whole house, an apartment building, or several openings at once — the travel cost is negligible against the total value of the job, so arranging a measuring visit is almost always worthwhile.',
+          'The simplest approach is to contact us with your location and a description of the job; we will tell you specifically whether a visit makes sense and what the travel cost would be.',
         ],
       },
     ],

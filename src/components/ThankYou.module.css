@@ -1,0 +1,85 @@
+.main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 6rem 2rem 7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tick {
+  color: var(--primary-text);
+  margin-bottom: 1.25rem;
+}
+
+@keyframes crtaj {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.krug {
+  stroke-dasharray: 182;
+  stroke-dashoffset: 182;
+  animation: crtaj 0.7s ease-out forwards;
+}
+
+.kvacica {
+  stroke-dasharray: 42;
+  stroke-dashoffset: 42;
+  animation: crtaj 0.4s ease-out 0.5s forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .krug,
+  .kvacica {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+.main h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+}
+
+.text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  max-width: 40ch;
+}
+
+.hurry {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+}
+
+.hurry a {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+}
+
+.hurry a:hover {
+  border-bottom-color: var(--primary-text);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 4rem 1.5rem 5rem;
+  }
+}

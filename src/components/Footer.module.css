@@ -9,9 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.9rem;
-  padding-bottom: 1.75rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  gap: 0.7rem;
 }
 
 /* Godina osnutka — mali naglasak, ne sitni otisak. Dvadeset godina rada
@@ -29,39 +27,6 @@
   text-align: center;
 }
 
-.social {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.icon {
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  color: rgba(255, 255, 255, 0.85);
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-
-.icon:hover {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: var(--ink);
-}
-
-/* Facebook dok nema adrese — vidi se, ali ne reagira */
-.iconOff {
-  opacity: 0.4;
-}
-
-.iconOff:hover {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.28);
-  color: rgba(255, 255, 255, 0.85);
-}
-
 /* Podaci o tvrtki — sitni otisak, ali prisutni */
 .legal {
   padding-top: 0.9rem;
@@ -74,12 +39,6 @@
   font-size: 0.78rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.55);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .icon {
-    transition: none;
-  }
 }
 
 @media (max-width: 768px) {

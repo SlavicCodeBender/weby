@@ -1,14 +1,20 @@
 'use client'
 import { useId, useState } from 'react'
 import { useSite } from './SiteProvider'
+import { SITE_URL } from '../lib/site'
 import styles from './QuoteForm.module.css'
 
-type Status = 'idle' | 'sending' | 'success' | 'error'
+type Status = 'idle' | 'sending' | 'error'
 type Errors = Partial<Record<'name' | 'reach' | 'service' | 'consent', string>>
 
 /**
  * Brzi upit — ista forma se koristi u skočnom prozoru i u odjeljku Kontakt.
  * `source` samo označava odakle je upit stigao, da se to vidi u mailu.
+ *
+ * Forma se šalje kao običan POST na formsubmit.co (bez AJAX-a), pa nakon
+ * uspješnog slanja preglednik ode na `_next` adresu — stranicu /hvala na
+ * ovoj domeni koja pokazuje potvrdu. Zato ovdje nema stanja 'success': do
+ * njega se ionako nikad ne bi stiglo, jer stranica u međuvremenu napusti SPA.
  */
 export default function QuoteForm() {
   const { t } = useSite()
@@ -45,37 +51,9 @@ export default function QuoteForm() {
 
   }
 
-  if (status === 'success') {
-    return (
-      <div className={styles.success} role="status">
-        <div className={styles.tick} aria-hidden="true">
-          <svg
-            viewBox="0 0 64 64"
-            width={58}
-            height={58}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle className={styles.krug} cx="32" cy="32" r="29" />
-            <path className={styles.kvacica} d="M20 33 L28.5 41.5 L44 24" />
-          </svg>
-        </div>
-        <h3>{t.form.successTitle}</h3>
-        <p>{t.form.successText}</p>
-        <p className={styles.hurry}>
-          {t.form.hurry}
-          <a href={`tel:${t.contact.phone.replace(/\s/g, '')}`}>{t.contact.phone}</a>
-        </p>
-      </div>
-    )
-  }
-
   return (
     <form className={styles.form} action="https://formsubmit.co/ilan.leopold.ivesic@gmail.com" onSubmit={handleSubmit} method="POST">
-      <input type="hidden" name="_next" value="https://ilanprozori.com" />
+      <input type="hidden" name="_next" value={`${SITE_URL}/hvala`} />
       <input type="hidden" name="_captcha" value="false" />
       <div className={styles.group}>
         <label htmlFor={`${uid}-name`}>{t.form.name}</label>

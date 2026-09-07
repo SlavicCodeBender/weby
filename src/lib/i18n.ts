@@ -66,8 +66,6 @@ export interface Dict {
     /** Podaci o tvrtki u sitnom otisku na dnu */
     legal: string
     /** Opisi za čitače ekrana na ikonama */
-    facebookLabel: string
-    instagramLabel: string
     emailLabel: string
   }
   meta: { title: string; description: string }
@@ -210,8 +208,6 @@ const hr: Dict = {
     tagline: 'Aluminijska i PVC stolarija.',
     legal:
       'I. L. A. N. d. o. o.\u00A0· Proizvodnja vrata i prozora od metala\u00A0· Ivana Luppisa 7, 51000 Rijeka\u00A0· OIB:\u00A096998412691',
-    facebookLabel: 'ILAN na Facebooku',
-    instagramLabel: 'ILAN na Instagramu',
     emailLabel: 'Pošalji e-mail',
   },
   meta: {
@@ -359,8 +355,6 @@ const en: Dict = {
     tagline: 'Aluminium and PVC joinery.',
     legal:
       'I. L. A. N. d. o. o.\u00A0· Manufacture of metal doors and windows\u00A0· Ivana Luppisa 7, 51000 Rijeka, Croatia\u00A0· OIB:\u00A096998412691',
-    facebookLabel: 'ILAN on Facebook',
-    instagramLabel: 'ILAN on Instagram',
     emailLabel: 'Send an email',
   },
   meta: {

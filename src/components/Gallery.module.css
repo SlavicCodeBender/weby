@@ -38,10 +38,15 @@
 }
 
 .thumb {
+  display: block;
+  width: 100%;
   position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #00000050;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .placeholder {
