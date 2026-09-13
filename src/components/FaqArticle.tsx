@@ -1,10 +1,9 @@
 'use client'
-import Link from 'next/link'
 import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import SubHeader from './SubHeader'
 import Footer from './Footer'
-import Strelica, { StrelicaGore } from './Strelica'
+import BackFooter from './BackFooter'
 import { faqClanci } from '../lib/faq'
 import styles from './FaqArticle.module.css'
 
@@ -17,7 +16,7 @@ export default function FaqArticle({ slug }: { slug: string }) {
 
   return (
     <>
-      <SubHeader natragHref="/faq" natragHr={t.faq.back} natragEn="Back to the questions" />
+      <SubHeader />
 
       <main className={styles.main} id="vrh">
         <p className={styles.eyebrow}>{t.faq.eyebrow}</p>
@@ -61,19 +60,9 @@ export default function FaqArticle({ slug }: { slug: string }) {
           ))}
         </div>
 
-        <div className={styles.podnozje}>
-          <Link href="/faq" className={styles.natrag}>
-            <Strelica velicina={16} />
-            <span>{t.faq.back}</span>
-          </Link>
-
-          {/* Nakon dugog članka vraća na početak teksta; klizanje je glatko
-              jer je scroll-behavior postavljen u globals.css. */}
-          <a href="#vrh" className={styles.naVrh}>
-            <StrelicaGore />
-            <span>{t.faq.toTop}</span>
-          </a>
-        </div>
+        {/* Nakon dugog članka vraća na početak teksta; klizanje je glatko
+            jer je scroll-behavior postavljen u globals.css. */}
+        <BackFooter href="/faq" label={t.faq.back} toTopId="vrh" toTopLabel={t.faq.toTop} />
       </main>
 
       <Footer />

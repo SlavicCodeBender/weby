@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useSite } from './SiteProvider'
 import type { Lang } from '../lib/i18n'
 import styles from './Navbar.module.css'
@@ -26,6 +27,9 @@ export default function Navbar() {
         </li>
         <li>
           <a href="#contact">{t.nav.contact}</a>
+        </li>
+        <li>
+          <Link href="/o-nama">{t.nav.about}</Link>
         </li>
       </ul>
 

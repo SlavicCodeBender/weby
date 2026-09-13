@@ -1,6 +1,9 @@
+/* Padding-top manji od padding-bottom: gore je granica sa Services sekcijom
+   koja je isto svijetla (bez promjene boje koja bi tu prazninu opravdala),
+   dolje je granica s tamnom Contact trakom, gdje promjena boje već radi svoj dio. */
 .section {
   background: var(--white);
-  padding: 7rem 4rem;
+  padding: 4rem 4rem 7rem;
 }
 
 .eyebrow {
@@ -99,7 +102,7 @@
 
 @media (max-width: 1000px) {
   .section {
-    padding: 5rem 2.5rem;
+    padding: 3rem 2.5rem 5rem;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -109,7 +112,7 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 1.5rem;
+    padding: 2rem 1.5rem 4rem;
   }
   .grid {
     grid-template-columns: 1fr;

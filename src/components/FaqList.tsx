@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import SubHeader from './SubHeader'
 import Footer from './Footer'
+import BackFooter from './BackFooter'
 import { faqClanci } from '../lib/faq'
 import styles from './FaqList.module.css'
 
@@ -11,6 +12,7 @@ import styles from './FaqList.module.css'
 export default function FaqList() {
   const { lang, t } = useSite()
   const clanci = faqClanci[lang]
+  const natrag = lang === 'hr' ? 'Natrag na stranicu' : 'Back to the site'
 
   return (
     <>
@@ -46,6 +48,8 @@ export default function FaqList() {
             </li>
           ))}
         </ul>
+
+        <BackFooter href="/" label={natrag} />
       </main>
 
       <Footer />

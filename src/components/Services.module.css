@@ -1,8 +1,12 @@
 /* Sekcija stoji na toploj plohi, a kartice su bijele — tako se odvajaju od
-   bijelih dijelova iznad i ispod, bez još jedne tamne mase uz traku s brojkama. */
+   bijelih dijelova iznad i ispod, bez još jedne tamne mase uz traku s brojkama.
+   Padding-bottom je manji od padding-top: gore je granica s tamnom Stats
+   trakom (promjena boje već razdvaja sekcije), a dolje je granica s Gallery
+   sekcijom koja je isto svijetla — dva puna razmaka jedan na drugi bi ondje
+   dali prazninu bez ikakvog vizualnog razloga. */
 .section {
   background: var(--surface);
-  padding: 7rem 4rem;
+  padding: 7rem 4rem 4rem;
 }
 
 .eyebrow {
@@ -22,17 +26,23 @@
   margin-bottom: 3rem;
 }
 
+/* grid-auto-rows: 1fr izjednačuje visinu svih kartica na visinu najviše —
+   bez toga, kraći opisi ostavljaju kraću karticu pa cijeli red djeluje
+   neravnomjerno. Radi i u jednom stupcu na mobitelu. */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1.25rem;
 }
 
 .card {
   background: var(--white);
-  padding: 2.25rem 2rem 2.5rem;
+  padding: 1.75rem 1.75rem 2rem;
   box-shadow: 0 1px 2px rgba(26, 26, 24, 0.05);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -97,7 +107,7 @@
 
 @media (max-width: 1000px) {
   .section {
-    padding: 5rem 2.5rem;
+    padding: 5rem 2.5rem 3rem;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -106,12 +116,19 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 1.5rem;
+    padding: 4rem 1.5rem 2rem;
+  }
+  .section h2 {
+    margin-bottom: 1.75rem;
+  }
+  .eyebrow {
+    margin-bottom: 0.5rem;
   }
   .grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   .card {
-    padding: 2rem 1.5rem 2.25rem;
+    padding: 1.5rem 1.5rem 1.75rem;
   }
 }

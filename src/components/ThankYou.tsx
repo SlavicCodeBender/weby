@@ -2,6 +2,7 @@
 import { useSite } from './SiteProvider'
 import SubHeader from './SubHeader'
 import Footer from './Footer'
+import BackFooter from './BackFooter'
 import styles from './ThankYou.module.css'
 
 /**
@@ -11,7 +12,8 @@ import styles from './ThankYou.module.css'
  * napusti stranicu prije nego se JS stanje stigne promijeniti.
  */
 export default function ThankYou() {
-  const { t } = useSite()
+  const { t, lang } = useSite()
+  const natrag = lang === 'hr' ? 'Natrag na stranicu' : 'Back to the site'
 
   return (
     <>
@@ -43,6 +45,8 @@ export default function ThankYou() {
             <a href={`tel:${t.contact.phone.replace(/\s/g, '')}`}>{t.contact.phone}</a>
           </p>
         )}
+
+        <BackFooter href="/" label={natrag} />
       </main>
 
       <Footer />

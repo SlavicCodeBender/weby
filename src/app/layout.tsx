@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   description: meta.description,
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
+  /* Kod za Google Search Console (Settings → Ownership verification → HTML tag)
+     ide u GOOGLE_SITE_VERIFICATION u .env.local — dok nije upisan, ovaj meta tag
+     se jednostavno ne ispisuje. */
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
   openGraph: {
     type: 'website',
     locale: 'hr_HR',

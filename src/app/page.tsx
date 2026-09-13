@@ -27,6 +27,7 @@ const tvrtkaPodaci = {
   email: TVRTKA.email,
   foundingDate: TVRTKA.osnovano,
   taxID: TVRTKA.oib,
+  founder: { '@type': 'Person', name: 'Josip Ivešić' },
   address: {
     '@type': 'PostalAddress',
     streetAddress: TVRTKA.ulica,
