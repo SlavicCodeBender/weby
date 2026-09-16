@@ -1,0 +1,80 @@
+.banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 4rem;
+  background: var(--white);
+  border-top: 3px solid var(--primary);
+  box-shadow: 0 -8px 24px rgba(26, 26, 24, 0.12);
+}
+
+.text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 60rem;
+}
+
+.actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.75rem;
+}
+
+/* Ista veličina i debljina slova na oba gumba — izbor mora biti podjednako
+   lak bez obzira koju opciju netko odabere. */
+.reject,
+.all {
+  padding: 0.8rem 1.6rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.reject {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+
+.reject:hover {
+  border-color: var(--ink);
+}
+
+.all {
+  background: var(--deep);
+  border: 1px solid var(--deep);
+  color: var(--white);
+}
+
+.all:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+  }
+  .actions {
+    gap: 0.6rem;
+  }
+  .necessary,
+  .all {
+    flex: 1;
+  }
+}

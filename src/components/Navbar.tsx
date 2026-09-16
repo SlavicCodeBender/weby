@@ -70,7 +70,7 @@ export default function Navbar() {
             <a href="#gallery">{t.nav.gallery}</a>
           </li>
           <li>
-            <a href="#contact">{t.nav.contact}</a>
+            <a href="#contact-form">{t.nav.contact}</a>
           </li>
           <li>
             <Link href="/o-nama">{t.nav.about}</Link>
@@ -159,7 +159,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setOpen(false)}>
+            <a href="#contact-form" onClick={() => setOpen(false)}>
               {t.nav.contact}
             </a>
           </li>

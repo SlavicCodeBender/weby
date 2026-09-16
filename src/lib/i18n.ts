@@ -70,6 +70,7 @@ export interface Dict {
     since: string
     impressumLink: string
     privacyLink: string
+    cookieSettings: string
     tagline: string
     /** Podaci o tvrtki u sitnom otisku na dnu */
     legal: string
@@ -227,6 +228,7 @@ const hr: Dict = {
     since: 'Od 2006.',
     impressumLink: 'Impressum',
     privacyLink: 'Pravila privatnosti',
+    cookieSettings: 'Postavke kolačića',
     tagline: 'Aluminijska i PVC stolarija.',
     legal:
       'I. L. A. N. d. o. o.\u00A0· Proizvodnja vrata i prozora od metala\u00A0· Ivana Luppisa 7, 51000 Rijeka\u00A0· OIB:\u00A096998412691',
@@ -235,7 +237,7 @@ const hr: Dict = {
   meta: {
     title: 'ILAN — Prozori i vrata',
     description:
-      'Aluminijski i PVC prozori, vrata i fasade po mjeri — osmišljeni, izrađeni i ugrađeni.',
+      'Aluminijski i PVC prozori i vrata po mjeri — vlastita proizvodnja i ugradnja u Rijeci i okolici.',
   },
 }
 
@@ -393,6 +395,7 @@ const en: Dict = {
     since: 'Since 2006',
     impressumLink: 'Company details',
     privacyLink: 'Privacy policy',
+    cookieSettings: 'Cookie settings',
     tagline: 'Aluminium and PVC joinery.',
     legal:
       'I. L. A. N. d. o. o.\u00A0· Manufacture of metal doors and windows\u00A0· Ivana Luppisa 7, 51000 Rijeka, Croatia\u00A0· OIB:\u00A096998412691',
@@ -401,7 +404,7 @@ const en: Dict = {
   meta: {
     title: 'ILAN — Windows & Doors',
     description:
-      'Custom aluminium and PVC windows, doors, and facades — designed, manufactured and installed.',
+      'Custom aluminium and PVC windows and doors — our own production and installation in Rijeka and the surrounding area.',
   },
 }
 

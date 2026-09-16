@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { dict, DEFAULT_LANG } from '../lib/i18n'
 import { SITE_URL } from '../lib/site'
 import './globals.css'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import CookieConsent from '@/components/CookieConsent'
 
 const meta = dict[DEFAULT_LANG].meta
 
@@ -34,8 +34,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={DEFAULT_LANG}>
-      <GoogleAnalytics/>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   )
 }

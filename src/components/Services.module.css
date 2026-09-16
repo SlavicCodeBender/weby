@@ -7,6 +7,9 @@
 .section {
   background: var(--surface);
   padding: 7rem 4rem 4rem;
+  /* Sigurnosna mreža kao kod Contacta — trenutno ne treba jer je padding
+     veći od visine headera, ali ne ovisi o toj slučajnosti ako se promijeni. */
+  scroll-margin-top: var(--nav-h);
 }
 
 .eyebrow {

@@ -4,6 +4,9 @@
 .section {
   background: var(--white);
   padding: 4rem 4rem 7rem;
+  /* Gornji padding (4rem) je tanji od headera na desktopu (--nav-h: 72px) —
+     bez ovoga bi mu vrh sekcije bio malo prekriven kod klika na "Galerija". */
+  scroll-margin-top: var(--nav-h);
 }
 
 .eyebrow {

@@ -56,7 +56,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  scroll-margin-top: 6rem;
+  /* Točno visina headera, ne više — veći razmak ostavlja procjep u kojem
+     proviri komad tamne trake iznad, jer header ne pokrije taj dio. */
+  scroll-margin-top: var(--nav-h);
 }
 
 .eyebrow {

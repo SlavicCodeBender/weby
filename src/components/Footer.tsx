@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useSite } from './SiteProvider'
+import { resetCookieConsent } from './CookieConsent'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -21,6 +22,10 @@ export default function Footer() {
         <Link href="/impressum">{t.footer.impressumLink}</Link>
         <span aria-hidden="true">·</span>
         <Link href="/privatnost">{t.footer.privacyLink}</Link>
+        <span aria-hidden="true">·</span>
+        <button type="button" className={styles.linkButton} onClick={resetCookieConsent}>
+          {t.footer.cookieSettings}
+        </button>
       </nav>
 
       <p className={styles.legal}>{t.footer.legal}</p>

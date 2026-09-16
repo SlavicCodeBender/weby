@@ -135,7 +135,7 @@ const privatnostHr: LegalDokument = {
       naslov: 'Koje podatke prikupljamo',
       odlomci: [
         'Samo ono što sami upišete u obrazac za upit: ime i prezime, telefon ili e-mail adresu, vrstu usluge koja vas zanima i poruku ako je napišete.',
-        'Stranica ne prikuplja ništa u pozadini — nema alata za praćenje posjeta ni profiliranja.',
+        'Osim toga, u pozadini koristimo Google Analytics za anonimizirane statistike posjeta — pojedinosti su u odjeljku "Analitika i kolačići" niže.',
       ],
     },
     {
@@ -160,14 +160,16 @@ const privatnostHr: LegalDokument = {
     {
       naslov: 'S kim dijelimo podatke',
       odlomci: [
-        'Ni s kim. Vaše podatke ne prodajemo, ne ustupamo i ne šaljemo izvan Europskog gospodarskog prostora.',
+        'Podatke iz obrasca za upit ne prodajemo, ne ustupamo i ne šaljemo nikome izvan Europskog gospodarskog prostora. Iznimka su anonimizirani statistički podaci o posjetima koje, ako na to pristanete, obrađuje Google u sklopu Google Analyticsa — vidi odjeljak "Analitika i kolačići".',
       ],
     },
     {
-      naslov: 'Kolačići',
+      naslov: 'Analitika i kolačići',
       odlomci: [
-        'Ova stranica ne koristi kolačiće za praćenje ni oglašavanje.',
-        'U vašem pregledniku pamtimo jedino koji ste jezik odabrali, hrvatski ili engleski, da vam se pri sljedećem posjetu otvori isti. Taj podatak ostaje na vašem uređaju i ne stiže do nas.',
+        'Osim jezika kojeg odaberete (hrvatski ili engleski), koji ostaje samo u vašem pregledniku, koristimo Google Analytics da vidimo koje stranice posjetiteljima najviše pomažu i time poboljšamo sadržaj.',
+        'Google Analytics postavlja kolačiće tek ako kliknete "Prihvati" u traci za kolačiće pri prvom posjetu. Ako kliknete "Odbaci", ti se kolačići uopće ne postavljaju.',
+        'Google Analytics prikuplja podatke o posjetu (npr. koje stranice gledate, tip uređaja, približnu regiju), ali ne vaše ime, telefon ili e-mail — ti podaci ostaju isključivo u obrascu za upit i ne dolaze do Googlea. Obrađuje ih Google Ireland Limited.',
+        'Svoj izbor možete promijeniti u svakom trenutku preko poveznice "Postavke kolačića" u podnožju stranice.',
       ],
     },
     {
@@ -205,7 +207,7 @@ const privatnostEn: LegalDokument = {
       naslov: 'What we collect',
       odlomci: [
         'Only what you type into the enquiry form: your name, a phone number or email address, the service you are interested in, and a message if you write one.',
-        'Nothing is collected in the background — there is no visitor tracking or profiling on this site.',
+        'In the background we also use Google Analytics for anonymised visit statistics — details are in the "Analytics and cookies" section below.',
       ],
     },
     {
@@ -230,14 +232,16 @@ const privatnostEn: LegalDokument = {
     {
       naslov: 'Who we share it with',
       odlomci: [
-        'No one. We do not sell, pass on, or transfer your data outside the European Economic Area.',
+        'We do not sell, pass on, or transfer your enquiry-form data outside the European Economic Area. The exception is anonymised visit statistics which, if you consent, are processed by Google as part of Google Analytics — see "Analytics and cookies".',
       ],
     },
     {
-      naslov: 'Cookies',
+      naslov: 'Analytics and cookies',
       odlomci: [
-        'This site uses no tracking or advertising cookies.',
-        'The only thing remembered in your browser is which language you chose, Croatian or English, so the same one opens next time. That stays on your device and never reaches us.',
+        'Besides the language you choose (Croatian or English), which stays only in your browser, we use Google Analytics to see which pages are most useful to visitors and improve the site accordingly.',
+        'Google Analytics only sets cookies if you click "Accept" in the cookie banner on your first visit. If you click "Reject", those cookies are never set.',
+        'Google Analytics collects visit data (e.g. which pages you view, device type, approximate region), but not your name, phone or email — that stays solely in the enquiry form and never reaches Google. It is processed by Google Ireland Limited.',
+        'You can change your choice at any time via the "Cookie settings" link in the site footer.',
       ],
     },
     {
