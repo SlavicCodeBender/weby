@@ -61,6 +61,12 @@
   font-size: 0.85rem;
 }
 
+.linksRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .links a {
   color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
@@ -94,4 +100,17 @@
 
 .links span {
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ispod 500px "Postavke kolačića" padaju u drugi red, sami — točka koja ih
+   inače dijeli od ostatka reda tu više nema smisla (ništa ne razdvaja kad
+   su već na svom retku). Iznad 500px ostaje kako je oduvijek bilo. */
+@media (max-width: 500px) {
+  .links {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .cookieDot {
+    display: none;
+  }
 }

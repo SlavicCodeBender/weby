@@ -17,12 +17,16 @@ export default function Footer() {
       </div>
 
       <nav className={styles.links}>
-        <Link href="/faq">{t.footer.faqLink}</Link>
-        <span aria-hidden="true">·</span>
-        <Link href="/impressum">{t.footer.impressumLink}</Link>
-        <span aria-hidden="true">·</span>
-        <Link href="/privatnost">{t.footer.privacyLink}</Link>
-        <span aria-hidden="true">·</span>
+        <div className={styles.linksRow}>
+          <Link href="/faq">{t.footer.faqLink}</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/impressum">{t.footer.impressumLink}</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/privatnost">{t.footer.privacyLink}</Link>
+        </div>
+        <span aria-hidden="true" className={styles.cookieDot}>
+          ·
+        </span>
         <button type="button" className={styles.linkButton} onClick={resetCookieConsent}>
           {t.footer.cookieSettings}
         </button>
