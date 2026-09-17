@@ -130,11 +130,13 @@
   background: var(--primary-dark);
 }
 
-/* Puni popis linkova puca u dva retka prije nego stigne do mobilnog praga
-   (768px) — "O nama" se lomi već oko 940-960px. Hamburger zato preuzima
-   ranije, na 1024px, dok sitnija stiskanja (padding, veličina gumba) ostaju
-   vezana za pravi mobilni prag ispod. */
-@media (max-width: 1024px) {
+/* Puni popis linkova (sad 5 stavki s "Česta pitanja") puca u dva retka
+   između 1120-1130px — izmjereno stvarnim renderiranjem, ne procjenom.
+   Prag je postavljen na 1200px, sa ~70px sigurnosne margine iznad izmjerene
+   točke loma, jer se metrika fonta malo razlikuje između preglednika i OS-a.
+   Hamburger zato preuzima ranije, dok sitnija stiskanja (padding, veličina
+   gumba) ostaju vezana za pravi mobilni prag ispod. */
+@media (max-width: 1200px) {
   .links {
     display: none;
   }
@@ -251,7 +253,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1201px) {
   .overlay,
   .drawer {
     display: none;
