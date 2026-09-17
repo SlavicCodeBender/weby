@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useSite } from './SiteProvider'
 import SubHeader from './SubHeader'
 import Footer from './Footer'
@@ -59,6 +60,19 @@ export default function FaqArticle({ slug }: { slug: string }) {
             </section>
           ))}
         </div>
+
+        {clanak.povezano && (
+          <div className={styles.povezano}>
+            <h2>{lang === 'hr' ? 'Povezano' : 'Related'}</h2>
+            <ul>
+              {clanak.povezano.map((veza) => (
+                <li key={veza.slug}>
+                  <Link href={`/faq/${veza.slug}`}>{veza.tekst}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Nakon dugog članka vraća na početak teksta; klizanje je glatko
             jer je scroll-behavior postavljen u globals.css. */}

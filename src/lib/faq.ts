@@ -44,6 +44,12 @@ export interface FaqClanak {
   /** Opis slike za čitače ekrana i za slučaj da se slika ne učita. */
   slikaOpis: string
   sadrzaj: FaqOdjeljak[]
+  /**
+   * Poveznice na srodne članke na dnu stranice — pravi interni linkovi,
+   * ne samo spomenuti naslovi. `tekst` je naziv onako kako stoji na jeziku
+   * ovog članka (nije nužno identičan `naslov` polju ciljanog članka).
+   */
+  povezano?: { slug: string; tekst: string }[]
 }
 
 const hr: FaqClanak[] = [
@@ -429,6 +435,50 @@ const hr: FaqClanak[] = [
           'Najbolje je jednostavno nas kontaktirati s lokacijom i opisom posla; javit ćemo vam konkretno vrijedi li doći na izmjeru i koliki bi bio putni trošak.',
         ],
       },
+    ],
+  },
+  {
+    slug: 'cijena-prozora-i-vrata',
+    naslov: 'Cijena PVC i ALU prozora i vrata — od čega stvarno ovisi',
+    seoNaslov: 'Cijena PVC i ALU prozora — od čega ovisi',
+    sazetak:
+      'Cijena prozora i vrata ovisi o materijalu, profilu, staklu, boji i broju otvora, pa jedinstvena cijena ne postoji bez konkretnih mjera — radimo kalkulator koji će dati okvirnu procjenu prije nego se javite.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Cijena PVC ili ALU prozora ovisi o materijalu, profilu, staklu, boji i broju otvora, pa jedinstvena cijena ne postoji dok se ti podaci ne znaju. Zato ozbiljna ponuda uvijek dolazi tek nakon razgovora ili izmjere, ne unaprijed.',
+          'Radimo kalkulator koji će vam dati okvirnu procjenu u par klikova, bez da prije toga trebate znati bilo što o PVC ili ALU stolariji.',
+        ],
+      },
+      {
+        naslov: 'Zašto cijena toliko varira',
+        odlomci: [
+          'Materijal je prvi faktor — PVC i aluminij imaju različitu cijenu proizvodnje i različite prednosti ovisno o veličini otvora. Profil dalje diže ili spušta cijenu: broj komora, dubina ugradnje i debljina ojačanja nisu isti kod jeftinijeg i kvalitetnijeg sustava.',
+          'Staklo je sljedeći veliki faktor — dvostruko i trostruko staklo razlikuju se ne samo u izolaciji nego i u težini, pa trostruko staklo traži jači i skuplji okov. Boja (RAL folija ili plastifikacija) i dodaci poput komarnika, klupčica i praga dodaju na cijenu, a broj i veličina otvora određuju ukupan iznos više nego bilo koji pojedinačni izbor.',
+        ],
+      },
+      {
+        naslov: 'Zašto je okvirna cijena i dalje vrijedna',
+        odlomci: [
+          'Znamo da je većini ljudi jasno da okvirna procjena nije isto što i konačna ponuda. Izrazito je frustrirajuće kada samo želite znati u kakav trošak se upuštate, a cijene se nigdje ne navode. Upravo za to kalkulator i služi — ne zamjenjuje pravu ponudu, nego vam u par klikova da realan raspon prije nego što se javite za ponudu.',
+          'Konačna cijena i dalje ovisi o izmjeri na terenu i vašim individualnim željama jer se prozori i vrata rade po mjeri konkretnog otvora — ali barem znate red veličine troška unaprijed, bez čekanja.',
+        ],
+      },
+      {
+        naslov: 'Kalkulator koji radimo',
+        odlomci: [
+          'Kalkulator je trenutno u izradi. Cilj nam je da bude jednostavan za korištenje — da ne trebate znati ništa o profilima, komorama ili vrstama stakla da biste dobili smislenu procjenu, i da radi jednako dobro na mobitelu kao i na računalu.',
+          'Ne obećavamo točan datum lansiranja jer ga želimo objaviti tek kad stvarno radi kako treba, ne prije — okvirno računamo na jedan do tri mjeseca.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
+      { slug: 'vrste-komarnika', tekst: 'Vrste komarnika — koji odabrati' },
+      { slug: 'ugradnja-prozora', tekst: 'Koliko traje ugradnja prozora' },
     ],
   },
   /*{
@@ -865,6 +915,50 @@ const en: FaqClanak[] = [
           'The simplest approach is to contact us with your location and a description of the job; we will tell you specifically whether a visit makes sense and what the travel cost would be.',
         ],
       },
+    ],
+  },
+  {
+    slug: 'cijena-prozora-i-vrata',
+    naslov: 'PVC and aluminium window and door prices — what actually determines them',
+    seoNaslov: 'PVC and aluminium window prices — what determines them',
+    sazetak:
+      'The price of windows and doors depends on material, profile, glass, colour and the number of openings, so a single price doesn’t exist without exact measurements — we’re building a calculator that will give a ballpark estimate before you even get in touch.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'The price of a PVC or aluminium window depends on material, profile, glass, colour and the number of openings, so a single price doesn’t exist until those details are known. That’s why a proper quote always comes after a conversation or a site visit, never in advance.',
+          'We’re building a calculator that will give you a ballpark estimate in a few clicks, without needing to know anything about PVC or aluminium joinery beforehand.',
+        ],
+      },
+      {
+        naslov: 'Why the price varies so much',
+        odlomci: [
+          'Material is the first factor — PVC and aluminium have different production costs and different strengths depending on the size of the opening. The profile shifts the price further: chamber count, installation depth and reinforcement thickness differ between a cheaper and a better system.',
+          'Glass is the next big factor — double and triple glazing differ not just in insulation but in weight, so triple glazing needs stronger, pricier hardware. Colour (RAL foil or powder coating) and extras like insect screens, sills and thresholds add to the price, and the number and size of openings determine the total more than any single choice.',
+        ],
+      },
+      {
+        naslov: 'Why a ballpark price is still worth having',
+        odlomci: [
+          'We know most people already understand a ballpark estimate isn’t the same as a final quote. It’s genuinely frustrating when all you want is to know what kind of expense you’re looking at, and nowhere are prices listed. That’s exactly what the calculator is for — it doesn’t replace a proper quote, but gives you a realistic range in a few clicks before you even request one.',
+          'The final price still depends on measuring the site and your individual preferences, because windows and doors are made to the exact opening — but at least you know the rough scale of the cost upfront, without waiting.',
+        ],
+      },
+      {
+        naslov: 'The calculator we’re building',
+        odlomci: [
+          'The calculator is currently in development. Our goal is to make it simple to use — you shouldn’t need to know anything about profiles, chambers or glass types to get a meaningful estimate, and it should work just as well on a phone as on a computer.',
+          'We’re not promising an exact launch date, because we want to publish it only once it genuinely works the way it should, not before — roughly, we’re aiming for one to three months.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
+      { slug: 'vrste-komarnika', tekst: 'Types of insect screens — which to choose' },
+      { slug: 'ugradnja-prozora', tekst: 'How long a window installation takes' },
     ],
   },
   /*{

@@ -173,6 +173,14 @@ const privatnostHr: LegalDokument = {
       ],
     },
     {
+      naslov: 'Prijava za obavijest o kalkulatoru',
+      odlomci: [
+        'Na članku o cijeni PVC i ALU stolarije možete ostaviti svoj e-mail da vas obavijestimo čim kalkulator za okvirnu procjenu cijene bude gotov. Traži se samo e-mail adresa, ništa drugo.',
+        'Pravna osnova je vaša privola, koju dajete kvačicom izravno u toj formi. Formu i slanje obavijesti pokreće Mailchimp (The Rocket Science Group, LLC), koji podatke obrađuje u skladu s EU-SAD okvirom za zaštitu podataka (EU-U.S. Data Privacy Framework).',
+        'Prijavu možete otkazati u svakom trenutku poveznicom za odjavu u samoj obavijesti, ili tako da nas izravno kontaktirate.',
+      ],
+    },
+    {
       naslov: 'Vaša prava',
       odlomci: ['U svakom trenutku imate pravo:'],
       natuknice: [
@@ -242,6 +250,14 @@ const privatnostEn: LegalDokument = {
         'Google Analytics only sets cookies if you click "Accept" in the cookie banner on your first visit. If you click "Reject", those cookies are never set.',
         'Google Analytics collects visit data (e.g. which pages you view, device type, approximate region), but not your name, phone or email — that stays solely in the enquiry form and never reaches Google. It is processed by Google Ireland Limited.',
         'You can change your choice at any time via the "Cookie settings" link in the site footer.',
+      ],
+    },
+    {
+      naslov: 'Calculator launch notification',
+      odlomci: [
+        'On the article about PVC and aluminium joinery prices, you can leave your email so we notify you once the price-estimate calculator is ready. Only an email address is asked for, nothing else.',
+        'The legal basis is your consent, given by ticking the box directly in that form. The form and the notification are run by Mailchimp (The Rocket Science Group, LLC), which processes the data under the EU-U.S. Data Privacy Framework.',
+        'You can unsubscribe at any time via the link in the notification email, or by contacting us directly.',
       ],
     },
     {

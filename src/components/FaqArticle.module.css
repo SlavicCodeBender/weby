@@ -99,6 +99,45 @@
   color: var(--primary-text);
 }
 
+/* Poveznice na srodne članke — tiša plava, ista boja obiteljski kao ostali
+   linkovi na stranici, s crtom umjesto podcrtavanja preko cijele riječi. */
+.povezano {
+  max-width: 68ch;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.povezano h2 {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.povezano ul {
+  list-style: none;
+}
+
+.povezano li {
+  margin-bottom: 0.65rem;
+}
+
+.povezano a {
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.povezano a:hover {
+  color: var(--primary-text);
+  border-bottom-color: var(--primary-dark);
+}
+
 @media (max-width: 768px) {
   .main {
     padding: calc(var(--nav-h) + 3rem) 1.5rem 4rem;

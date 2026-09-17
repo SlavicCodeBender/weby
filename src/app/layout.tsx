@@ -3,6 +3,7 @@ import { dict, DEFAULT_LANG } from '../lib/i18n'
 import { SITE_URL } from '../lib/site'
 import './globals.css'
 import CookieConsent from '@/components/CookieConsent'
+import MailchimpConnect from '@/components/MailchimpConnect'
 
 const meta = dict[DEFAULT_LANG].meta
 
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={DEFAULT_LANG}>
+      <MailchimpConnect />
       <body>
         {children}
         <CookieConsent />
