@@ -75,6 +75,9 @@ export default function Navbar() {
           <li>
             <Link href="/o-nama">{t.nav.about}</Link>
           </li>
+          <li>
+            <Link href="/faq">{t.nav.faq}</Link>
+          </li>
         </ul>
 
         <div className={styles.right}>
@@ -166,6 +169,11 @@ export default function Navbar() {
           <li>
             <Link href="/o-nama" onClick={() => setOpen(false)}>
               {t.nav.about}
+            </Link>
+          </li>
+          <li>
+            <Link href="/faq" onClick={() => setOpen(false)}>
+              {t.nav.faq}
             </Link>
           </li>
         </ul>

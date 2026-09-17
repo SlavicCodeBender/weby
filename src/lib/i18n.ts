@@ -1,7 +1,15 @@
 export type Lang = 'hr' | 'en'
 
 export interface Dict {
-  nav: { about: string; services: string; gallery: string; contact: string; cta: string; call: string }
+  nav: {
+    about: string
+    services: string
+    gallery: string
+    contact: string
+    faq: string
+    cta: string
+    call: string
+  }
   hero: { eyebrow: string; title: string; sub: string; btn: string; badge: string; photoAlt: string }
   stats: { title: string; items: { num: string; label: string }[] }
   about: {
@@ -86,6 +94,7 @@ const hr: Dict = {
     services: 'Usluge',
     gallery: 'Galerija',
     contact: 'Kontakt',
+    faq: 'Česta pitanja',
     cta: 'Zatraži ponudu',
     call: 'Nazovite nas',
   },
@@ -247,6 +256,7 @@ const en: Dict = {
     services: 'Services',
     gallery: 'Gallery',
     contact: 'Contact',
+    faq: 'FAQ',
     cta: 'Request a quote',
     call: 'Call us',
   },
