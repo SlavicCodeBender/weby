@@ -5,6 +5,7 @@ import { useSite } from './SiteProvider'
 import SubHeader from './SubHeader'
 import Footer from './Footer'
 import BackFooter from './BackFooter'
+import KalkulatorObavijest from './KalkulatorObavijest'
 import { faqClanci } from '../lib/faq'
 import styles from './FaqArticle.module.css'
 
@@ -60,6 +61,9 @@ export default function FaqArticle({ slug }: { slug: string }) {
             </section>
           ))}
         </div>
+
+        {/* Samo na članku o kalkulatoru — prijava za obavijest o lansiranju. */}
+        {clanak.slug === 'cijena-prozora-i-vrata' && <KalkulatorObavijest />}
 
         {clanak.povezano && (
           <div className={styles.povezano}>

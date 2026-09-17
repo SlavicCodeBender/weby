@@ -175,7 +175,7 @@ const privatnostHr: LegalDokument = {
     {
       naslov: 'Prijava za obavijest o kalkulatoru',
       odlomci: [
-        'Na članku o cijeni PVC i ALU stolarije možete ostaviti svoj e-mail da vas obavijestimo čim kalkulator za okvirnu procjenu cijene bude gotov. Traži se samo e-mail adresa, ništa drugo.',
+        'Na članku o cijeni PVC i ALU stolarije možete ostaviti svoj e-mail da vas obavijestimo čim kalkulator za okvirnu procjenu cijene bude gotov. Traži se samo e-mail adresa, ništa drugo. Rijetko, i samo kad procijenimo da je stvarno korisno, tu istu adresu možemo iskoristiti i za koji savjet ili ponudu vezanu uz PVC i ALU stolariju — ne šaljemo redovit newsletter ni čestu reklamnu poštu.',
         'Pravna osnova je vaša privola, koju dajete kvačicom izravno u toj formi. Formu i slanje obavijesti pokreće Mailchimp (The Rocket Science Group, LLC), koji podatke obrađuje u skladu s EU-SAD okvirom za zaštitu podataka (EU-U.S. Data Privacy Framework).',
         'Prijavu možete otkazati u svakom trenutku poveznicom za odjavu u samoj obavijesti, ili tako da nas izravno kontaktirate.',
       ],
@@ -255,7 +255,7 @@ const privatnostEn: LegalDokument = {
     {
       naslov: 'Calculator launch notification',
       odlomci: [
-        'On the article about PVC and aluminium joinery prices, you can leave your email so we notify you once the price-estimate calculator is ready. Only an email address is asked for, nothing else.',
+        'On the article about PVC and aluminium joinery prices, you can leave your email so we notify you once the price-estimate calculator is ready. Only an email address is asked for, nothing else. Rarely, and only when we think it’s genuinely useful, we may use that same address for a tip or offer about PVC and aluminium joinery — we don’t send a regular newsletter or frequent promotional email.',
         'The legal basis is your consent, given by ticking the box directly in that form. The form and the notification are run by Mailchimp (The Rocket Science Group, LLC), which processes the data under the EU-U.S. Data Privacy Framework.',
         'You can unsubscribe at any time via the link in the notification email, or by contacting us directly.',
       ],
