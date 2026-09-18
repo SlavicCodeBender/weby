@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useId, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useSite } from './SiteProvider'
 import styles from './KalkulatorObavijest.module.css'
 
@@ -11,16 +11,16 @@ import styles from './KalkulatorObavijest.module.css'
  * Mailchimpov "classic" endpoint — isti Audience, samo bez njihovog
  * automatskog prikaza.
  *
- * Cilj otvara prozor, submit ide na Mailchimp u novoj kartici (target
- * _blank, isto kao njihov zadani embed kod), a ovdje odmah prikažemo
- * zahvalu — pravu potvrdu (dvostruki opt-in ili ne) posjetitelj vidi u toj
- * drugoj kartici.
+ * VAŽNO: forma i poruka zahvale oboje ostaju u DOM-u cijelo vrijeme, samo se
+ * sakriva jedno ili drugo (`hidden`). Ako se forma ukloni iz DOM-a unutar
+ * `onSubmit` (npr. uvjetnim renderiranjem), preglednik zna otkazati stvarno
+ * slanje jer forma "nije više spojena" prije nego stigne poslati zahtjev —
+ * to se stvarno dogodilo i tiho pokvarilo prijavu bez ikakve greške na oko.
  */
 export default function KalkulatorObavijest() {
   const { lang } = useSite()
   const [open, setOpen] = useState(false)
   const [sent, setSent] = useState(false)
-  const titleId = useId()
   const panelRef = useRef<HTMLDivElement>(null)
   const lastFocused = useRef<HTMLElement | null>(null)
 
@@ -64,7 +64,8 @@ export default function KalkulatorObavijest() {
           posalji: 'Prijavi me',
           zatvori: 'Zatvori',
           hvalaNaslov: 'Hvala!',
-          hvalaTekst: 'U novoj kartici koja se otvorila potvrdite prijavu (ako se to od vas traži).',
+          hvalaTekst:
+            'Vaša prijava je zaprimljena. Poslali smo vam mail s potvrdom — kliknite poveznicu u njemu da dovršite prijavu. Odjaviti se možete u svakom trenutku istim mailom.',
         }
       : {
           boxNaslov: "Get notified when it's ready",
@@ -78,7 +79,8 @@ export default function KalkulatorObavijest() {
           posalji: 'Sign me up',
           zatvori: 'Close',
           hvalaNaslov: 'Thanks!',
-          hvalaTekst: 'In the new tab that opened, confirm your signup (if asked to).',
+          hvalaTekst:
+            "Your signup has been received. We've sent you a confirmation email — click the link in it to complete your signup. You can unsubscribe at any time using that same email.",
         }
 
   return (
@@ -98,7 +100,7 @@ export default function KalkulatorObavijest() {
             className={styles.panel}
             role="dialog"
             aria-modal="true"
-            aria-labelledby={titleId}
+            aria-label={sent ? t.hvalaNaslov : t.naslov}
             tabIndex={-1}
             onClick={(e) => e.stopPropagation()}
           >
@@ -108,58 +110,51 @@ export default function KalkulatorObavijest() {
               </svg>
             </button>
 
-            {sent ? (
-              <div className={styles.hvala}>
-                <h2 className={styles.naslov} id={titleId}>
-                  {t.hvalaNaslov}
-                </h2>
-                <p>{t.hvalaTekst}</p>
-              </div>
-            ) : (
-              <>
-                <h2 className={styles.naslov} id={titleId}>
-                  {t.naslov}
-                </h2>
+            <div className={styles.hvala} hidden={!sent}>
+              <h2 className={styles.naslov}>{t.hvalaNaslov}</h2>
+              <p>{t.hvalaTekst}</p>
+            </div>
 
-                <form
-                  className={styles.form}
-                  action="https://ilanprozori.us15.list-manage.com/subscribe/post?u=27618132505d7ef241008a067&id=e66b261cd1&f_id=0049a7e1f0"
-                  method="post"
-                  target="_blank"
-                  onSubmit={() => setSent(true)}
-                >
-                  <div className={styles.group}>
-                    <label htmlFor="mce-EMAIL">{t.emailLabel}</label>
-                    <input
-                      type="email"
-                      name="EMAIL"
-                      id="mce-EMAIL"
-                      placeholder={t.emailPh}
-                      required
-                    />
-                  </div>
+            <div hidden={sent}>
+              <h2 className={styles.naslov}>{t.naslov}</h2>
 
-                  {/* Zamka za robote — Mailchimpov honeypot, mora ostati prazan. */}
-                  <div aria-hidden="true" className={styles.trap}>
-                    <input
-                      type="text"
-                      name="b_27618132505d7ef241008a067_e66b261cd1"
-                      tabIndex={-1}
-                      defaultValue=""
-                    />
-                  </div>
+              <form
+                className={styles.form}
+                action="https://ilanprozori.us15.list-manage.com/subscribe/post?u=27618132505d7ef241008a067&id=e66b261cd1&f_id=0049a7e1f0"
+                method="post"
+                target="_blank"
+                onSubmit={() => {
+                  // Odgoda je namjerna — vidi napomenu na vrhu datoteke.
+                  // Bez nje preglednik zna otkazati stvarno slanje jer bi
+                  // React sakrio formu prebrzo, prije nego zahtjev krene.
+                  setTimeout(() => setSent(true), 300)
+                }}
+              >
+                <div className={styles.group}>
+                  <label htmlFor="mce-EMAIL">{t.emailLabel}</label>
+                  <input type="email" name="EMAIL" id="mce-EMAIL" placeholder={t.emailPh} required />
+                </div>
 
-                  <div className={styles.consentRow}>
-                    <input type="checkbox" id="gdpr_85778" name="gdpr[85778]" value="Y" required />
-                    <label htmlFor="gdpr_85778">{t.gdpr}</label>
-                  </div>
+                {/* Zamka za robote — Mailchimpov honeypot, mora ostati prazan. */}
+                <div aria-hidden="true" className={styles.trap}>
+                  <input
+                    type="text"
+                    name="b_27618132505d7ef241008a067_e66b261cd1"
+                    tabIndex={-1}
+                    defaultValue=""
+                  />
+                </div>
 
-                  <button type="submit" className={styles.submit}>
-                    {t.posalji}
-                  </button>
-                </form>
-              </>
-            )}
+                <div className={styles.consentRow}>
+                  <input type="checkbox" id="gdpr_85778" name="gdpr[85778]" value="Y" required />
+                  <label htmlFor="gdpr_85778">{t.gdpr}</label>
+                </div>
+
+                <button type="submit" className={styles.submit}>
+                  {t.posalji}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       )}

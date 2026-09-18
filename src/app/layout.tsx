@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={DEFAULT_LANG}>
-      <MailchimpConnect />
       <body>
+        <MailchimpConnect />
         {children}
         <CookieConsent />
       </body>
