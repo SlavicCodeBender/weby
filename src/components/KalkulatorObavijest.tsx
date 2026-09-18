@@ -65,7 +65,7 @@ export default function KalkulatorObavijest() {
           zatvori: 'Zatvori',
           hvalaNaslov: 'Hvala!',
           hvalaTekst:
-            'Vaša prijava je zaprimljena. Poslali smo vam mail s potvrdom — kliknite poveznicu u njemu da dovršite prijavu. Odjaviti se možete u svakom trenutku istim mailom.',
+            'Vaša prijava je zaprimljena. Poslali smo vam mail s potvrdom — kliknite poveznicu u njemu da dovršite prijavu. Ako ga ne vidite odmah, provjerite i mapu neželjene pošte (spam). Odjaviti se možete u svakom trenutku istim mailom.',
         }
       : {
           boxNaslov: "Get notified when it's ready",
@@ -80,7 +80,7 @@ export default function KalkulatorObavijest() {
           zatvori: 'Close',
           hvalaNaslov: 'Thanks!',
           hvalaTekst:
-            "Your signup has been received. We've sent you a confirmation email — click the link in it to complete your signup. You can unsubscribe at any time using that same email.",
+            "Your signup has been received. We've sent you a confirmation email — click the link in it to complete your signup. If you don't see it right away, check your spam/junk folder too. You can unsubscribe at any time using that same email.",
         }
 
   return (
