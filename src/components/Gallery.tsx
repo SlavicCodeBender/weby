@@ -1,50 +1,142 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import Lightbox from './Lightbox'
 import styles from './Gallery.module.css'
 
-/**
- * Plohe stoje umjesto fotografija dok ih ne bude.
- * Kad stignu prave slike, ovaj niz se briše, a <div className={styles.thumb}>
- * dobiva <Image> iz next/image.
- */
+type Category = 'prozori' | 'vrata' | 'grilje' | 'komarnici' | 'verande'
+const FILTERS: ('all' | Category)[] = ['all', 'verande', 'grilje', 'vrata', 'prozori', 'komarnici']
+
+/** Koliko pločica stane u jedan red — uvijek točno jedan red, na svakoj širini. */
+function itemsPerRowFor(width: number) {
+  if (width <= 640) return 2
+  if (width <= 1000) return 3
+  return 4
+}
 
 export default function Gallery() {
   const { t } = useSite()
-  const [otvorena, setOtvorena] = useState<number | null>(null)
+  const [filter, setFilter] = useState<'all' | Category>('all')
+  const [page, setPage] = useState(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [itemsPerRow, setItemsPerRow] = useState(4)
+
+  useEffect(() => {
+    function update() {
+      setItemsPerRow(itemsPerRowFor(window.innerWidth))
+    }
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
+
+  const visible = useMemo(
+    () => (filter === 'all' ? t.gallery.items : t.gallery.items.filter((item) => item.category === filter)),
+    [filter, t.gallery.items],
+  )
+  const pages = useMemo(() => {
+    const chunks: (typeof visible)[] = []
+    for (let i = 0; i < visible.length; i += itemsPerRow) chunks.push(visible.slice(i, i + itemsPerRow))
+    return chunks
+  }, [visible, itemsPerRow])
+
+  useEffect(() => {
+    setPage(0)
+  }, [filter, itemsPerRow])
+
+  const pageCount = pages.length
+  const clampedPage = Math.min(page, Math.max(pageCount - 1, 0))
 
   return (
     <section className={styles.section} id="gallery">
       <p className={styles.eyebrow}>{t.gallery.eyebrow}</p>
       <h2>{t.gallery.title}</h2>
 
-      <div className={styles.grid}>
-        {t.gallery.items.map((item, i) => (
-          <figure key={item.title} className={styles.item}>
-            <button type="button" className={styles.thumb} onClick={() => setOtvorena(i)}>
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className={styles.grid_photo}
-              />
-            </button>
-            <figcaption className={styles.caption}>
-              <h3>{item.title}</h3>
-              <p>{item.meta}</p>
-            </figcaption>
-          </figure>
+      <div className={styles.chips}>
+        {FILTERS.map((key) => (
+          <button
+            key={key}
+            type="button"
+            className={`${styles.chip} ${filter === key ? styles.chipActive : ''}`}
+            onClick={() => setFilter(key)}
+          >
+            {t.gallery.filters[key]}
+          </button>
         ))}
       </div>
 
-      {otvorena !== null && (
+      <div className={styles.trackWrap}>
+        <div className={styles.track} style={{ transform: `translateX(-${clampedPage * 100}%)` }}>
+          {pages.map((pageItems, pi) => (
+            <div className={styles.page} key={pi} style={{ gridTemplateColumns: `repeat(${itemsPerRow}, 1fr)` }}>
+              {pageItems.map((item) => {
+                const i = visible.indexOf(item)
+                return (
+                  <button type="button" key={item.image} className={styles.tile} onClick={() => setOpenIndex(i)}>
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1000px) 33vw, 25vw"
+                      className={styles.photo}
+                    />
+                  </button>
+                )
+              })}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {pageCount > 1 && (
+        <div className={styles.nav}>
+          <button
+            type="button"
+            className={styles.navBtn}
+            disabled={clampedPage === 0}
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            aria-label={t.gallery.prevPage}
+          >
+            <svg viewBox="0 0 20 20" width={14} height={14} fill="none" aria-hidden="true">
+              <path d="M12 4 L6 10 L12 16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <div className={styles.dots}>
+            {pages.map((_, pi) => (
+              <button
+                key={pi}
+                type="button"
+                className={`${styles.dot} ${pi === clampedPage ? styles.dotActive : ''}`}
+                onClick={() => setPage(pi)}
+                aria-label={`${t.gallery.pageWord} ${pi + 1}`}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            className={styles.navBtn}
+            disabled={clampedPage >= pageCount - 1}
+            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            aria-label={t.gallery.nextPage}
+          >
+            <svg viewBox="0 0 20 20" width={14} height={14} fill="none" aria-hidden="true">
+              <path d="M8 4 L14 10 L8 16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        </div>
+      )}
+
+      {openIndex !== null && visible[openIndex] && (
         <Lightbox
-          src={t.gallery.items[otvorena].image}
-          alt={t.gallery.items[otvorena].title}
-          onClose={() => setOtvorena(null)}
+          src={visible[openIndex].image}
+          alt={visible[openIndex].alt}
+          onClose={() => setOpenIndex(null)}
+          onPrev={() => setOpenIndex((i) => (i === null ? null : (i - 1 + visible.length) % visible.length))}
+          onNext={() => setOpenIndex((i) => (i === null ? null : (i + 1) % visible.length))}
+          prevLabel={t.gallery.prevPhoto}
+          nextLabel={t.gallery.nextPhoto}
+          counter={`${openIndex + 1} / ${visible.length}`}
         />
       )}
     </section>

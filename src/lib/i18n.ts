@@ -24,7 +24,24 @@ export interface Dict {
   gallery: {
     eyebrow: string
     title: string
-    items: { title: string; meta: string; image: string }[]
+    filters: {
+      all: string
+      prozori: string
+      vrata: string
+      grilje: string
+      komarnici: string
+      verande: string
+    }
+    items: {
+      image: string
+      category: 'prozori' | 'vrata' | 'grilje' | 'komarnici' | 'verande'
+      alt: string
+    }[]
+    prevPage: string
+    nextPage: string
+    pageWord: string
+    prevPhoto: string
+    nextPhoto: string
   }
   contact: {
     strip: string
@@ -160,14 +177,46 @@ const hr: Dict = {
   gallery: {
     eyebrow: 'Naši radovi',
     title: 'Odabrani projekti',
+    filters: {
+      all: 'Sve',
+      prozori: 'Prozori',
+      vrata: 'Vrata',
+      grilje: 'Grilje',
+      komarnici: 'Komarnici',
+      verande: 'Staklene stijene',
+    },
     items: [
-      { title: 'Aparman, Krk', meta: 'Veranda · 2025.', image:'/ApartmanKrk.jpeg' },
-      { title: 'Obiteljska Kuća, Rijeka', meta: 'Dvokrilni prozor · 2024.', image:'/DvokrilniProzorRijeka.jpeg' },
-      { title: 'Kuća za odmor, Fužine', meta: 'Nadstrešnica · 2026.', image:'/NatsresnicaFuzine.jpeg' },
-      { title: 'Obiteljska Kuća, Krk', meta: 'Nadstrešnica · 2025.', image:'/NatsresnicaKrk.jpeg' },
-      { title: 'Čeka Montažu', meta: 'Otklopno Zaklopni Prozor · 2026.', image:'/OtklopniZatvorniProzor.jpeg' },
-      { title: 'Apartman, Istra', meta: 'Plise Komarnici · 2026.', image:'/PliseKomarnici.jpeg' },
+      { image: '/gallery/staklena-stijena-bok.jpeg', category: 'verande', alt: 'Staklena stijena, bočni pogled, Rijeka' },
+      { image: '/gallery/alu-konstrukcija-sa-krovnim-sendvic-panelima.jpeg', category: 'verande', alt: 'Aluminijska konstrukcija s krovnim sendvič panelima, krovna terasa na Krku' },
+      { image: '/gallery/detalj-aluminijska-vrata-sa-panelom-i-spijunkom.jpeg', category: 'vrata', alt: 'Detalj ulaznih vrata s inox ručkom i špijunkom' },
+      { image: '/gallery/aluminijske-grilje.jpeg', category: 'grilje', alt: 'Aluminijske grilje na drvenoj fasadi kuće, Gorski kotar' },
+      { image: '/DvokrilniProzorRijeka.jpeg', category: 'prozori', alt: 'Dvokrilni PVC prozor, obiteljska kuća u Rijeci' },
+      { image: '/OtklopniZatvorniProzor.jpeg', category: 'prozori', alt: 'Otklopno-zaklopni prozor' },
+      { image: '/gallery/aluminijska-vrata-sa-panelom-i-spijunkom.jpeg', category: 'vrata', alt: 'Aluminijska ulazna vrata s panelom i špijunkom' },
+      { image: '/gallery/aluminijska-trokrilna-vrata.jpeg', category: 'vrata', alt: 'Aluminijska trokrilna vrata, imitacija drva' },
+      { image: '/NatsresnicaFuzine.jpeg', category: 'verande', alt: 'Aluminijska nadstrešnica, kuća za odmor u Fužinama' },
+      { image: '/NatsresnicaKrk.jpeg', category: 'verande', alt: 'Aluminijska nadstrešnica, obiteljska kuća na Krku' },
+      { image: '/gallery/alu-grilje.jpeg', category: 'grilje', alt: 'Aluminijske grilje na kamenoj fasadi u staroj jezgri, Rijeka' },
+      { image: '/gallery/aluminijske-grilje-plave.jpeg', category: 'grilje', alt: 'Plave aluminijske grilje na kamenoj fasadi, stara jezgra Rijeke' },
+      { image: '/gallery/male-alu-grilje.jpeg', category: 'grilje', alt: 'Manja lučna aluminijska grilja, detalj' },
+      { image: '/gallery/aluminijske-grilje-za-montazu.jpeg', category: 'grilje', alt: 'Aluminijske grilje pripremljene za montažu' },
+      { image: '/gallery/pvc-prozor-i-alu-grilje.jpeg', category: 'grilje', alt: 'PVC prozori i aluminijske grilje na kamenoj kući, Istra' },
+      { image: '/gallery/aluminijske-grilje-na-kip-otvorene.jpeg', category: 'grilje', alt: 'Aluminijske grilje na "kip" otvaranje, stambena zgrada u Rijeci' },
+      { image: '/PliseKomarnici.jpeg', category: 'komarnici', alt: 'Plisirani komarnici, apartman u Istri' },
+      { image: '/ApartmanKrk.jpeg', category: 'verande', alt: 'Staklena stijena, apartman na Krku' },
+      { image: '/gallery/staklena-stijena-imitacija-drva.jpeg', category: 'verande', alt: 'Staklena stijena, imitacija drva, Rijeka' },
+      { image: '/gallery/staklena-stijena-smeda.jpeg', category: 'verande', alt: 'Smeđa staklena stijena, obiteljska kuća' },
+      { image: '/gallery/staklena-stijena-zgrada.jpeg', category: 'verande', alt: 'Staklena stijena na zgradi, uličica' },
+      { image: '/gallery/staklena-stijena.jpeg', category: 'verande', alt: 'Zastakljena staklena stijena na novogradnji, Grobnik' },
+      { image: '/gallery/staklena-stijena-na-kuci.jpeg', category: 'verande', alt: 'Staklena stijena na novogradnji, Grobnik' },
+      { image: '/gallery/staklena-stijena-bijela.jpeg', category: 'verande', alt: 'Bijela staklena stijena sa stubištem' },
+      { image: '/gallery/oluk-alu-konstrukcija-sa-krovnim-sendvic-panelima.jpeg', category: 'verande', alt: 'Oluk na aluminijskoj konstrukciji s krovnim sendvič panelima, detalj' },
     ],
+    prevPage: 'Prethodna stranica',
+    nextPage: 'Sljedeća stranica',
+    pageWord: 'Stranica',
+    prevPhoto: 'Prethodna slika',
+    nextPhoto: 'Sljedeća slika',
   },
   contact: {
     strip: 'Zapinje prozor, popustila kvaka? Dolazimo i za sitnice.',
@@ -327,14 +376,46 @@ const en: Dict = {
   gallery: {
     eyebrow: 'Our work',
     title: 'Selected Projects',
+    filters: {
+      all: 'All',
+      prozori: 'Windows',
+      vrata: 'Doors',
+      grilje: 'Shutters',
+      komarnici: 'Insect Screens',
+      verande: 'Glass Walls',
+    },
     items: [
-      { title: 'Apartment, Krk', meta: 'Terrace · 2025.', image:'/ApartmanKrk.jpeg' },
-      { title: 'Family House, Rijeka', meta: 'Double-Sash Window · 2024.', image:'/DvokrilniProzorRijeka.jpeg' },
-      { title: 'Holiday Home, Fužine', meta: 'Canopy · 2026.', image:'/NatsresnicaFuzine.jpeg' },
-      { title: 'Family House, Krk', meta: 'Canopy · 2025.', image:'/NatsresnicaKrk.jpeg' },
-      { title: 'Awaiting Installation', meta: 'Tilt-and-Turn Window · 2026.', image:'/OtklopniZatvorniProzor.jpeg' },
-      { title: 'Apartment, Istria', meta: 'Pleated Insect Screens · 2026.', image:'/PliseKomarnici.jpeg' },
-   ],
+      { image: '/gallery/staklena-stijena-bok.jpeg', category: 'verande', alt: 'Glass wall veranda, side view, Rijeka' },
+      { image: '/gallery/alu-konstrukcija-sa-krovnim-sendvic-panelima.jpeg', category: 'verande', alt: 'Aluminium structure with sandwich-panel roofing, rooftop terrace on Krk' },
+      { image: '/gallery/detalj-aluminijska-vrata-sa-panelom-i-spijunkom.jpeg', category: 'vrata', alt: 'Entrance door detail with stainless steel handle and peephole' },
+      { image: '/gallery/aluminijske-grilje.jpeg', category: 'grilje', alt: 'Aluminium shutters on a wooden house facade, Gorski kotar' },
+      { image: '/DvokrilniProzorRijeka.jpeg', category: 'prozori', alt: 'Double-sash PVC window, family house in Rijeka' },
+      { image: '/OtklopniZatvorniProzor.jpeg', category: 'prozori', alt: 'Tilt-and-turn window' },
+      { image: '/gallery/aluminijska-vrata-sa-panelom-i-spijunkom.jpeg', category: 'vrata', alt: 'Aluminium entrance door with side panel and peephole' },
+      { image: '/gallery/aluminijska-trokrilna-vrata.jpeg', category: 'vrata', alt: 'Aluminium three-leaf door, wood-look finish' },
+      { image: '/NatsresnicaFuzine.jpeg', category: 'verande', alt: 'Aluminium canopy, holiday home in Fužine' },
+      { image: '/NatsresnicaKrk.jpeg', category: 'verande', alt: 'Aluminium canopy, family house on Krk' },
+      { image: '/gallery/alu-grilje.jpeg', category: 'grilje', alt: 'Aluminium shutters on a stone facade in the old town, Rijeka' },
+      { image: '/gallery/aluminijske-grilje-plave.jpeg', category: 'grilje', alt: 'Blue-grey aluminium shutters on a stone facade, Rijeka old town' },
+      { image: '/gallery/male-alu-grilje.jpeg', category: 'grilje', alt: 'Small arched aluminium shutter, detail' },
+      { image: '/gallery/aluminijske-grilje-za-montazu.jpeg', category: 'grilje', alt: 'Aluminium shutters ready for installation' },
+      { image: '/gallery/pvc-prozor-i-alu-grilje.jpeg', category: 'grilje', alt: 'PVC windows with aluminium shutters on a stone house, Istria' },
+      { image: '/gallery/aluminijske-grilje-na-kip-otvorene.jpeg', category: 'grilje', alt: 'Tilt-opening aluminium shutters, apartment building in Rijeka' },
+      { image: '/PliseKomarnici.jpeg', category: 'komarnici', alt: 'Pleated insect screens, apartment in Istria' },
+      { image: '/ApartmanKrk.jpeg', category: 'verande', alt: 'Glass wall veranda, apartment on Krk' },
+      { image: '/gallery/staklena-stijena-imitacija-drva.jpeg', category: 'verande', alt: 'Glass wall veranda, wood-look finish, Rijeka' },
+      { image: '/gallery/staklena-stijena-smeda.jpeg', category: 'verande', alt: 'Brown-toned glass wall veranda, family house' },
+      { image: '/gallery/staklena-stijena-zgrada.jpeg', category: 'verande', alt: 'Glass wall veranda on a building, side alley' },
+      { image: '/gallery/staklena-stijena.jpeg', category: 'verande', alt: 'Glazed glass wall veranda on a new build, Grobnik' },
+      { image: '/gallery/staklena-stijena-na-kuci.jpeg', category: 'verande', alt: 'Glass wall veranda on a new build, Grobnik' },
+      { image: '/gallery/staklena-stijena-bijela.jpeg', category: 'verande', alt: 'White glass wall veranda with staircase' },
+      { image: '/gallery/oluk-alu-konstrukcija-sa-krovnim-sendvic-panelima.jpeg', category: 'verande', alt: 'Gutter detail on an aluminium sandwich-panel roof structure' },
+    ],
+    prevPage: 'Previous page',
+    nextPage: 'Next page',
+    pageWord: 'Page',
+    prevPhoto: 'Previous image',
+    nextPhoto: 'Next image',
   },
   contact: {
     strip: 'Sticking window, loose handle? We come out for those too.',

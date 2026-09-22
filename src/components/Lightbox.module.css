@@ -39,6 +39,45 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
+.nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.prev {
+  left: 1.5rem;
+}
+
+.next {
+  right: 1.5rem;
+}
+
+.counter {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -58,5 +97,15 @@
   .close {
     top: 0.75rem;
     right: 0.75rem;
+  }
+  .prev {
+    left: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .next {
+    right: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 }
