@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Image from 'next/image'
 import { useSite } from './SiteProvider'
 import Lightbox from './Lightbox'
@@ -48,6 +48,30 @@ export default function Gallery() {
   const pageCount = pages.length
   const clampedPage = Math.min(page, Math.max(pageCount - 1, 0))
 
+  const touchStartX = useRef(0)
+  const touchDeltaX = useRef(0)
+  const swiped = useRef(false)
+
+  function onTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX
+    touchDeltaX.current = 0
+    swiped.current = false
+  }
+  function onTouchMove(e: React.TouchEvent) {
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current
+    if (Math.abs(touchDeltaX.current) > 10) swiped.current = true
+  }
+  function onTouchEnd() {
+    if (Math.abs(touchDeltaX.current) > 40) {
+      if (touchDeltaX.current < 0) setPage((p) => Math.min(pageCount - 1, p + 1))
+      else setPage((p) => Math.max(0, p - 1))
+    }
+  }
+  function onTileClick(i: number) {
+    if (swiped.current) return
+    setOpenIndex(i)
+  }
+
   return (
     <section className={styles.section} id="gallery">
       <p className={styles.eyebrow}>{t.gallery.eyebrow}</p>
@@ -66,14 +90,19 @@ export default function Gallery() {
         ))}
       </div>
 
-      <div className={styles.trackWrap}>
+      <div
+        className={styles.trackWrap}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         <div className={styles.track} style={{ transform: `translateX(-${clampedPage * 100}%)` }}>
           {pages.map((pageItems, pi) => (
             <div className={styles.page} key={pi} style={{ gridTemplateColumns: `repeat(${itemsPerRow}, 1fr)` }}>
               {pageItems.map((item) => {
                 const i = visible.indexOf(item)
                 return (
-                  <button type="button" key={item.image} className={styles.tile} onClick={() => setOpenIndex(i)}>
+                  <button type="button" key={item.image} className={styles.tile} onClick={() => onTileClick(i)}>
                     <Image
                       src={item.image}
                       alt={item.alt}
