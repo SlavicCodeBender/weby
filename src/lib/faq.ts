@@ -713,6 +713,65 @@ const hr: FaqClanak[] = [
       { slug: 'odrzavanje-pvc-prozora', tekst: 'Održavanje PVC prozora' },
     ],
   },
+  {
+    slug: 'buka-i-zvucna-izolacija-prozora',
+    naslov: 'Buka s ceste i zvučna izolacija prozora — što stvarno pomaže',
+    seoNaslov: 'Zvučna izolacija prozora — što stvarno pomaže',
+    sazetak:
+      'Zvučnu izolaciju prozora prije svega određuje debljina i asimetrija stakla, ne broj komora u okviru ili dvostruko naspram trostrukog ostakljenja. Vanjske rolete i grilje dodaju osjetno smanjenje buke, ali tek uz već dobro staklo i brtvljenje, ne umjesto njih.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Zvučnu izolaciju prozora prije svega određuje debljina i asimetrija stakla u paketu, ne broj komora u okviru. Dva stakla različite debljine, ili obično staklo u kombinaciji s akustičnim laminiranim staklom, priguše buku bolje od dva jednaka stakla iste ukupne debljine — čak i kad je ukupna masa stakla podjednaka.',
+          'Trostruko staklo samo po sebi ne znači tiše, isto kao što ne znači automatski ni bolju izolaciju topline — bitniji je sastav paketa nego broj stakala. Vanjske rolete i grilje dodatno pomažu, ali tek kad je staklo i brtvljenje već u redu, ne kao zamjena za njih.',
+        ],
+      },
+      {
+        naslov: 'Zašto asimetrija stakla radi više od same debljine',
+        odlomci: [
+          'Dva jednaka stakla u paketu titraju na sličnim frekvencijama, pa zvuk lakše prođe kroz njih baš na tim frekvencijama — svojevrsna rezonancija koja poništava dio dobitka od same debljine. Kad su stakla različite debljine, svako titra na drugoj frekvenciji, pa se zvuk prigušuje ravnomjernije kroz širi raspon frekvencija.',
+          'Akustično laminirano staklo radi na drugi način — između dva sloja stakla je mekana folija (PVB) koja upija titranje umjesto da ga prenosi dalje. Zato i jedno laminirano staklo u paketu osjetno podigne zvučnu izolaciju, više nego da se doda još jedno obično staklo iste ukupne debljine.',
+          'Uobičajen dvostruki paket stakla ima zvučnu izolaciju otprilike 30-ak decibela. Paket s asimetrijom i akustičnim laminatom obično ide do sredine ili gornje granice 40-ak decibela, ovisno o točnom sastavu — razlika koja se u praksi jasno osjeti.',
+        ],
+      },
+      {
+        naslov: 'Zašto profil okvira manje utječe od stakla',
+        odlomci: [
+          'Staklo je najveća površina prozora, pa ono nosi najveći dio zvučne izolacije, ne broj komora u profilu. Ipak, slabo pritegnut okov ili brtva koja ne pritišće ravnomjerno ostavljaju tanke procjepe kroz koje zvuk prolazi mimo cijelog stakla — pa i vrhunsko akustično staklo malo pomaže ako brtva propušta.',
+          'Neki sustavi imaju ugrađene ventilacijske otvore ili rešetke za stalno prozračivanje bez otvaranja krila. Praktični su za kvalitetu zraka, ali osjetno smanjuju zvučnu izolaciju dok su otvoreni — ako je buka prioritet, bira se izvedba koja se može potpuno zatvoriti.',
+        ],
+      },
+      {
+        naslov: 'Uloga vanjskih roleta i grilja',
+        odlomci: [
+          'Vanjske rolete, pogotovo aluminijske s kutijom punjenom pjenom i razmakom od barem pet centimetara od stakla, kad su spuštene dodaju osjetno smanjenje buke uz već dobro staklo — kutija i zračni jastuk između rolete i stakla djeluju kao dodatna prepreka i masa.',
+          'Rolete nisu zamjena za loše staklo — pomažu samo dok su spuštene, pa noćna buka s prometnice profitira najviše, kad se roleta ionako spušta zbog mraka i privatnosti. Grilje rade po sličnom principu kao dodatna prepreka ispred stakla, ali bez pune mase spuštene kutije, pa je njihov doprinos manje izražen od roleta.',
+        ],
+      },
+      {
+        naslov: 'Kako procijeniti treba li posebno akustično staklo',
+        odlomci: [
+          'Za uobičajenu ulicu s povremenim prometom standardan dvostruki paket stakla već je sasvim solidan izbor i ne treba ništa posebno tražiti. Za prometnicu s gustim ili noćnim prometom, blizinu raskrižja ili glavne ceste, vrijedi unaprijed tražiti asimetrično ili akustično laminirano staklo, ne pretpostaviti da će trostruko staklo samo po sebi riješiti buku.',
+          'Reci nam pri traženju ponude kakva je buka na lokaciji, pa predložimo sastav stakla prema tome, ne samo prema toplinskoj izolaciji.',
+        ],
+      },
+      {
+        naslov: 'Kako odlučiti',
+        odlomci: [
+          'Standardna ulica, povremen promet, bez posebnih zahtjeva — uobičajeni dvostruki paket stakla je dovoljan.',
+          'Prometnica s gustim ili noćnim prometom, blizina raskrižja — traži asimetrično ili akustično laminirano staklo, ne samo veći broj stakala.',
+          'Dodatna zaštita za noć, uz već dobro staklo — vanjska roleta s kutijom punjenom pjenom i razmakom od stakla, spuštena kad je buka najizraženija.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
+      { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Zamjena brtvi na prozorima' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
+    ],
+  },
   /*{
     slug: 'termalni-zid',
     naslov: 'Što je termalni zid i zašto je dobra investicija',
@@ -1416,6 +1475,65 @@ const en: FaqClanak[] = [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
       { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Replacing window seals' },
       { slug: 'odrzavanje-pvc-prozora', tekst: 'Looking after PVC windows' },
+    ],
+  },
+  {
+    slug: 'buka-i-zvucna-izolacija-prozora',
+    naslov: 'Street noise and window sound insulation — what actually helps',
+    seoNaslov: 'Window sound insulation — what actually helps',
+    sazetak:
+      'Sound insulation in a window is mostly down to the thickness and asymmetry of the glass, not the number of chambers in the frame or double versus triple glazing. External roller shutters and louvred shutters add a noticeable reduction, but only on top of glass and sealing that are already good, not instead of them.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Sound insulation in a window comes mostly from the thickness and asymmetry of the glass build-up, not the number of chambers in the frame. Two panes of different thickness, or a plain pane paired with acoustic laminated glass, cut noise better than two identical panes of the same total thickness — even when the total glass mass is about the same.',
+          'Triple glazing does not automatically mean quieter, any more than it automatically means better thermal insulation — the build-up of the glass unit matters more than the number of panes. External roller shutters and louvred shutters help further, but only once the glass and the sealing are already good, not as a substitute for them.',
+        ],
+      },
+      {
+        naslov: 'Why asymmetric glass does more than thickness alone',
+        odlomci: [
+          'Two identical panes in a unit vibrate at similar frequencies, so sound passes through more easily right at those frequencies — a kind of resonance that cancels out part of the gain from the thickness itself. With panes of different thickness, each vibrates at a different frequency, so sound is damped more evenly across a wider range.',
+          'Acoustic laminated glass works differently — a soft interlayer (PVB) sits between two layers of glass and absorbs the vibration instead of passing it on. That is why even one laminated pane in the unit noticeably lifts the sound rating, more than simply adding another plain pane of the same total thickness would.',
+          'A standard double-glazed unit typically rates at around 30 decibels. A build-up with asymmetric panes and an acoustic laminate usually reaches the mid-to-high 40s, depending on the exact make-up — a difference that is clearly noticeable in practice.',
+        ],
+      },
+      {
+        naslov: 'Why the frame profile matters less than the glass',
+        odlomci: [
+          'The glass is the largest surface on a window, so it carries most of the sound insulation, not the chamber count in the profile. That said, loosely adjusted hardware or a seal that does not press evenly leaves thin gaps that let sound bypass the glass entirely — even excellent acoustic glass does little good if the seal is leaking.',
+          'Some systems have built-in vents or trickle grilles for constant background ventilation without opening the sash. They are handy for air quality, but noticeably cut sound insulation while open — if noise is the priority, choose a version that closes completely.',
+        ],
+      },
+      {
+        naslov: 'What roller shutters and louvred shutters actually add',
+        odlomci: [
+          'External roller shutters, especially aluminium ones with a foam-filled box and a gap of at least five centimetres from the glass, add a noticeable reduction in noise when lowered, on top of glass that is already good — the box and the air cushion between the shutter and the glass act as an extra barrier and extra mass.',
+          'Shutters are not a substitute for poor glass — they only help while lowered, so night-time traffic noise benefits most, since that is when a shutter is lowered anyway for darkness and privacy. Louvred shutters work on a similar principle as an extra barrier in front of the glass, but without the full mass of a lowered box, so their contribution is smaller than a roller shutter’s.',
+        ],
+      },
+      {
+        naslov: 'How to judge whether you need acoustic glass specifically',
+        odlomci: [
+          'For an ordinary street with occasional traffic, a standard double-glazed unit is already a solid choice and there is no need to ask for anything special. For a road with heavy or night-time traffic, or a spot close to a junction or a main road, it is worth asking upfront for asymmetric or acoustic laminated glass, rather than assuming triple glazing alone will solve the noise.',
+          'Tell us what the noise is like at the site when you ask for a quote, and we will suggest a glass build-up based on that, not only on thermal performance.',
+        ],
+      },
+      {
+        naslov: 'How to decide',
+        odlomci: [
+          'An ordinary street, occasional traffic, no special requirements — a standard double-glazed unit is enough.',
+          'A road with heavy or night-time traffic, close to a junction — ask for asymmetric or acoustic laminated glass, not just more panes.',
+          'Extra protection for the night, on top of already good glass — an external roller shutter with a foam-filled box and a gap from the glass, lowered when noise is at its worst.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
+      { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Replacing window seals' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
     ],
   },
   /*{
