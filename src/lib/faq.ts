@@ -640,6 +640,79 @@ const hr: FaqClanak[] = [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
     ],
   },
+  {
+    slug: 'kondenzacija-na-prozorima',
+    naslov: 'Kondenzacija i rošenje na prozorima — zašto se događa i kako se rješava',
+    seoNaslov: 'Kondenzacija na prozorima — uzrok i rješenje',
+    sazetak:
+      'Rošenje s unutarnje strane prozora gotovo uvijek znači previše vlage u prostoriji, ne kvar na prozoru, i rješava se prozračivanjem i manje vlage u zraku. Rošenje s vanjske strane ujutro nije kvar, nego znak da prozor dobro izolira.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Rošenje s unutarnje strane stakla ili okvira gotovo uvijek znači da u prostoriji ima previše vlage, ne da je prozor loš ili loše ugrađen. Topao vlažan zrak dotakne hladnu površinu stakla ili okvira, ohladi se ispod točke rošenja i vlaga se izluči kao kapljice — isti proces kao rosa na travi ujutro.',
+          'Rješenje je gotovo uvijek isto: manje vlage u zraku i redovito prozračivanje, ne zamjena prozora. Rošenje na vanjskoj strani stakla, ujutro prije sunca, sasvim je druga stvar i nije kvar — o tome niže.',
+        ],
+      },
+      {
+        naslov: 'Zašto se baš na prozoru prvo pojavi',
+        odlomci: [
+          'Staklo i okvir su najhladnija površina u prostoriji jer brže gube toplinu od zida, pa vlaga tu prva padne ispod točke rošenja, iako je zrak posvuda u sobi podjednako vlažan.',
+          'Kvalitetan noviji prozor dobro brtvi i gotovo ne propušta zrak, što je odlično za grijanje, ali znači da se vlaga iz sobe više ne izmjenjuje sama kroz procjepe kao kod starih, netesnih prozora. Zato se često čini da je "novi prozor kriv" za rošenje, a zapravo je samo otkrio problem s vlagom koji je propuh stare stolarije do tada prikrivao.',
+        ],
+      },
+      {
+        naslov: 'Najčešći izvori vlage u stanu',
+        natuknice: [
+          'Kuhanje bez nape ili s napom koja ne izbacuje zrak van, nego samo kruži unutar prostorije.',
+          'Tuširanje i kupanje bez otvorenog prozora ili ventilatora.',
+          'Sušenje mokrog rublja u zatvorenom prostoru.',
+          'Nova žbuka, estrih ili beton — u prvih godinu do dvije grijanja iz same gradnje isparava velika količina vlage.',
+          'Puno sobnog bilja, akvarij ili veći broj ljudi u manjem, slabo prozračenom prostoru.',
+        ],
+      },
+      {
+        naslov: 'Kako se rješava',
+        odlomci: [
+          'Prozračuj kratko i naširoko, s potpuno otvorenim krilom, po nekoliko puta dnevno — umjesto dugo u nagibu. Zrak se izmijeni brzo, zid ostane topao, a vlaga ode van prije nego se stigne kondenzirati.',
+          'Kuhinjska napa i ventilator u kupaonici neka rade dok traje izvor vlage i još desetak minuta poslije. Ako je stan useljen u novogradnju ili je sezona tek prva nakon radova, prozračuj češće nego inače cijelu prvu grijanu sezonu.',
+          'Odvlaživač zraka ima smisla u prostorijama bez prirodne ventilacije, poput kupaonice bez prozora, ili dok traje sušenje nove gradnje.',
+        ],
+        natuknice: [
+          'Ako rošenje ostane unatoč prozračivanju, provjeri nisu li odvodni otvori na donjem dijelu okvira začepljeni.',
+          'Provjeri i jesu li brtve još elastične — stvrdnuta ili spljoštena brtva propušta hladan zrak baš na mjestu gdje se onda rosi.',
+        ],
+      },
+      {
+        naslov: 'Kad rošenje ukazuje na stvaran problem s prozorom',
+        natuknice: [
+          'Rosi se samo na jednom prozoru, dok su svi ostali suhi — provjeri brtvu i ugradnju na tom mjestu, moguć je propust u brtvljenju pjenom oko okvira.',
+          'Rosi se stalno na okviru, ne na staklu, kod starijeg aluminijskog prozora — vjerojatno nema prekinuti toplinski most.',
+          'Rosi se između dva stakla, unutar samog paketa stakla — to nije kondenzacija iz sobe nego kvar na brtvenom distanceru; rješava se zamjenom stakla, ne cijelog prozora.',
+        ],
+      },
+      {
+        naslov: 'Rošenje na vanjskoj strani nije kvar',
+        odlomci: [
+          'Ujutro, prije nego sunce zagrije okolinu, vanjsko staklo dobrog prozora zna biti rošno ili čak lagano zaleđeno. To je znak da prozor dobro izolira: toplina iz sobe ne dopire do vanjskog stakla, pa ono ostane hladno kao i okolni zrak, a vlaga iz atmosfere se na njemu kondenzira — isti proces kao rosa na travi ili na automobilu. Nestane samo čim se okolina zagrije.',
+          'Ova pojava je češća kod trostrukog stakla i na vedrim, mirnim noćima, jer staklo tada dodatno gubi toplinu zračenjem prema otvorenom nebu.',
+        ],
+      },
+      {
+        naslov: 'Kad se javiti nama, a kad rješavati prozračivanjem',
+        odlomci: [
+          'Ako se rosi po cijelom stanu, na svim prozorima podjednako, gotovo sigurno je riječ o vlazi u prostoru — prvo pojačaj prozračivanje i smanji izvore vlage prije nego posumnjaš na prozore.',
+          'Ako se rosi samo na jednom mjestu, na okviru umjesto na staklu, ili između stakala, javi nam se — to je znak koji vrijedi provjeriti na terenu, jer se najčešće rješava servisom brtve ili okova, ne cijelim novim prozorom.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
+      { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Zamjena brtvi na prozorima' },
+      { slug: 'odrzavanje-pvc-prozora', tekst: 'Održavanje PVC prozora' },
+    ],
+  },
   /*{
     slug: 'termalni-zid',
     naslov: 'Što je termalni zid i zašto je dobra investicija',
@@ -1270,6 +1343,79 @@ const en: FaqClanak[] = [
       { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
       { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
+    ],
+  },
+  {
+    slug: 'kondenzacija-na-prozorima',
+    naslov: 'Condensation and misting on windows — why it happens and how to fix it',
+    seoNaslov: 'Window condensation — cause and fix',
+    sazetak:
+      'Misting on the inside of a window almost always means too much humidity in the room, not a fault with the window, and is fixed with ventilation and less moisture in the air. Misting on the outside in the morning is not a fault — it is a sign the window insulates well.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Misting on the inside of the glass or frame almost always means there is too much humidity in the room, not that the window is poor or badly fitted. Warm, moist air touches the cold surface of the glass or frame, cools below its dew point, and the moisture comes out as droplets — the same process as dew on grass in the morning.',
+          'The fix is almost always the same: less moisture in the air and regular airing, not a new window. Misting on the outside of the glass, in the morning before the sun warms it up, is something else entirely and is not a fault — covered further down.',
+        ],
+      },
+      {
+        naslov: 'Why it shows up on the window first',
+        odlomci: [
+          'Glass and frame are the coldest surface in a room, because they lose heat faster than the wall, so moisture there is the first to drop below the dew point, even though the air throughout the room is equally humid.',
+          'A good, newer window seals well and lets almost no air through, which is excellent for heating, but it also means moisture from the room no longer exchanges itself through gaps the way it did with an old, leaky window. That is why a new window often gets blamed for misting, when really it has just uncovered a moisture problem the draught from the old joinery used to hide.',
+        ],
+      },
+      {
+        naslov: 'The most common sources of moisture in a home',
+        natuknice: [
+          'Cooking without an extractor hood, or with one that just recirculates air instead of venting it outside.',
+          'Showering or bathing without an open window or a fan running.',
+          'Drying wet washing indoors.',
+          'New plaster, screed or concrete — for the first year or two of heating, the building itself releases a large amount of moisture.',
+          'Lots of houseplants, an aquarium, or more people than usual in a small, poorly ventilated room.',
+        ],
+      },
+      {
+        naslov: 'How to fix it',
+        odlomci: [
+          'Air the room briefly and fully, with the sash wide open, several times a day — rather than tilted for hours. The air changes quickly, the wall stays warm, and the moisture leaves before it has a chance to condense.',
+          'Run the cooker hood and the bathroom fan for as long as the moisture source lasts, and for another ten minutes or so afterwards. If you have just moved into a new build, or this is the first season it is being heated, air the rooms more often than usual for the whole first heating season.',
+          'A dehumidifier makes sense in rooms with no natural ventilation, such as a windowless bathroom, or while a new build is still drying out.',
+        ],
+        natuknice: [
+          'If misting persists despite airing the room, check that the drainage holes at the bottom of the frame are not blocked.',
+          'Also check that the seals are still supple — a hardened or flattened seal lets cold air through right at the spot where misting then appears.',
+        ],
+      },
+      {
+        naslov: 'When misting points to a real problem with the window',
+        natuknice: [
+          'It mists on only one window while all the others stay dry — check the seal and the installation at that spot; there may be a gap in the foam sealing around the frame.',
+          'It mists constantly on the frame rather than the glass, on an older aluminium window — it probably has no thermal break.',
+          'It mists between the two panes, inside the glass unit itself — that is not condensation from the room but a fault in the seal spacer; it is fixed by replacing the glass, not the whole window.',
+        ],
+      },
+      {
+        naslov: 'Misting on the outside is not a fault',
+        odlomci: [
+          'In the morning, before the sun warms the surroundings, the outer pane of a good window can mist up or even carry a light frost. That is a sign the window insulates well: heat from the room is not reaching the outer glass, so it stays as cold as the surrounding air, and moisture from the atmosphere condenses on it — the same process as dew on grass or on a car. It clears on its own as soon as the surroundings warm up.',
+          'This shows up more often with triple glazing and on clear, still nights, because the glass then loses extra heat by radiating it out towards the open sky.',
+        ],
+      },
+      {
+        naslov: 'When to call us, and when airing the room is enough',
+        odlomci: [
+          'If misting appears throughout the flat, on every window about equally, it is almost certainly moisture in the space — step up the ventilation and cut the sources of moisture before suspecting the windows themselves.',
+          'If it mists in one spot only, on the frame instead of the glass, or between the panes, get in touch — that is a sign worth checking on site, since it is usually fixed by servicing a seal or the hardware, not by a whole new window.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
+      { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Replacing window seals' },
+      { slug: 'odrzavanje-pvc-prozora', tekst: 'Looking after PVC windows' },
     ],
   },
   /*{
