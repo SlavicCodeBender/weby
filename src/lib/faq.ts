@@ -687,7 +687,7 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kad rošenje ukazuje na stvaran problem s prozorom',
         natuknice: [
-          'Rosi se samo na jednom prozoru, dok su svi ostali suhi — provjerite brtvu i ugradnju na tom mjestu, moguć je propust u brtvljenju pjenom oko okvira.',
+          'Rosi se samo na jednom prozoru, dok su svi ostali u istoj prostoriji suhi — zrak u sobi je posvuda podjednako vlažan, pa uzrok nije vlaga u prostoriji nego to konkretno mjesto: brtva ili pjena oko okvira ne brtvi kako treba, pa tuda ulazi hladan zrak koji lokalno ohladi okvir ispod točke rošenja.',
           'Rosi se stalno na okviru, ne na staklu, kod aluminijskog prozora — nema prekinuti toplinski most. Aluminijski profil s prekinutim toplinskim mostom ne provodi hladnoću izvana prema unutra, pa mu okvir ne postaje dovoljno hladan da se na njemu rosi; kod "hladnog" profila bez tog prekida to je uobičajeno.',
           'Rosi se između dva stakla, unutar samog paketa — to nije kondenzacija iz sobe nego kvar na brtvenom distanceru. Prostor između stakala je zatvoren i ispunjen argonom; ako se ondje pojavi vlaga, brtva je propustila i vanjski zrak je ušao unutra. Rješava se zamjenom stakla, ne cijelog prozora.',
         ],
@@ -695,7 +695,7 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Rošenje na vanjskoj strani nije kvar',
         odlomci: [
-          'Ujutro, prije nego sunce zagrije okolinu, vanjsko staklo dobrog prozora zna biti rošno ili čak lagano zaleđeno. To je znak da prozor dobro izolira: toplina iz sobe ne dopire do vanjskog stakla, pa ono ostane hladno kao i okolni zrak, a vlaga iz atmosfere se na njemu kondenzira — isti proces kao rosa na travi ili na automobilu. Nestane samo čim se okolina zagrije.',
+          'Ujutro, prije nego sunce zagrije okolinu, vanjsko staklo dobrog prozora može biti rošno ili čak lagano zaleđeno. To je izravna posljedica dobre izolacije: toplina iz sobe ne dopire do vanjskog stakla, pa ono ostane hladno kao i okolni zrak, a vlaga iz atmosfere se na njemu kondenzira — isti proces kao rosa na travi ili na automobilu. Nestane samo čim se okolina zagrije.',
           'Ova pojava je češća kod trostrukog stakla i na vedrim, mirnim noćima, jer staklo tada dodatno gubi toplinu zračenjem prema otvorenom nebu.',
         ],
       },
@@ -1451,7 +1451,7 @@ const en: FaqClanak[] = [
       {
         naslov: 'When misting points to a real problem with the window',
         natuknice: [
-          'It mists on only one window while all the others stay dry — check the seal and the installation at that spot; there may be a gap in the foam sealing around the frame.',
+          'It mists on only one window while all the others in the same room stay dry — the air in the room is equally humid everywhere, so the cause is not humidity in the space but that specific spot: the seal or the foam sealing around the frame is not sealing properly, letting in cold air that locally cools the frame below its dew point.',
           'It mists constantly on the frame rather than the glass, on an aluminium window — it has no thermal break. An aluminium profile with a thermal break does not conduct outside cold through to the inside, so the frame never gets cold enough to mist; on a "cold" profile without that break, it is the norm.',
           'It mists between the two panes, inside the glass unit itself — that is not condensation from the room but a fault in the seal spacer. The cavity between the panes is sealed and filled with argon; if moisture shows up in there, the seal has failed and outside air has gotten in. It is fixed by replacing the glass, not the whole window.',
         ],
@@ -1459,7 +1459,7 @@ const en: FaqClanak[] = [
       {
         naslov: 'Misting on the outside is not a fault',
         odlomci: [
-          'In the morning, before the sun warms the surroundings, the outer pane of a good window can mist up or even carry a light frost. That is a sign the window insulates well: heat from the room is not reaching the outer glass, so it stays as cold as the surrounding air, and moisture from the atmosphere condenses on it — the same process as dew on grass or on a car. It clears on its own as soon as the surroundings warm up.',
+          'In the morning, before the sun warms the surroundings, the outer pane of a good window can mist up or even carry a light frost. That is a direct consequence of good insulation: heat from the room is not reaching the outer glass, so it stays as cold as the surrounding air, and moisture from the atmosphere condenses on it — the same process as dew on grass or on a car. It clears on its own as soon as the surroundings warm up.',
           'This shows up more often with triple glazing and on clear, still nights, because the glass then loses extra heat by radiating it out towards the open sky.',
         ],
       },
