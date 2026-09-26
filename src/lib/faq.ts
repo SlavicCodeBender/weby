@@ -477,8 +477,89 @@ const hr: FaqClanak[] = [
     povezano: [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
       { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
+      { slug: 'alu-ili-pvc-vrata', tekst: 'Alu ili PVC vrata — što odabrati' },
       { slug: 'vrste-komarnika', tekst: 'Vrste komarnika — koji odabrati' },
       { slug: 'ugradnja-prozora', tekst: 'Koliko traje ugradnja prozora' },
+    ],
+  },
+  {
+    slug: 'alu-ili-pvc-vrata',
+    naslov: 'Alu ili PVC vrata — razlike, cijena i kad je bolja staklena stijena',
+    seoNaslov: 'Alu ili PVC vrata — što odabrati',
+    sazetak:
+      'Koji je materijal bolji ovisi prije svega o tome kakva su vrata: za grijani prostor PVC i aluminij s prekinutim toplinskim mostom su ravnopravni izbori, a za podrum, garažu ili spremište isplativiji je aluminij bez toplinskog mosta jer se prostor ne grije. Kod velikih otvora s puno stakla staklena stijena od aluminija često je bolja od jednog velikog krila.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Ne postoji jedan odgovor za sva vrata — odluka prije svega ovisi o tome kakva su vrata u pitanju i kakav je prostor iza njih. Za standardna ulazna ili balkonska vrata u grijani prostor PVC daje bolju izolaciju po uloženom novcu, dok se aluminij bira kad je otvor velik, kad se traži puno stakla uz tanak okvir, ili kad vrata moraju izdržati veće opterećenje i češću upotrebu.',
+          'Kod velikih otvora — terase, ulaza u dnevni boravak, poslovnog prostora — često se više isplati klizna ili fiksna staklena stijena od aluminija nego jedno veliko krilno vrata, jer stijena ima manje okvira i više stakla na istoj površini.',
+        ],
+      },
+      {
+        naslov: 'Prvo pitanje: grije li se prostor iza vrata',
+        odlomci: [
+          'Prije usporedbe materijala vrijedi razdvojiti dvije situacije. Ulazna vrata u stan ili kuću i balkonska vrata vode u grijani prostor, pa izolacija stvarno nešto znači — tu su PVC i aluminij s prekinutim toplinskim mostom podjednako dobar izbor, a između njih najčešće odlučuje cijena i izgled koji kupac želi.',
+          'Podrumska, garažna i vrata prema spremištu vode u prostor koji se ne grije. Tamo nema smisla plaćati za izolaciju koju ništa ne koristi — logičniji i jeftiniji izbor je aluminij bez prekinutog toplinskog mosta, takozvani hladni profil, koji je čvrst i izdržljiv, a ne nosi cijenu toplinske izolacije koja se u tom prostoru ionako ne osjeti.',
+          'Isto pravilo vrijedi i za pregrade unutar zgrade koje ne dijele grijani od negrijanog prostora, nego dva negrijana prostora, npr. spremište od stubišta — i tu je hladni aluminijski profil sasvim dovoljan.',
+        ],
+      },
+      {
+        naslov: 'Zašto je PVC ograničen kod vrata',
+        odlomci: [
+          'PVC krilo vrata gradi se isto kao prozorsko — šuplji profil s više komora i čeličnim ojačanjem unutra, s ispunom (izolacijskim panelom ili staklom) u donjem i gornjem dijelu krila. Za standardna ulazna vrata širine do stotinjak centimetara to je sasvim dovoljno čvrsto.',
+          'Problem nastaje kod visokih ili širokih krila i kod vrata koja se otvaraju po nekoliko puta dnevno. Teško krilo se s vremenom objesi na šarkama, a veliko opterećenje na jednom PVC profilu bez dodatnog aluminijskog ojačanja dovodi do provjesa i otežanog zatvaranja.',
+          'Zato se kod ulaznih vrata širih otvora ili s puno stakla PVC često kombinira s aluminijskim ojačanjem, ili se odmah prelazi na aluminijski profil.',
+        ],
+      },
+      {
+        naslov: 'Zašto aluminijska vrata trebaju prekinuti toplinski most',
+        odlomci: [
+          'Aluminij dobro provodi toplinu, što je za vrata jednako loše kao i za prozor. Kvalitetna ulazna vrata rade se iz dva odvojena profila, vanjskog i unutarnjeg, spojena poliamidnim trakama koje toplinu ne provode — to je prekinuti toplinski most.',
+          'Aluminijska vrata bez prekinutog toplinskog mosta i dalje se rade i ugrađuju, ali za negrijane prostore: garaže, spremišta, pregrade prema stubištu. Na ulazu u stan ili kuću bez prekinutog mosta okvir se hladi i rosi iznutra.',
+          'Aluminijski profil vrata u pravilu ostaje nešto lošiji izolator od dobrog PVC-a, ali podnosi puno veći i teži panel stakla uz tanji vidljivi okvir — pa ulazna vrata mogu imati veliku staklenu plohu, a da pritom ostanu čvrsta.',
+        ],
+      },
+      {
+        naslov: 'Kad je bolja staklena stijena od velikih aluminijskih vrata',
+        odlomci: [
+          'Vrata, i PVC i aluminijska, uvijek imaju barem donji dio krila pun ili poluprozirni — konstrukcija mora nositi bravu, šarke i zaključavanje, pa čistog stakla ima manje nego što izgleda na prvi pogled.',
+          'Staklena stijena — klizna ili fiksna, s uskim aluminijskim profilima i prekinutim toplinskim mostom — nema to ograničenje. Kod ulaza na terasu, veće dnevne prostorije ili poslovnog prostora, gdje je prioritet svjetlo i pogled, a ne pojedinačno zaključavanje jednog krila, staklena stijena često daje više svjetla za sličnu cijenu kao veliko aluminijsko krilno vrata.',
+          'Obrnuto vrijedi za ulaz kroz koji se prolazi svaki dan i gdje je važna sigurnost — tu klasična krilna vrata, PVC ili aluminijska, ostaju praktičnija od klizne stijene jer imaju jednostavnije i sigurnije zaključavanje.',
+        ],
+      },
+      {
+        naslov: 'Po čemu se prepoznaju bolja aluminijska vrata',
+        natuknice: [
+          'Prekinuti toplinski most — bez njega vrata nisu prava izolacija, samo aluminijska konstrukcija.',
+          'Višetočkasto zaključavanje (tri do pet točaka) umjesto jedne brave — bitno je i za sigurnost i za ravnomjeran pritisak na brtvu po cijelom opsegu krila.',
+          'Debljina i ispuna krila — panel s pjenom ili izolacijskim slojem izolira bitno bolje od tankog, praznog aluminijskog panela.',
+          'Sigurnosna klasa (RC2, RC3) — govori koliko dugo krilo i okov odolijevaju pokušaju provale, ne samo je li brava kvalitetna.',
+          'Brtvljenje u dvije ili tri razine oko krila, ne samo jedna gumena brtva na rubu.',
+        ],
+      },
+      {
+        naslov: 'Vijek trajanja i održavanje',
+        natuknice: [
+          'Aluminijska vrata najbolje podnose vremenske utjecaje i praktički se ne mijenjaju s godinama.',
+          'PVC vrata realno traju dvadesetak do tridesetak godina uz standardnu izloženost suncu i moru — nešto kraće od PVC prozora jer se vrata više koriste i nose teži panel.',
+          'Okov kod oba materijala treba isto godišnje podmazivanje, a brtve se troše podjednako bez obzira na okvir.',
+        ],
+      },
+      {
+        naslov: 'Kako odlučiti',
+        odlomci: [
+          'Podrum, garaža, spremište ili druga negrijana prostorija — aluminij bez prekinutog toplinskog mosta. Izolacija se ondje ne osjeti, pa nema smisla platiti za nju.',
+          'Ulazna ili balkonska vrata u grijani stan ili kuću, uobičajene širine, bez posebnih zahtjeva na sigurnost — PVC i aluminij s prekinutim toplinskim mostom podjednako dobro izoliraju. Ovdje izbor u pravilu ovisi o cijeni i o tome što kupcu izgleda elegantnije — tanji, moderniji profil aluminija ili klasičniji izgled PVC-a.',
+          'Ulazna vrata s puno stakla, veća širina krila ili čest prolaz — aluminij s prekinutim toplinskim mostom i višetočkastim zaključavanjem.',
+          'Velik otvor gdje je prioritet svjetlo, pogled ili pristup terasi — prije odluke o jednom velikom aluminijskom krilu, provjeri isplati li se klizna ili fiksna staklena stijena.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
+      { slug: 'cijena-prozora-i-vrata', tekst: 'Cijena PVC i ALU prozora i vrata' },
     ],
   },
   /*{
@@ -957,8 +1038,89 @@ const en: FaqClanak[] = [
     povezano: [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
       { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
+      { slug: 'alu-ili-pvc-vrata', tekst: 'Aluminium or PVC doors — how to choose' },
       { slug: 'vrste-komarnika', tekst: 'Types of insect screens — which to choose' },
       { slug: 'ugradnja-prozora', tekst: 'How long a window installation takes' },
+    ],
+  },
+  {
+    slug: 'alu-ili-pvc-vrata',
+    naslov: 'Aluminium or PVC doors — differences, cost and when a glass wall wins',
+    seoNaslov: 'Aluminium or PVC doors — how to choose',
+    sazetak:
+      'Which material is better depends first on what kind of door it is: for a heated space, PVC and thermally broken aluminium are equally good choices, while a cellar, garage or storeroom is better served by aluminium without a thermal break, since the space is not heated anyway. For large openings with lots of glass, an aluminium glass wall is often better than one large door leaf.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'There is no single answer for every door — the decision starts with what kind of door it is and what space it leads into. For a standard entrance or balcony door into a heated space, PVC gives better insulation for the money, while aluminium is chosen when the opening is large, when a lot of glass is wanted with a slim frame, or when the door has to carry more load and heavier daily use.',
+          'For large openings — a terrace, an entrance to a living room, or commercial premises — a sliding or fixed aluminium glass wall is often better value than one large door leaf, because a screen has less frame and more glass over the same area.',
+        ],
+      },
+      {
+        naslov: 'The first question: is the space behind the door heated',
+        odlomci: [
+          'Before comparing materials, it helps to separate two situations. An entrance door into a flat or house, and a balcony door, both lead into a heated space, so insulation genuinely matters — there, PVC and thermally broken aluminium are equally good choices, and the decision usually comes down to price and to which look the customer prefers.',
+          'Cellar, garage and storeroom doors lead into a space that is not heated. There is no point paying for insulation nothing will ever use — the more sensible and cheaper choice is aluminium without a thermal break, a so-called cold profile, which is sturdy and durable without carrying the cost of thermal performance the space will never feel.',
+          'The same rule applies to partitions inside a building that separate two unheated spaces rather than a heated one from an unheated one — a storeroom from a stairwell, for instance. A cold aluminium profile is entirely sufficient there too.',
+        ],
+      },
+      {
+        naslov: 'Why PVC has limits on a door',
+        odlomci: [
+          'A PVC door leaf is built the same way as a window — a hollow multi-chamber profile with steel reinforcement inside, with an infill panel or glass in the upper and lower sections of the leaf. For a standard entrance door up to around a metre wide, that is strong enough.',
+          'Problems start with tall or wide leaves and with doors opened several times a day. A heavy leaf sags on its hinges over time, and a large load on a plain PVC profile without extra aluminium reinforcement leads to drooping and a leaf that no longer closes cleanly.',
+          'That is why wide entrance doors, or ones with a lot of glass, are often built with PVC reinforced by aluminium, or move straight to an aluminium profile.',
+        ],
+      },
+      {
+        naslov: 'Why aluminium doors need a thermal break',
+        odlomci: [
+          'Aluminium conducts heat well, which is just as bad for a door as for a window. A quality entrance door is built from two separate profiles, outer and inner, joined by polyamide strips that do not conduct heat — the thermal break.',
+          'Aluminium doors without a thermal break are still made and fitted, but for unheated spaces: garages, storerooms, partitions onto a stairwell. On the entrance to a flat or house, a frame without a thermal break turns cold and mists up on the inside.',
+          'An aluminium door profile generally remains a slightly poorer insulator than good PVC, but it carries a much larger and heavier glass panel behind a slimmer visible frame — so an entrance door can carry a large glazed area and still stay rigid.',
+        ],
+      },
+      {
+        naslov: 'When a glass wall beats a large aluminium door',
+        odlomci: [
+          'A door leaf, PVC or aluminium, always keeps at least the lower section solid or semi-solid — the construction has to carry the lock, hinges and locking points, so there is less actual glass than it looks at first glance.',
+          'A glass wall — sliding or fixed, in slim aluminium profiles with a thermal break — is not bound by that. For a terrace opening, a large living space, or commercial premises where the priority is light and view rather than a single lockable leaf, a glass wall often gives more daylight for a similar price to one large aluminium door leaf.',
+          'The opposite holds for an entrance used daily where security matters — there a standard door leaf, PVC or aluminium, stays more practical than a glass wall, because it locks more simply and more securely.',
+        ],
+      },
+      {
+        naslov: 'What marks out a better aluminium door',
+        natuknice: [
+          'A thermal break — without it, the door is an aluminium structure, not real insulation.',
+          'Multi-point locking (three to five points) instead of a single lock — this matters both for security and for even seal pressure around the whole leaf.',
+          'Leaf thickness and infill — a foam-filled or insulated panel performs far better than a thin, empty aluminium panel.',
+          'Security rating (RC2, RC3) — states how long the leaf and hardware resist a break-in attempt, not just whether the lock itself is good.',
+          'Sealing in two or three stages around the leaf, not a single rubber gasket at the edge.',
+        ],
+      },
+      {
+        naslov: 'Lifespan and upkeep',
+        natuknice: [
+          'Aluminium doors handle weather best and are practically unaffected over the years.',
+          'PVC doors realistically last twenty to thirty years under standard sun and sea exposure — somewhat less than PVC windows, because doors see more use and carry a heavier panel.',
+          'Hardware on both materials needs the same annual oiling, and seals wear at the same rate regardless of the frame.',
+        ],
+      },
+      {
+        naslov: 'How to decide',
+        odlomci: [
+          'A cellar, garage, storeroom or any other unheated room — aluminium without a thermal break. Insulation is not felt there, so there is no point paying for it.',
+          'An entrance or balcony door into a heated flat or house, ordinary width, with no special security requirements — PVC and thermally broken aluminium insulate equally well. Here the choice usually comes down to price and to which look the customer finds more elegant — the slimmer, more modern aluminium profile or the more classic look of PVC.',
+          'An entrance door with a lot of glass, a wider leaf, or frequent daily use — aluminium with a thermal break and multi-point locking.',
+          'A large opening where the priority is light, view or terrace access — before settling on one big aluminium leaf, check whether a sliding or fixed glass wall pays off instead.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
+      { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
     ],
   },
   /*{
