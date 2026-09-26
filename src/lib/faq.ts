@@ -105,7 +105,7 @@ const hr: FaqClanak[] = [
         natuknice: [
           'Zaštitnu foliju s profila skini u roku od nekoliko dana — na suncu se zapeče i teško se skida.',
           'Prvo čišćenje radi mekom krpom i vodom sa sapunicom, bez otapala.',
-          'Ako se ugrađuje zimi, prozračuj prostoriju češće idućih tjedan dana — u pjeni i žbuci ima puno vlage.',
+          'Ako se ugrađuje zimi, prozračujte prostoriju češće idućih tjedan dana — u pjeni i žbuci ima puno vlage.',
         ],
       },
     ],
@@ -185,7 +185,7 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Provjera listom papira',
         odlomci: [
-          'Stavi list papira preko okvira, zatvori i zaključaj krilo, pa povuci papir. Ako izlazi bez ikakvog otpora, na tom mjestu nema pritiska. Ponovi to na nekoliko mjesta oko cijelog krila, gore, dolje i sa strane šarki.',
+          'Stavite list papira preko okvira, zatvorite i zaključajte krilo, pa povucite papir. Ako izlazi bez ikakvog otpora, na tom mjestu nema pritiska. Ponovite to na nekoliko mjesta oko cijelog krila, gore, dolje i sa strane šarki.',
           'Ako papir lako izlazi samo na jednom mjestu, češće je problem u okovu nego u brtvi. Ako izlazi svugdje jednako lako, brtva je gotova.',
         ],
       },
@@ -208,10 +208,10 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kako produžiti vijek brtvi',
         natuknice: [
-          'Jednom godišnje obriši brtve vlažnom krpom i premaži sredstvom na bazi silikona ili glicerina.',
-          'Nikad ne koristi otapala, razrjeđivače ni ulja na naftnoj bazi — guma od njih nabubri i propadne.',
-          'Ne liči brtve. Boja ih ukruti i popuca pri prvom otvaranju.',
-          'Zimi ne ostavljaj krilo dugo u nagibu. Hladan zrak stalno struji preko brtve i skraćuje joj vijek.',
+          'Jednom godišnje obrišite brtve vlažnom krpom i premažite sredstvom na bazi silikona ili glicerina.',
+          'Nikad ne koristite otapala, razrjeđivače ni ulja na naftnoj bazi — guma od njih nabubri i propadne.',
+          'Ne ličite brtve. Boja ih ukruti i popuca pri prvom otvaranju.',
+          'Zimi ne ostavljajte krilo dugo u nagibu. Hladan zrak stalno struji preko brtve i skraćuje joj vijek.',
         ],
       },
     ],
@@ -268,7 +268,7 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kako odlučiti',
         odlomci: [
-          'Ako se mijenjaju prozori u stanu ili obiteljskoj kući standardnih dimenzija, PVC ili aluminij su ok izbori. Koji izabarti? Odgovor ovisi o prisutnosti soli, sunca i temperaturnim razlikama',
+          'Ako se mijenjaju prozori u stanu ili obiteljskoj kući standardnih dimenzija, PVC ili aluminij su ok izbori. Koji izabrati? Odgovor ovisi o prisutnosti soli, sunca i temperaturnim razlikama.',
           'Ako se radi klizna terasna stijena, veliki fiksni otvor, izlog ili ulazna vrata poslovnog prostora, aluminij je pravi izbor jer PVC na tim dimenzijama traži previše ojačanja.',
         ],
       },
@@ -293,44 +293,44 @@ const hr: FaqClanak[] = [
         naslov: 'Okov',
         odlomci: [
           'Okov je mehanizam skriven u utoru krila: škare gore, prijenosne poluge sa strane i zaporne točke po obodu. Sve pokretne dijelove treba nauljiti, a zaporne točke premazati mašću.',
-          'Koristi ulje bez kiseline i bez smole ili sprej koji je proizvođač okova predvidio. Univerzalni sprej za odvijanje zahrđalih vijaka nije mazivo — on istiskuje vlagu i ispari, pa nakon nekoliko tjedana okov ostane suh.',
-          'Prije podmazivanja obriši utor krila od prašine, inače se mast pomiješa s prljavštinom i radi obrnuto.',
+          'Koristite ulje bez kiseline i bez smole ili sprej koji je proizvođač okova predvidio. Univerzalni sprej za odvijanje zahrđalih vijaka nije mazivo — on istiskuje vlagu i ispari, pa nakon nekoliko tjedana okov ostane suh.',
+          'Prije podmazivanja obrišite utor krila od prašine, inače se mast pomiješa s prljavštinom i radi obrnuto.',
         ],
       },
       {
         naslov: 'Brtve',
         odlomci: [
-          'Brtve obriši vlažnom krpom, a zatim premaži sredstvom na bazi silikona ili glicerina. Time guma ostaje elastična i ne puca na hladnoći.',
-          'Ne koristi otapala ni sredstva na naftnoj bazi i ne liči brtve. Oboje ih trajno ošteti.',
+          'Brtve obrišite vlažnom krpom, a zatim premažite sredstvom na bazi silikona ili glicerina. Time guma ostaje elastična i ne puca na hladnoći.',
+          'Ne koristite otapala ni sredstva na naftnoj bazi i ne ličite brtve. Oboje ih trajno ošteti.',
         ],
       },
       {
         naslov: 'Odvodni otvori',
         odlomci: [
           'Na donjoj strani okvira, s vanjske strane, nalaze se mali otvori kroz koje istječe voda koja uđe u profil. To je dio koji se najčešće zaboravi, a najviše smeta kad se začepi.',
-          'Ako se ti otvori zapune prašinom, lišćem ili ostacima žbuke, voda ostaje u profilu, zimi se ledi i s vremenom razdvaja spojeve. Provjeri ih jednom godišnje i po potrebi pročisti tankom žicom ili usisavačem, bez oštrih predmeta.',
+          'Ako se ti otvori zapune prašinom, lišćem ili ostacima žbuke, voda ostaje u profilu, zimi se ledi i s vremenom razdvaja spojeve. Provjerite ih jednom godišnje i po potrebi pročistite tankom žicom ili usisavačem, bez oštrih predmeta.',
         ],
       },
       {
         naslov: 'Čišćenje profila i stakla',
         natuknice: [
-          'Profile peri mlakom vodom sa sapunicom i mekom krpom.',
-          'Nikad ne koristi abrazivna sredstva, spužve s grubom stranom, aceton, nitro razrjeđivač ni sredstva za čišćenje pećnice — površina PVC-a se trajno zamuti.',
-          'Zaštitnu foliju s novih profila skini u roku od nekoliko tjedana; na suncu se zapeče i ostavlja ljepilo.',
+          'Profile perite mlakom vodom sa sapunicom i mekom krpom.',
+          'Nikad ne koristite abrazivna sredstva, spužve s grubom stranom, aceton, nitro razrjeđivač ni sredstva za čišćenje pećnice — površina PVC-a se trajno zamuti.',
+          'Zaštitnu foliju s novih profila skinite u roku od nekoliko tjedana; na suncu se zapeče i ostavlja ljepilo.',
           'Za staklo je dovoljna voda i guma za brisanje; sredstva s alkoholom ostavljaju tragove na brtvama.',
         ],
       },
       {
         naslov: 'Podešavanje i pravilno rukovanje',
         odlomci: [
-          'Krilo koje pri zatvaranju zapinje donjim kutom najčešće je sjelo i treba ga podići na donjoj šarki. Vijci za podešavanje su ispod plastične kapice na šarki. Ako nisi sigurna koji vijak radi što, bolje je pozvati servis nego nasumice okretati — krivim podešavanjem se lako izgubi pritisak na brtvu.',
-          'Mnogi okovi imaju ljetni i zimski položaj zapornih točaka, kojim se pojačava ili smanjuje pritisak na brtvu. Ako se prebacuje, radi to jednom u jesen i jednom u proljeće, i to na svim točkama jednako.',
+          'Krilo koje pri zatvaranju zapinje donjim kutom najčešće je sjelo i treba ga podići na donjoj šarki. Vijci za podešavanje su ispod plastične kapice na šarki. Ako niste sigurni koji vijak radi što, bolje je pozvati servis nego nasumice okretati — krivim podešavanjem se lako izgubi pritisak na brtvu.',
+          'Mnogi okovi imaju ljetni i zimski položaj zapornih točaka, kojim se pojačava ili smanjuje pritisak na brtvu. Ako se prebacuje, radite to jednom u jesen i jednom u proljeće, i to na svim točkama jednako.',
           'Kvaka se okreće samo kad je krilo zatvoreno. Ako se okrene dok je krilo otvoreno, mehanizam može ostati u međupoložaju i krilo visi na jednoj šarki. Noviji okovi imaju blokadu koja to sprječava, ali stariji je nemaju.',
         ],
         natuknice: [
-          'Ne vješaj ništa na otvoreno krilo.',
-          'Zimi ne ostavljaj krilo dugo u nagibu — oko otvora se hladi zid i javlja se kondenzacija.',
-          'Prozračuj kratko i naširoko, s potpuno otvorenim krilom, umjesto dugo u nagibu. Zrak se izmijeni brže, a zid ostane topao.',
+          'Ne vješajte ništa na otvoreno krilo.',
+          'Zimi ne ostavljajte krilo dugo u nagibu — oko otvora se hladi zid i javlja se kondenzacija.',
+          'Prozračujte kratko i naširoko, s potpuno otvorenim krilom, umjesto dugo u nagibu. Zrak se izmijeni brže, a zid ostane topao.',
         ],
       },
     ],
@@ -383,10 +383,10 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Na što paziti pri naručivanju',
         natuknice: [
-          'Reci mjeri li se otvor u svjetlu ili vanjski gabarit okvira — po tome se razlikuje gotova mjera.',
-          'Provjeri ima li prostora za kazetu rolo komarnika ako je vani roleta ili nadstrešnica.',
-          'Za vrata kroz koja se često prolazi biraj izvedbu s nižom donjom vodilicom.',
-          'Boju okvira uskladi s prozorom; kod aluminija se radi po RAL karti.',
+          'Recite mjeri li se otvor u svjetlu ili vanjski gabarit okvira — po tome se razlikuje gotova mjera.',
+          'Provjerite ima li prostora za kazetu rolo komarnika ako je vani roleta ili nadstrešnica.',
+          'Za vrata kroz koja se često prolazi birajte izvedbu s nižom donjom vodilicom.',
+          'Boju okvira uskladite s prozorom; kod aluminija se radi po RAL karti.',
         ],
       },
     ],
@@ -560,7 +560,7 @@ const hr: FaqClanak[] = [
           'Podrum, garaža, spremište ili druga negrijana prostorija — aluminij bez prekinutog toplinskog mosta. Izolacija se ondje ne osjeti, pa nema smisla platiti za nju.',
           'Ulazna ili balkonska vrata u grijani stan ili kuću, uobičajene širine, bez posebnih zahtjeva na sigurnost — PVC i aluminij s prekinutim toplinskim mostom podjednako dobro izoliraju. Ovdje izbor u pravilu ovisi o cijeni i o tome što kupcu izgleda elegantnije — tanji, moderniji profil aluminija ili klasičniji izgled PVC-a.',
           'Ulazna vrata s puno stakla, veća širina krila ili čest prolaz — aluminij s prekinutim toplinskim mostom i višetočkastim zaključavanjem.',
-          'Velik otvor gdje je prioritet svjetlo, pogled ili pristup terasi — prije odluke o jednom velikom aluminijskom krilu, provjeri isplati li se klizna ili fiksna staklena stijena.',
+          'Velik otvor gdje je prioritet svjetlo, pogled ili pristup terasi — prije odluke o jednom velikom aluminijskom krilu, provjerite isplati li se klizna ili fiksna staklena stijena.',
         ],
       },
     ],
@@ -814,8 +814,8 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Prije nego se naruči',
         odlomci: [
-          'Traži da u ponudi piše vrijednost za cijelu stijenu, oznaka profilnog sustava i sastav stakla. To su tri podatka po kojima se ponude uopće mogu usporediti; sve ostalo je opis.',
-          'Za velike plohe provjeri i način otvaranja. Klizna izvedba štedi prostor, ali brtvi slabije od zaokretno-nagibne, pa se kod izloženih pozicija bira sustav koji je ispitan na propuštanje zraka i kiše.',
+          'Tražite da u ponudi piše vrijednost za cijelu stijenu, oznaka profilnog sustava i sastav stakla. To su tri podatka po kojima se ponude uopće mogu usporediti; sve ostalo je opis.',
+          'Za velike plohe provjerite i način otvaranja. Klizna izvedba štedi prostor, ali brtvi slabije od zaokretno-nagibne, pa se kod izloženih pozicija bira sustav koji je ispitan na propuštanje zraka i kiše.',
         ],
       },
     ],
