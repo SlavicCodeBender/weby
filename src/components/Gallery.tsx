@@ -5,22 +5,18 @@ import { useSite } from './SiteProvider'
 import Lightbox from './Lightbox'
 import styles from './Gallery.module.css'
 
-type Category = 'prozori' | 'vrata' | 'grilje' | 'komarnici' | 'verande'
-const FILTERS: ('all' | Category)[] = ['all', 'verande', 'grilje', 'vrata', 'prozori', 'komarnici']
-
 /** Koliko pločica stane u jedan red — uvijek točno jedan red, na svakoj širini. */
 function itemsPerRowFor(width: number) {
   if (width <= 640) return 2
-  if (width <= 1000) return 3
-  return 4
+  if (width <= 1000) return 2
+  return 3
 }
 
 export default function Gallery() {
   const { t } = useSite()
-  const [filter, setFilter] = useState<'all' | Category>('all')
   const [page, setPage] = useState(0)
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-  const [itemsPerRow, setItemsPerRow] = useState(4)
+  const [itemsPerRow, setItemsPerRow] = useState(3)
 
   useEffect(() => {
     function update() {
@@ -31,10 +27,7 @@ export default function Gallery() {
     return () => window.removeEventListener('resize', update)
   }, [])
 
-  const visible = useMemo(
-    () => (filter === 'all' ? t.gallery.items : t.gallery.items.filter((item) => item.category === filter)),
-    [filter, t.gallery.items],
-  )
+  const visible = t.gallery.items
   const pages = useMemo(() => {
     const chunks: (typeof visible)[] = []
     for (let i = 0; i < visible.length; i += itemsPerRow) chunks.push(visible.slice(i, i + itemsPerRow))
@@ -43,7 +36,7 @@ export default function Gallery() {
 
   useEffect(() => {
     setPage(0)
-  }, [filter, itemsPerRow])
+  }, [itemsPerRow])
 
   const pageCount = pages.length
   const clampedPage = Math.min(page, Math.max(pageCount - 1, 0))
@@ -77,19 +70,6 @@ export default function Gallery() {
       <p className={styles.eyebrow}>{t.gallery.eyebrow}</p>
       <h2>{t.gallery.title}</h2>
 
-      <div className={styles.chips}>
-        {FILTERS.map((key) => (
-          <button
-            key={key}
-            type="button"
-            className={`${styles.chip} ${filter === key ? styles.chipActive : ''}`}
-            onClick={() => setFilter(key)}
-          >
-            {t.gallery.filters[key]}
-          </button>
-        ))}
-      </div>
-
       <div
         className={styles.trackWrap}
         onTouchStart={onTouchStart}
@@ -107,7 +87,7 @@ export default function Gallery() {
                       src={item.image}
                       alt={item.alt}
                       fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1000px) 33vw, 25vw"
+                      sizes="(max-width: 1000px) 50vw, 33vw"
                       className={styles.photo}
                     />
                   </button>
