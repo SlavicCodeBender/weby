@@ -688,8 +688,8 @@ const hr: FaqClanak[] = [
         naslov: 'Kad rošenje ukazuje na stvaran problem s prozorom',
         natuknice: [
           'Rosi se samo na jednom prozoru, dok su svi ostali suhi — provjerite brtvu i ugradnju na tom mjestu, moguć je propust u brtvljenju pjenom oko okvira.',
-          'Rosi se stalno na okviru, ne na staklu, kod starijeg aluminijskog prozora — vjerojatno nema prekinuti toplinski most.',
-          'Rosi se između dva stakla, unutar samog paketa stakla — to nije kondenzacija iz sobe nego kvar na brtvenom distanceru; rješava se zamjenom stakla, ne cijelog prozora.',
+          'Rosi se stalno na okviru, ne na staklu, kod aluminijskog prozora — nema prekinuti toplinski most. Aluminijski profil s prekinutim toplinskim mostom ne provodi hladnoću izvana prema unutra, pa mu okvir ne postaje dovoljno hladan da se na njemu rosi; kod "hladnog" profila bez tog prekida to je uobičajeno.',
+          'Rosi se između dva stakla, unutar samog paketa — to nije kondenzacija iz sobe nego kvar na brtvenom distanceru. Prostor između stakala je zatvoren i ispunjen argonom; ako se ondje pojavi vlaga, brtva je propustila i vanjski zrak je ušao unutra. Rješava se zamjenom stakla, ne cijelog prozora.',
         ],
       },
       {
@@ -1452,8 +1452,8 @@ const en: FaqClanak[] = [
         naslov: 'When misting points to a real problem with the window',
         natuknice: [
           'It mists on only one window while all the others stay dry — check the seal and the installation at that spot; there may be a gap in the foam sealing around the frame.',
-          'It mists constantly on the frame rather than the glass, on an older aluminium window — it probably has no thermal break.',
-          'It mists between the two panes, inside the glass unit itself — that is not condensation from the room but a fault in the seal spacer; it is fixed by replacing the glass, not the whole window.',
+          'It mists constantly on the frame rather than the glass, on an aluminium window — it has no thermal break. An aluminium profile with a thermal break does not conduct outside cold through to the inside, so the frame never gets cold enough to mist; on a "cold" profile without that break, it is the norm.',
+          'It mists between the two panes, inside the glass unit itself — that is not condensation from the room but a fault in the seal spacer. The cavity between the panes is sealed and filled with argon; if moisture shows up in there, the seal has failed and outside air has gotten in. It is fixed by replacing the glass, not the whole window.',
         ],
       },
       {
