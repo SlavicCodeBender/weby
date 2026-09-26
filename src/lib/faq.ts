@@ -611,7 +611,7 @@ const hr: FaqClanak[] = [
         naslov: 'Kako izgleda prijava u praksi',
         odlomci: [
           'Prijava ide online, kroz sustav Fonda, u razdoblju dok je poziv otvoren. Potrebna dokumentacija uključuje energetski certifikat, dokaz legalnosti i vlasništva, te ponude izvođača s tehničkim podacima o proizvodima koji se ugrađuju.',
-          'Mi u ponudi za prozore i vrata dajemo tehničke podatke (koeficijent prolaska topline, dimenzije, sastav stakla) u obliku koji se obično traži uz prijavu — javite nam se i za ovo, ne samo za samu ugradnju.',
+          'Tehnički podaci o proizvodima — koeficijent prolaska topline, sastav stakla — dio su dokumentacije koju uz svaki profil izdaje proizvođač, pa se to rješava zajedno s izvođačem u trenutku prijave. Nije nešto što kupac mora sam unaprijed tražiti ili razumjeti.',
         ],
       },
       {
@@ -1316,7 +1316,7 @@ const en: FaqClanak[] = [
         naslov: 'What applying actually looks like',
         odlomci: [
           'The application is submitted online, through the Fund’s system, during the period the call is open. The paperwork includes an energy certificate, proof the property is legal and proof of ownership, plus contractor quotes with the technical data for the products being installed.',
-          'In our quotes for windows and doors we provide the technical data (heat transfer coefficient, dimensions, glass build-up) in the form usually required for an application — get in touch about this too, not only about the installation itself.',
+          'The technical data for the products — heat transfer coefficient, glass build-up — is part of the documentation the profile manufacturer issues with every system, so it gets sorted out together with your installer at the point of applying. It is not something you need to chase down or understand yourself in advance.',
         ],
       },
       {
