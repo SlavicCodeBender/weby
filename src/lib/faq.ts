@@ -618,7 +618,7 @@ const hr: FaqClanak[] = [
         naslov: 'Gdje pratiti kad se poziv otvori',
         odlomci: [
           'Pozive objavljuje isključivo Fond za zaštitu okoliša i energetsku učinkovitost, na svojim službenim stranicama — to je jedini izvor na koji se isplati osloniti, jer se uvjeti i rokovi znaju mijenjati iz poziva u poziv.',
-          'Za obiteljske kuće prati stranicu programa energetske obnove obiteljskih kuća, a za stanove u zgradama s više vlasnika postoji paralelan program za višestambene zgrade. Popis svih trenutno otvorenih poziva Fonda, iz svih područja, nalazi se na jednom mjestu.',
+          'Za obiteljske kuće pratite stranicu programa energetske obnove obiteljskih kuća, a za stanove u zgradama s više vlasnika postoji paralelan program za višestambene zgrade. Popis svih trenutno otvorenih poziva Fonda, iz svih područja, nalazi se na jednom mjestu.',
         ],
         vanjskeVeze: [
           { url: 'https://www.fzoeu.hr/hr/energetska-obnova-obiteljskih-kuca-7679/7679', tekst: 'Energetska obnova obiteljskih kuća — fzoeu.hr' },
@@ -675,19 +675,19 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kako se rješava',
         odlomci: [
-          'Prozračuj kratko i naširoko, s potpuno otvorenim krilom, po nekoliko puta dnevno — umjesto dugo u nagibu. Zrak se izmijeni brzo, zid ostane topao, a vlaga ode van prije nego se stigne kondenzirati.',
-          'Kuhinjska napa i ventilator u kupaonici neka rade dok traje izvor vlage i još desetak minuta poslije. Ako je stan useljen u novogradnju ili je sezona tek prva nakon radova, prozračuj češće nego inače cijelu prvu grijanu sezonu.',
+          'Prozračujte kratko i naširoko, s potpuno otvorenim krilom, po nekoliko puta dnevno — umjesto dugo u nagibu. Zrak se izmijeni brzo, zid ostane topao, a vlaga ode van prije nego se stigne kondenzirati.',
+          'Kuhinjska napa i ventilator u kupaonici neka rade dok traje izvor vlage i još desetak minuta poslije. Ako je stan useljen u novogradnju ili je sezona tek prva nakon radova, prozračujte češće nego inače cijelu prvu grijanu sezonu.',
           'Odvlaživač zraka ima smisla u prostorijama bez prirodne ventilacije, poput kupaonice bez prozora, ili dok traje sušenje nove gradnje.',
         ],
         natuknice: [
-          'Ako rošenje ostane unatoč prozračivanju, provjeri nisu li odvodni otvori na donjem dijelu okvira začepljeni.',
-          'Provjeri i jesu li brtve još elastične — stvrdnuta ili spljoštena brtva propušta hladan zrak baš na mjestu gdje se onda rosi.',
+          'Ako rošenje ostane unatoč prozračivanju, provjerite nisu li odvodni otvori na donjem dijelu okvira začepljeni.',
+          'Provjerite i jesu li brtve još elastične — stvrdnuta ili spljoštena brtva propušta hladan zrak baš na mjestu gdje se onda rosi.',
         ],
       },
       {
         naslov: 'Kad rošenje ukazuje na stvaran problem s prozorom',
         natuknice: [
-          'Rosi se samo na jednom prozoru, dok su svi ostali suhi — provjeri brtvu i ugradnju na tom mjestu, moguć je propust u brtvljenju pjenom oko okvira.',
+          'Rosi se samo na jednom prozoru, dok su svi ostali suhi — provjerite brtvu i ugradnju na tom mjestu, moguć je propust u brtvljenju pjenom oko okvira.',
           'Rosi se stalno na okviru, ne na staklu, kod starijeg aluminijskog prozora — vjerojatno nema prekinuti toplinski most.',
           'Rosi se između dva stakla, unutar samog paketa stakla — to nije kondenzacija iz sobe nego kvar na brtvenom distanceru; rješava se zamjenom stakla, ne cijelog prozora.',
         ],
@@ -702,8 +702,8 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Kad se javiti nama, a kad rješavati prozračivanjem',
         odlomci: [
-          'Ako se rosi po cijelom stanu, na svim prozorima podjednako, gotovo sigurno je riječ o vlazi u prostoru — prvo pojačaj prozračivanje i smanji izvore vlage prije nego posumnjaš na prozore.',
-          'Ako se rosi samo na jednom mjestu, na okviru umjesto na staklu, ili između stakala, javi nam se — to je znak koji vrijedi provjeriti na terenu, jer se najčešće rješava servisom brtve ili okova, ne cijelim novim prozorom.',
+          'Ako se rosi po cijelom stanu, na svim prozorima podjednako, gotovo sigurno je riječ o vlazi u prostoru — prvo pojačajte prozračivanje i smanjite izvore vlage prije nego posumnjate na prozore.',
+          'Ako se rosi samo na jednom mjestu, na okviru umjesto na staklu, ili između stakala, javite nam se — to je znak koji vrijedi provjeriti na terenu, jer se najčešće rješava servisom brtve ili okova, ne cijelim novim prozorom.',
         ],
       },
     ],
@@ -754,14 +754,14 @@ const hr: FaqClanak[] = [
         naslov: 'Kako procijeniti treba li posebno akustično staklo',
         odlomci: [
           'Za uobičajenu ulicu s povremenim prometom standardan dvostruki paket stakla već je sasvim solidan izbor i ne treba ništa posebno tražiti. Za prometnicu s gustim ili noćnim prometom, blizinu raskrižja ili glavne ceste, vrijedi unaprijed tražiti asimetrično ili akustično laminirano staklo, ne pretpostaviti da će trostruko staklo samo po sebi riješiti buku.',
-          'Reci nam pri traženju ponude kakva je buka na lokaciji, pa predložimo sastav stakla prema tome, ne samo prema toplinskoj izolaciji.',
+          'Recite nam pri traženju ponude kakva je buka na lokaciji, pa predložimo sastav stakla prema tome, ne samo prema toplinskoj izolaciji.',
         ],
       },
       {
         naslov: 'Kako odlučiti',
         odlomci: [
           'Standardna ulica, povremen promet, bez posebnih zahtjeva — uobičajeni dvostruki paket stakla je dovoljan.',
-          'Prometnica s gustim ili noćnim prometom, blizina raskrižja — traži asimetrično ili akustično laminirano staklo, ne samo veći broj stakala.',
+          'Prometnica s gustim ili noćnim prometom, blizina raskrižja — tražite asimetrično ili akustično laminirano staklo, ne samo veći broj stakala.',
           'Dodatna zaštita za noć, uz već dobro staklo — vanjska roleta s kutijom punjenom pjenom i razmakom od stakla, spuštena kad je buka najizraženija.',
         ],
       },
