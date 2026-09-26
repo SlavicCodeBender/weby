@@ -22,6 +22,13 @@ export interface FaqOdjeljak {
   naslov?: string
   odlomci?: string[]
   natuknice?: string[]
+  /**
+   * Vanjske poveznice na kraju odjeljka (npr. na službenu stranicu Fonda).
+   * Link uvijek na stalnu, "trajnu" stranicu (npr. opći pregled programa),
+   * nikad na stranicu jednog konkretnog natječaja koji istekne — inače link
+   * s vremenom postane mrtav.
+   */
+  vanjskeVeze?: { url: string; tekst: string }[]
 }
 
 export interface FaqClanak {
@@ -560,6 +567,77 @@ const hr: FaqClanak[] = [
     povezano: [
       { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
       { slug: 'cijena-prozora-i-vrata', tekst: 'Cijena PVC i ALU prozora i vrata' },
+    ],
+  },
+  {
+    slug: 'sufinanciranje-zamjene-prozora',
+    naslov: 'Sufinanciranje zamjene prozora i vrata — kako funkcionira energetska obnova',
+    seoNaslov: 'Sufinanciranje zamjene prozora — kako funkcionira',
+    sazetak:
+      'Poseban natječaj samo za prozore ne postoji — zamjena stolarije ulazi u širi Javni poziv Fonda za zaštitu okoliša i energetsku učinkovitost za energetsku obnovu obiteljskih kuća ili zgrada, koji sufinancira 60 do 80% troška, ali se otvara povremeno i traje ograničeno.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Ne postoji zaseban natječaj samo za prozore. Zamjena vanjske stolarije — prozora i vrata — jedna je od mjera unutar šireg Javnog poziva Fonda za zaštitu okoliša i energetsku učinkovitost (FZOEU) za energetsku obnovu obiteljskih kuća, odnosno višestambenih zgrada kroz poseban, paralelan program. Poziv nije stalno otvoren; kad se objavi, sufinancira 60% opravdanog troška, a 80% za kuće oštećene u potresu ili na područjima posebne državne skrbi.',
+          'Prijava ide za cijeli paket mjera, ne za prozore odvojeno od svega ostalog — zamjena stolarije se prijavljuje ili kao dio cjelovite obnove, ili kao samostalna mjera toplinske zaštite ovojnice, o čemu više u nastavku.',
+        ],
+      },
+      {
+        naslov: 'Koje mjere pokriva poziv za obiteljske kuće',
+        natuknice: [
+          'A1 — cjelovita energetska obnova: toplinska zaštita vanjske ovojnice (fasada, krov, pod, stolarija) zajedno s ugradnjom sustava na obnovljive izvore energije.',
+          'A2 — samo toplinska zaštita vanjske ovojnice, bez obnovljivih izvora. Ovdje spada zamjena prozora i vrata kao samostalna mjera, bez fasade ili grijanja.',
+          'A3 — sustavi grijanja, hlađenja i pripreme potrošne tople vode na obnovljive izvore energije.',
+          'A4 — fotonaponska elektrana za vlastitu potrošnju.',
+        ],
+      },
+      {
+        naslov: 'Koliko iznosi sufinanciranje',
+        odlomci: [
+          'Standardno se sufinancira 60% opravdanog troška, a 80% za kuće oštećene u potresu ili na područjima posebne državne skrbi. Na posljednjem provedenom pozivu maksimalni iznos poticaja išao je do otprilike 62.000 eura po prijavi, ovisno o odabranom paketu mjera — taj iznos vrijedi kao orijentir, a ne kao trajno pravilo, jer se uvjeti svakog poziva objavljuju posebno.',
+          'Ako se prijavljuje samo zamjena stolarije (kategorija A2), maksimalni opravdani trošak je niži nego kod cjelovite obnove (A1), jer se odnosi na jednu mjeru, a ne na cijeli paket.',
+        ],
+      },
+      {
+        naslov: 'Uvjeti koje kuća i prozori moraju zadovoljiti',
+        odlomci: [
+          'Prijaviti se mogu vlasnici i suvlasnici obiteljskih kuća do 600 m² i najviše tri stambene jedinice, s više od polovice površine namijenjene stanovanju. Uvjet je i prijavljeno prebivalište u toj kući, uredno vlasništvo i dokaz da je kuća u potpunosti legalna.',
+          'Ako se ne mijenja cijela stolarija nego samo dio, preostali prozori i vrata koji ostaju moraju već zadovoljavati važeći tehnički propis. Novi prozori i vrata moraju postići propisani koeficijent prolaska topline za cijeli sklop, ne samo za staklo — to je dodatan razlog zašto podatak "samo za staklo" iz ponude nije dovoljan za prijavu.',
+        ],
+      },
+      {
+        naslov: 'Kako izgleda prijava u praksi',
+        odlomci: [
+          'Prijava ide online, kroz sustav Fonda, u razdoblju dok je poziv otvoren. Potrebna dokumentacija uključuje energetski certifikat, dokaz legalnosti i vlasništva, te ponude izvođača s tehničkim podacima o proizvodima koji se ugrađuju.',
+          'Mi u ponudi za prozore i vrata dajemo tehničke podatke (koeficijent prolaska topline, dimenzije, sastav stakla) u obliku koji se obično traži uz prijavu — javite nam se i za ovo, ne samo za samu ugradnju.',
+        ],
+      },
+      {
+        naslov: 'Gdje pratiti kad se poziv otvori',
+        odlomci: [
+          'Pozive objavljuje isključivo Fond za zaštitu okoliša i energetsku učinkovitost, na svojim službenim stranicama — to je jedini izvor na koji se isplati osloniti, jer se uvjeti i rokovi znaju mijenjati iz poziva u poziv.',
+          'Za obiteljske kuće prati stranicu programa energetske obnove obiteljskih kuća, a za stanove u zgradama s više vlasnika postoji paralelan program za višestambene zgrade. Popis svih trenutno otvorenih poziva Fonda, iz svih područja, nalazi se na jednom mjestu.',
+        ],
+        vanjskeVeze: [
+          { url: 'https://www.fzoeu.hr/hr/energetska-obnova-obiteljskih-kuca-7679/7679', tekst: 'Energetska obnova obiteljskih kuća — fzoeu.hr' },
+          { url: 'https://www.fzoeu.hr/hr/energetska-obnova-visestambenih-zgrada/7683', tekst: 'Energetska obnova višestambenih zgrada — fzoeu.hr' },
+          { url: 'https://www.fzoeu.hr/hr/nacionalni-javni-pozivi-i-natjecaji/1367', tekst: 'Svi trenutni pozivi i natječaji Fonda — fzoeu.hr' },
+        ],
+      },
+      {
+        naslov: 'Vrijedi li čekati poziv ili zamijeniti odmah',
+        odlomci: [
+          'Ako prozori propuštaju zrak, rose se iznutra ili je okov toliko dotrajao da vrata ne zatvaraju kako treba, ne isplati se čekati neizvjestan datum sljedećeg poziva — to je trošak koji se već sad osjeti na računu za grijanje. Sufinanciranje je dobar bonus kad je dostupno, ne razlog za odgađanje nužne zamjene.',
+          'Za veće projekte, gdje se ionako planira cjelovita obnova fasade i grijanja, ima smisla provjeriti je li poziv u najavi prije nego se krene s radovima — prijava se odnosi na radove koji još nisu izvedeni, ne na već završenu obnovu.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'cijena-prozora-i-vrata', tekst: 'Cijena PVC i ALU prozora i vrata' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
     ],
   },
   /*{
@@ -1121,6 +1199,77 @@ const en: FaqClanak[] = [
     povezano: [
       { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
       { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
+    ],
+  },
+  {
+    slug: 'sufinanciranje-zamjene-prozora',
+    naslov: 'Grants for replacing windows and doors — how energy renovation funding works',
+    seoNaslov: 'Grants for window replacement — how it works',
+    sazetak:
+      'There is no separate grant scheme just for windows — replacing joinery falls under the wider Public Call run by the Fund for Environmental Protection and Energy Efficiency for the energy renovation of family houses or buildings, co-financing 60 to 80% of the cost, but it only opens periodically and for a limited time.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'There is no separate grant scheme just for windows. Replacing external joinery — windows and doors — is one of the measures within the wider Public Call run by the Fund for Environmental Protection and Energy Efficiency (FZOEU) for the energy renovation of family houses, or of multi-apartment buildings through a separate, parallel programme. The call is not open all the time; when it is published, it co-finances 60% of the eligible cost, or 80% for houses damaged in the earthquake or in areas of special state concern.',
+          'The application covers the whole package of measures, not windows on their own — replacing joinery is applied for either as part of a complete renovation, or as a standalone thermal-envelope measure, covered below.',
+        ],
+      },
+      {
+        naslov: 'Which measures the call for family houses covers',
+        natuknice: [
+          'A1 — complete energy renovation: thermal protection of the external envelope (facade, roof, floor, joinery) together with installing a renewable energy system.',
+          'A2 — thermal protection of the external envelope only, without renewables. This is where replacing windows and doors as a standalone measure belongs, without facade work or heating.',
+          'A3 — heating, cooling and hot water systems running on renewable energy sources.',
+          'A4 — a photovoltaic system for your own consumption.',
+        ],
+      },
+      {
+        naslov: 'How much of the cost is covered',
+        odlomci: [
+          'The standard rate is 60% of the eligible cost, or 80% for houses damaged in the earthquake or in areas of special state concern. On the most recent call, the maximum grant ran up to roughly €62,000 per application, depending on the package of measures chosen — treat that figure as a rough guide rather than a fixed rule, since the terms of each call are published separately.',
+          'If you are only applying to replace joinery (category A2), the maximum eligible cost is lower than for a complete renovation (A1), because it covers one measure rather than the whole package.',
+        ],
+      },
+      {
+        naslov: 'Conditions the house and the windows must meet',
+        odlomci: [
+          'Owners and co-owners of family houses up to 600 m² and no more than three residential units, with more than half the floor area used for living, can apply. You also need to be registered as resident at that address, hold clear title, and be able to show the house is fully legal.',
+          'If you are not replacing all the joinery, whatever windows and doors stay in place already have to meet the current technical regulation. The new windows and doors have to reach the prescribed heat transfer coefficient for the whole unit, not just the glass — which is another reason a "glass only" figure in an offer is not enough on its own for an application.',
+        ],
+      },
+      {
+        naslov: 'What applying actually looks like',
+        odlomci: [
+          'The application is submitted online, through the Fund’s system, during the period the call is open. The paperwork includes an energy certificate, proof the property is legal and proof of ownership, plus contractor quotes with the technical data for the products being installed.',
+          'In our quotes for windows and doors we provide the technical data (heat transfer coefficient, dimensions, glass build-up) in the form usually required for an application — get in touch about this too, not only about the installation itself.',
+        ],
+      },
+      {
+        naslov: 'Where to watch for the call opening',
+        odlomci: [
+          'Calls are published only by the Fund for Environmental Protection and Energy Efficiency, on its own official pages — that is the only source worth relying on, since terms and deadlines do change from one call to the next.',
+          'For family houses, watch the page for the family house energy renovation programme; for flats in buildings with multiple owners there is a parallel programme for multi-apartment buildings. A list of every call the Fund currently has open, across all its areas, sits in one place.',
+        ],
+        vanjskeVeze: [
+          { url: 'https://www.fzoeu.hr/hr/energetska-obnova-obiteljskih-kuca-7679/7679', tekst: 'Energy renovation of family houses — fzoeu.hr' },
+          { url: 'https://www.fzoeu.hr/hr/energetska-obnova-visestambenih-zgrada/7683', tekst: 'Energy renovation of multi-apartment buildings — fzoeu.hr' },
+          { url: 'https://www.fzoeu.hr/hr/nacionalni-javni-pozivi-i-natjecaji/1367', tekst: 'All current calls from the Fund — fzoeu.hr' },
+        ],
+      },
+      {
+        naslov: 'Is it worth waiting for a call, or replacing now',
+        odlomci: [
+          'If your windows let draughts through, mist up on the inside, or the hardware is so worn the doors no longer close properly, it is not worth waiting for an uncertain date for the next call — that is a cost you are already paying on your heating bill. A grant is a good bonus when it is available, not a reason to put off a replacement you actually need.',
+          'For larger projects, where a full facade and heating renovation is planned anyway, it is worth checking whether a call is expected before starting the work — an application covers work that has not been carried out yet, not a renovation that is already finished.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
+      { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
     ],
   },
   /*{

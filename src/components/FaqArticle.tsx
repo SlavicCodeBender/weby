@@ -58,6 +58,18 @@ export default function FaqArticle({ slug }: { slug: string }) {
                   ))}
                 </ul>
               )}
+
+              {odjeljak.vanjskeVeze && (
+                <ul className={styles.vanjskeVeze}>
+                  {odjeljak.vanjskeVeze.map((veza) => (
+                    <li key={veza.url}>
+                      <a href={veza.url} target="_blank" rel="noopener noreferrer">
+                        {veza.tekst} ↗
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
           ))}
         </div>

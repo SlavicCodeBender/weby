@@ -99,6 +99,30 @@
   color: var(--primary-text);
 }
 
+/* Vanjske poveznice unutar odjeljka (npr. na službenu stranicu Fonda) —
+   ista suzdržana linija kao interni linkovi, samo bez razmaka od naslova. */
+.vanjskeVeze {
+  list-style: none;
+  margin: 0.5rem 0 1.1rem;
+}
+
+.vanjskeVeze li {
+  margin-bottom: 0.45rem;
+}
+
+.vanjskeVeze a {
+  font-size: 0.95rem;
+  color: var(--primary-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.vanjskeVeze a:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary-dark);
+}
+
 /* Poveznice na srodne članke — tiša plava, ista boja obiteljski kao ostali
    linkovi na stranici, s crtom umjesto podcrtavanja preko cijele riječi. */
 .povezano {
