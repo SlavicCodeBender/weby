@@ -533,7 +533,7 @@ const hr: FaqClanak[] = [
         naslov: 'Po čemu se prepoznaju bolja aluminijska vrata',
         natuknice: [
           'Prekinuti toplinski most — bez njega vrata nisu prava izolacija, samo aluminijska konstrukcija.',
-          'Višetočkasto zaključavanje (tri do pet točaka) umjesto jedne brave — bitno je i za sigurnost i za ravnomjeran pritisak na brtvu po cijelom opsegu krila.',
+          'Višetočkasto zaključavanje (tri do pet točaka) — poboljšava ravnomjeran pritisak na brtvu po cijelom opsegu krila, ali sigurnost ne dolazi od samog broja točaka. Loš cilindar brave provaljuje se za manje od minute bez obzira koliko zapornih točaka ima; dobar cilindar, otporan na bušenje i pikanje, tu razliku stvarno pravi.',
           'Debljina i ispuna krila — panel s pjenom ili izolacijskim slojem izolira bitno bolje od tankog, praznog aluminijskog panela.',
           'Sigurnosna klasa (RC2, RC3) — govori koliko dugo krilo i okov odolijevaju pokušaju provale, ne samo je li brava kvalitetna.',
           'Brtvljenje u dvije ili tri razine oko krila, ne samo jedna gumena brtva na rubu.',
@@ -1094,7 +1094,7 @@ const en: FaqClanak[] = [
         naslov: 'What marks out a better aluminium door',
         natuknice: [
           'A thermal break — without it, the door is an aluminium structure, not real insulation.',
-          'Multi-point locking (three to five points) instead of a single lock — this matters both for security and for even seal pressure around the whole leaf.',
+          'Multi-point locking (three to five points) — improves even seal pressure around the whole leaf, but security doesn’t come from the point count alone. A poor lock cylinder can be forced in under a minute regardless of how many locking points there are; a good cylinder, resistant to drilling and picking, is what actually makes that difference.',
           'Leaf thickness and infill — a foam-filled or insulated panel performs far better than a thin, empty aluminium panel.',
           'Security rating (RC2, RC3) — states how long the leaf and hardware resist a break-in attempt, not just whether the lock itself is good.',
           'Sealing in two or three stages around the leaf, not a single rubber gasket at the edge.',
