@@ -276,7 +276,7 @@ const hr: Dict = {
     eyebrow: 'Česta pitanja',
     title: 'Pitanja koja najčešće čujemo',
     intro:
-      'Kratki odgovori na ono što nas ljudi pitaju prije izmjere. Ako vaše pitanje nije ovdje, slobodno nazovite.',
+      'Kratki odgovori na ono što nas ljudi pitaju prije izmjere. Ako vaše pitanje nije ovdje, slobodno nam se javite.',
     readMore: 'Pročitaj',
     back: 'Natrag na česta pitanja',
     toTop: 'Na vrh',
@@ -476,7 +476,7 @@ const en: Dict = {
     eyebrow: 'FAQ',
     title: 'The questions we hear most',
     intro:
-      'Short answers to what people ask us before the measuring visit. If your question is not here, just give us a call.',
+      'Short answers to what people ask us before the measuring visit. If your question is not here, feel free to get in touch.',
     readMore: 'Read',
     back: 'Back to the questions',
     toTop: 'Back to top',
