@@ -777,14 +777,14 @@ const hr: FaqClanak[] = [
     naslov: 'Ug, g-faktor i propusnost svjetla — kako čitati vrijednosti stakla',
     seoNaslov: 'Ug, g-faktor i LT — kako čitati vrijednosti stakla',
     sazetak:
-      'Tri broja govore najviše o staklu: Ug (koliko dobro zadržava toplinu), g-faktor (koliko sunčeve topline propušta) i LT (koliko dnevnog svjetla propušta). Dobra kombinacija ovisi o tome kamo prozor gleda i koliko sunca hvata — ne postoji jedno staklo koje je najbolje za svaki otvor na kući.',
+      'Tri broja govore najviše o staklu: Ug (koliko dobro zadržava toplinu), g-faktor (koliko sunčeve topline propušta) i LT (koliko dnevnog svjetla propušta). U teoriji se idealna kombinacija mijenja od prozora do prozora, ali u praksi se za cijelu kuću bira jedno standardno staklo, a razlike u suncu rješavaju vanjskom zaštitom — roletama, griljama ili tendama.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
-          'Tri broja govore najviše o staklu, i sva tri vrijedi znati prije nego se naruči stolarija za cijelu kuću. Ug govori koliko dobro staklo zadržava toplinu, g-faktor koliko sunčeve topline propusti unutra, a LT (ili Tv) koliko dnevnog svjetla propusti. Kod Ug-a vrijedi jednostavno pravilo — manji broj je uvijek bolji. Kod g-faktora i LT-a "bolje" ovisi o tome kamo prozor gleda i koliko sunca hvata.',
-          'Zato jedinstveno "najbolje" staklo za cijelu kuću ne postoji. Veliko staklo okrenuto zapadu, koje se ljeti satima prži na suncu, treba drukčiju kombinaciju brojeva od malog prozora na sjevernoj strani koji sunce gotovo nikad ne vidi.',
+          'Tri broja govore najviše o staklu. Ug govori koliko dobro staklo zadržava toplinu, g-faktor koliko sunčeve topline propusti unutra, a LT (ili Tv) koliko dnevnog svjetla propusti. Kod Ug-a vrijedi jednostavno pravilo — manji broj je uvijek bolji. Kod g-faktora i LT-a "bolje" ovisi o tome kamo prozor gleda i koliko sunca hvata.',
+          'Ovaj tekst ne daje savjet što naručiti — objašnjava što ti brojevi znače, da vam bude jasno što stoji u ponudi i zašto. Kako se to stvarno rješava u praksi opisano je na kraju članka.',
         ],
       },
       {
@@ -817,17 +817,18 @@ const hr: FaqClanak[] = [
         ],
       },
       {
-        naslov: 'Zašto ne postoji jedno univerzalno staklo',
+        naslov: 'Zašto se te vrijednosti razlikuju od prozora do prozora',
         odlomci: [
-          'Staklo koje jednako dobro izolira zimi i štiti od sunca ljeti na istom otvoru je kompromis, ne rješenje bez cijene — svaki dobitak u jednoj vrijednosti obično nešto oduzme u drugoj. Zato iste postavke ne rade jednako dobro na svakom prozoru iste kuće.',
-          'Bitno je i koliko je otvor izložen: veličina staklene plohe, orijentacija, postoji li vanjska zaštita poput roleta ili grilja, i koliko je prostorija sklona pregrijavanju ljeti. Veliki zapadni prozor bez vanjske zaštite obično treba nižu g-vrijednost nego mali sjeverni prozor, čak i kad je Ug isti na oba.',
+          'Staklo koje jednako dobro izolira zimi i štiti od sunca ljeti na istom otvoru je kompromis, ne rješenje bez cijene — svaki dobitak u jednoj vrijednosti obično nešto oduzme u drugoj.',
+          'Izloženost suncu ovisi o veličini staklene plohe, orijentaciji i koliko je prostorija sklona pregrijavanju ljeti. Teoretski bi veliki zapadni prozor trebao niži g-faktor nego mali sjeverni, čak i uz isti Ug.',
         ],
       },
       {
-        naslov: 'Kako odabrati pravu kombinaciju za svaki prozor',
+        naslov: 'Kako to izgleda u praksi',
         odlomci: [
-          'Recite nam orijentaciju i veličinu svakog otvora kad tražite ponudu — prijedlog stakla onda pravimo po prozoru, ne isto staklo za cijelu kuću. Veliko staklo na jugu ili zapadu obično dobije nižu g-vrijednost, dok manji prozor na sjeveru može zadržati viši g-faktor jer tamo sunce nije problem.',
-          'Kad uspoređujete ponude, tražite konkretne brojeve — Ug, g-faktor i LT baš za to staklo — a ne opisne fraze poput "energetski učinkovito" ili "zaštita od sunca", koje same po sebi ne govore ništa mjerljivo.',
+          'U praksi gotovo nitko ne kupuje različito staklo za svaki prozor u kući — bira se jedno standardno staklo za cijelu kuću, s istim Ug, g-faktorom i LT vrijednostima posvuda.',
+          'Razlika u izloženosti suncu rješava se vanjskom zaštitom po pojedinom otvoru, ne mijenjanjem stakla — roletama, griljama, škurama ili tendama. Veliki zapadni prozor tako dobije isto staklo kao mali sjeverni, ali uz vanjsku roletu ili grilju koja se spusti kad sunce najjače grije.',
+          'Ovi brojevi su zato prije svega korisni da razumijete što piše u ponudi i što neka oznaka zapravo znači — ne kao popis onoga što treba mijenjati od prozora do prozora.',
         ],
       },
     ],
@@ -1605,14 +1606,14 @@ const en: FaqClanak[] = [
     naslov: 'Ug, g-value and light transmittance — how to read glass performance numbers',
     seoNaslov: 'Ug, g-value and LT — how to read glass numbers',
     sazetak:
-      'Three numbers say the most about a pane of glass: Ug (how well it holds heat), g-value (how much solar heat it lets through) and LT (how much daylight it lets through). The right combination depends on which way the window faces and how much sun it gets — there is no single glass that is best for every opening in a house.',
+      'Three numbers say the most about a pane of glass: Ug (how well it holds heat), g-value (how much solar heat it lets through) and LT (how much daylight it lets through). In theory the ideal combination changes window by window, but in practice a house gets one standard glass throughout, and differences in sun exposure are handled with external shading — roller shutters, louvred shutters or awnings.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
-          'Three numbers say the most about a pane of glass, and all three are worth knowing before ordering joinery for a whole house. Ug says how well the glass holds heat, the g-value says how much solar heat it lets through into the room, and LT (or Tv) says how much daylight it lets through. With Ug the rule is simple — a lower number is always better. With the g-value and LT, "better" depends on which way the window faces and how much sun it gets.',
-          'That is why there is no single "best" glass for a whole house. A large west-facing pane that bakes in the sun for hours in summer needs a different combination of numbers than a small north-facing window that almost never sees direct sun.',
+          'Three numbers say the most about a pane of glass. Ug says how well the glass holds heat, the g-value says how much solar heat it lets through into the room, and LT (or Tv) says how much daylight it lets through. With Ug the rule is simple — a lower number is always better. With the g-value and LT, "better" depends on which way the window faces and how much sun it gets.',
+          'This isn’t advice on what to order — it explains what these numbers mean, so a quote actually makes sense to you. How this is actually handled in practice is covered at the end of the article.',
         ],
       },
       {
@@ -1645,17 +1646,18 @@ const en: FaqClanak[] = [
         ],
       },
       {
-        naslov: 'Why there is no one universal glass',
+        naslov: 'Why these numbers differ from window to window',
         odlomci: [
-          'Glass that insulates equally well in winter and blocks the sun equally well in summer, on the same opening, is a trade-off, not a free win — a gain in one number usually costs something in another. That is why the same settings don’t work equally well on every window in the same house.',
-          'How exposed the opening is matters too: the size of the glazed area, its orientation, whether there is external shading such as a roller shutter or louvred shutter, and how prone the room is to overheating in summer. A large west-facing window with no external shading usually needs a lower g-value than a small north-facing one, even when the Ug is the same on both.',
+          'Glass that insulates equally well in winter and blocks the sun equally well in summer, on the same opening, is a trade-off, not a free win — a gain in one number usually costs something in another.',
+          'Sun exposure depends on the size of the glazed area, its orientation, and how prone the room is to overheating in summer. In theory, a large west-facing window should have a lower g-value than a small north-facing one, even with the same Ug.',
         ],
       },
       {
-        naslov: 'How to choose the right combination for each window',
+        naslov: 'How this actually works in practice',
         odlomci: [
-          'Tell us the orientation and size of each opening when you ask for a quote — we then propose the glass per window, not the same glass for the whole house. A large pane facing south or west usually gets a lower g-value, while a smaller north-facing window can keep a higher g-value, since the sun isn’t a problem there.',
-          'When you compare quotes, ask for the actual numbers — Ug, g-value and LT for that specific glass — rather than descriptive phrases like "energy efficient" or "solar protection", which don’t say anything measurable on their own.',
+          'In practice, almost nobody buys different glass for every window in a house — a house gets one standard glass throughout, with the same Ug, g-value and LT everywhere.',
+          'Differences in sun exposure are handled with external shading on the individual opening, not by changing the glass — roller shutters, louvred shutters, external blinds or awnings. A large west-facing window ends up with the same glass as a small north-facing one, just with an external shutter that comes down when the sun is strongest.',
+          'These numbers are mainly useful, then, for understanding what a quote actually says and what a spec label means — not as a list of things to vary from window to window.',
         ],
       },
     ],
