@@ -127,7 +127,7 @@ const hr: FaqClanak[] = [
       {
         naslov: 'Što zapravo radi izolaciju',
         odlomci: [
-          'Broj stakala je samo jedan dio. Niskoemisijski premaz je tanak metalni sloj koji propušta svjetlo, a odbija toplinsko zračenje natrag u prostoriju. On nosi najveći dio razlike u odnosu na obično staklo bez premaza, koje ima oko 2,7 W/m²K.',
+          'Broj stakala je samo jedan dio. Niskoemisijski premaz (Low-E) je tanak metalni sloj koji propušta svjetlo, a odbija toplinsko zračenje natrag u prostoriju. On nosi najveći dio razlike u odnosu na obično staklo bez premaza, koje ima oko 2,7 W/m²K.',
           'Međuprostor se puni argonom jer plin slabije prenosi toplinu od zraka. Optimalna širina komore je oko 14 do 16 milimetara. Šire ne pomaže jer se plin unutar komore počne gibati i toplinu prenositi strujanjem.',
           'Rub stakla je mjesto gdje se najviše gubi. Klasični aluminijski distancer između stakala je toplinski most i na njemu se prvo javlja kondenzacija. Distancer s toplim rubom, od plastike ili nehrđajućeg čelika, poboljša cijeli prozor i smanji rošenje po obodu.',
         ],
@@ -956,7 +956,7 @@ const en: FaqClanak[] = [
       {
         naslov: 'What actually does the insulating',
         odlomci: [
-          'The number of panes is only part of it. A low-emissivity coating is a thin metallic layer that lets light through but reflects heat radiation back into the room. It accounts for most of the difference against plain uncoated glass, which sits around 2.7 W/m²K.',
+          'The number of panes is only part of it. A low-emissivity coating (Low-E) is a thin metallic layer that lets light through but reflects heat radiation back into the room. It accounts for most of the difference against plain uncoated glass, which sits around 2.7 W/m²K.',
           'The cavity is filled with argon because the gas conducts heat less readily than air. The optimum cavity is about 14 to 16 millimetres. Wider does not help, because the gas starts to circulate inside the cavity and carries heat by convection.',
           'The edge of the glass is where most is lost. A conventional aluminium spacer between the panes is a thermal bridge, and condensation appears there first. A warm-edge spacer, in plastic or stainless steel, improves the whole window and reduces misting around the perimeter.',
         ],
