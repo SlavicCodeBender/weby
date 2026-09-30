@@ -772,6 +772,70 @@ const hr: FaqClanak[] = [
       { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
     ],
   },
+  {
+    slug: 'ug-g-faktor-i-propusnost-svjetla',
+    naslov: 'Ug, g-faktor i propusnost svjetla — kako čitati vrijednosti stakla',
+    seoNaslov: 'Ug, g-faktor i LT — kako čitati vrijednosti stakla',
+    sazetak:
+      'Tri broja govore najviše o staklu: Ug (koliko dobro zadržava toplinu), g-faktor (koliko sunčeve topline propušta) i LT (koliko dnevnog svjetla propušta). Dobra kombinacija ovisi o tome kamo prozor gleda i koliko sunca hvata — ne postoji jedno staklo koje je najbolje za svaki otvor na kući.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Tri broja govore najviše o staklu, i sva tri vrijedi znati prije nego se naruči stolarija za cijelu kuću. Ug govori koliko dobro staklo zadržava toplinu, g-faktor koliko sunčeve topline propusti unutra, a LT (ili Tv) koliko dnevnog svjetla propusti. Kod Ug-a vrijedi jednostavno pravilo — manji broj je uvijek bolji. Kod g-faktora i LT-a "bolje" ovisi o tome kamo prozor gleda i koliko sunca hvata.',
+          'Zato jedinstveno "najbolje" staklo za cijelu kuću ne postoji. Veliko staklo okrenuto zapadu, koje se ljeti satima prži na suncu, treba drukčiju kombinaciju brojeva od malog prozora na sjevernoj strani koji sunce gotovo nikad ne vidi.',
+        ],
+      },
+      {
+        naslov: 'Ug — koliko dobro staklo zadržava toplinu',
+        odlomci: [
+          'Ug se mjeri u W/m²K i govori koliko topline prođe kroz sam paket stakla. Što je broj niži, staklo je bolji izolator — slično kao deblja zimska jakna. Dobro dvostruko staklo ima Ug oko 1,0 do 1,1, a trostruko ga spušta na otprilike 0,5 do 0,7.',
+          'Ovo je jedina od tri vrijednosti gdje nema kompromisa oko orijentacije — manji Ug je uvijek bolji, bilo da je prozor na sjeveru ili na jugu. Detaljnije o razlici između dvostrukog i trostrukog stakla pišemo u posebnom članku.',
+        ],
+      },
+      {
+        naslov: 'g-faktor — koliko sunčeve topline uđe unutra',
+        odlomci: [
+          'g-faktor, zvan i solarni faktor, govori koliki postotak sunčeve energije koja padne na staklo stvarno prođe unutra kao toplina. Staklo s g-faktorom 0,6 propusti 60% sunčeve topline u prostoriju; ostatak se odbije ili upije u samo staklo.',
+          'Standardno dvostruko staklo s niskoemisijskim premazom ima g-faktor otprilike 0,5 do 0,65. Posebna stakla za kontrolu sunca spuštaju ga na otprilike 0,25 do 0,35 — propuste manje od polovice te topline.',
+          'Visok g-faktor je dobar na sjevernoj strani ili zimi, kad želimo da nas sunce grije. Isti visok g-faktor na velikom staklu okrenutom jugu ili zapadu ljeti pretvara prostoriju u staklenik.',
+        ],
+      },
+      {
+        naslov: 'LT (ili Tv) — koliko dnevnog svjetla ulazi',
+        odlomci: [
+          'LT, ponegdje označen i kao Tv, govori koliki postotak dnevnog svjetla — same svjetlosti koju oko vidi, ne topline — prođe kroz staklo. Standardno prozirno dvostruko staklo propusti otprilike 70 do 80% svjetla.',
+          'LT i g-faktor često idu ruku pod ruku. Staklo koje agresivno reže sunčevu toplinu obično zatamni i dio svjetla, nekad na 40 do 60%, pa prostorija djeluje mračnije nego što bi se očekivalo. Noviji, selektivniji premazi režu više topline nego svjetla, ali to treba izričito zatražiti, ne pretpostaviti da svako "staklo protiv sunca" radi to jednako dobro.',
+        ],
+      },
+      {
+        naslov: 'Refleksija i boja — ono što tablica s brojevima ne pokazuje',
+        odlomci: [
+          'Premaz koji upravlja toplinom i svjetlom mijenja i kako staklo izgleda. Izvana zna dati blago zrcalni, srebrnkasti odsjaj, a iznutra ponekad lagano oboji ono što se kroz njega gleda — bijeli zid, drvo, tkaninu.',
+          'Te razlike se ne vide u tablici s brojevima, a fizički uzorak stakla na uvid u praksi se teško dobije — na hrvatskom tržištu to gotovo nitko ne nudi. Najbolje što možete napraviti jest tražiti točan naziv i tehnički list baš onog stakla koje vam se nudi, ne opisnu frazu poput "toplinsko staklo" ili "staklo protiv sunca" — proizvođač profila ima podatke o refleksiji, ne samo o Ug, g-faktoru i LT-u.',
+        ],
+      },
+      {
+        naslov: 'Zašto ne postoji jedno univerzalno staklo',
+        odlomci: [
+          'Staklo koje jednako dobro izolira zimi i štiti od sunca ljeti na istom otvoru je kompromis, ne rješenje bez cijene — svaki dobitak u jednoj vrijednosti obično nešto oduzme u drugoj. Zato iste postavke ne rade jednako dobro na svakom prozoru iste kuće.',
+          'Bitno je i koliko je otvor izložen: veličina staklene plohe, orijentacija, postoji li vanjska zaštita poput roleta ili grilja, i koliko je prostorija sklona pregrijavanju ljeti. Veliki zapadni prozor bez vanjske zaštite obično treba nižu g-vrijednost nego mali sjeverni prozor, čak i kad je Ug isti na oba.',
+        ],
+      },
+      {
+        naslov: 'Kako odabrati pravu kombinaciju za svaki prozor',
+        odlomci: [
+          'Recite nam orijentaciju i veličinu svakog otvora kad tražite ponudu — prijedlog stakla onda pravimo po prozoru, ne isto staklo za cijelu kuću. Veliko staklo na jugu ili zapadu obično dobije nižu g-vrijednost, dok manji prozor na sjeveru može zadržati viši g-faktor jer tamo sunce nije problem.',
+          'Kad uspoređujete ponude, tražite konkretne brojeve — Ug, g-faktor i LT baš za to staklo — a ne opisne fraze poput "energetski učinkovito" ili "zaštita od sunca", koje same po sebi ne govore ništa mjerljivo.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
+      { slug: 'buka-i-zvucna-izolacija-prozora', tekst: 'Zvučna izolacija prozora — što stvarno pomaže' },
+    ],
+  },
   /*{
     slug: 'termalni-zid',
     naslov: 'Što je termalni zid i zašto je dobra investicija',
@@ -1534,6 +1598,70 @@ const en: FaqClanak[] = [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
       { slug: 'zamjena-brtvi-na-prozorima', tekst: 'Replacing window seals' },
       { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
+    ],
+  },
+  {
+    slug: 'ug-g-faktor-i-propusnost-svjetla',
+    naslov: 'Ug, g-value and light transmittance — how to read glass performance numbers',
+    seoNaslov: 'Ug, g-value and LT — how to read glass numbers',
+    sazetak:
+      'Three numbers say the most about a pane of glass: Ug (how well it holds heat), g-value (how much solar heat it lets through) and LT (how much daylight it lets through). The right combination depends on which way the window faces and how much sun it gets — there is no single glass that is best for every opening in a house.',
+    slika: '',
+    slikaOpis: '',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Three numbers say the most about a pane of glass, and all three are worth knowing before ordering joinery for a whole house. Ug says how well the glass holds heat, the g-value says how much solar heat it lets through into the room, and LT (or Tv) says how much daylight it lets through. With Ug the rule is simple — a lower number is always better. With the g-value and LT, "better" depends on which way the window faces and how much sun it gets.',
+          'That is why there is no single "best" glass for a whole house. A large west-facing pane that bakes in the sun for hours in summer needs a different combination of numbers than a small north-facing window that almost never sees direct sun.',
+        ],
+      },
+      {
+        naslov: 'Ug — how well the glass holds heat',
+        odlomci: [
+          'Ug is measured in W/m²K and says how much heat passes through the glass unit itself. The lower the number, the better the insulator — much like a thicker winter coat. Good double glazing has a Ug of around 1.0 to 1.1, and triple glazing brings it down to roughly 0.5 to 0.7.',
+          'This is the one of the three numbers with no trade-off around orientation — a lower Ug is always better, whether the window faces north or south. We cover the difference between double and triple glazing in more depth in a separate article.',
+        ],
+      },
+      {
+        naslov: 'The g-value — how much solar heat gets in',
+        odlomci: [
+          'The g-value, also called the solar factor, says what percentage of the solar energy hitting the glass actually gets through as heat. Glass with a g-value of 0.6 lets 60% of the sun’s heat into the room; the rest is reflected or absorbed by the glass itself.',
+          'Standard double glazing with a low-emissivity coating has a g-value of roughly 0.5 to 0.65. Special solar-control glass brings it down to around 0.25 to 0.35 — letting through less than half that heat.',
+          'A high g-value is welcome on a north-facing window, or in winter, when you want the sun to warm the room. The same high g-value on a large south- or west-facing pane turns the room into a greenhouse in summer.',
+        ],
+      },
+      {
+        naslov: 'LT (or Tv) — how much daylight gets in',
+        odlomci: [
+          'LT, sometimes labelled Tv, says what percentage of daylight — the light itself, not the heat — passes through the glass. Standard clear double glazing lets through roughly 70 to 80% of the light.',
+          'LT and the g-value often move together. Glass that aggressively cuts solar heat usually dims some of the light too, sometimes down to 40-60%, leaving a room feeling darker than expected. Newer, more selective coatings cut more heat than light, but that has to be asked for specifically — not assumed of every "solar" glass.',
+        ],
+      },
+      {
+        naslov: 'Reflection and colour — what the numbers on a spec sheet don’t show',
+        odlomci: [
+          'A coating that manages heat and light also changes how the glass looks. From outside it can take on a faint mirror-like, silvery sheen, and from inside it can slightly tint whatever you view through it — a white wall, timber, fabric.',
+          'A spec sheet doesn’t show any of that, and getting an actual physical sample to look at beforehand is hard in practice — almost nobody on the Croatian market offers that. The best you can do is ask for the exact product name and technical data sheet for the glass actually being quoted, rather than a descriptive phrase like "thermal glass" or "solar glass" — the profile manufacturer holds reflection data too, not just Ug, g-value and LT.',
+        ],
+      },
+      {
+        naslov: 'Why there is no one universal glass',
+        odlomci: [
+          'Glass that insulates equally well in winter and blocks the sun equally well in summer, on the same opening, is a trade-off, not a free win — a gain in one number usually costs something in another. That is why the same settings don’t work equally well on every window in the same house.',
+          'How exposed the opening is matters too: the size of the glazed area, its orientation, whether there is external shading such as a roller shutter or louvred shutter, and how prone the room is to overheating in summer. A large west-facing window with no external shading usually needs a lower g-value than a small north-facing one, even when the Ug is the same on both.',
+        ],
+      },
+      {
+        naslov: 'How to choose the right combination for each window',
+        odlomci: [
+          'Tell us the orientation and size of each opening when you ask for a quote — we then propose the glass per window, not the same glass for the whole house. A large pane facing south or west usually gets a lower g-value, while a smaller north-facing window can keep a higher g-value, since the sun isn’t a problem there.',
+          'When you compare quotes, ask for the actual numbers — Ug, g-value and LT for that specific glass — rather than descriptive phrases like "energy efficient" or "solar protection", which don’t say anything measurable on their own.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
+      { slug: 'buka-i-zvucna-izolacija-prozora', tekst: 'Window sound insulation — what actually helps' },
     ],
   },
   /*{
