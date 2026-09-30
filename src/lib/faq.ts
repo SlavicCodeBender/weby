@@ -798,7 +798,7 @@ const hr: FaqClanak[] = [
         naslov: 'g-faktor — koliko sunčeve topline uđe unutra',
         odlomci: [
           'g-faktor, zvan i solarni faktor, govori koliki postotak sunčeve energije koja padne na staklo stvarno prođe unutra kao toplina. Staklo s g-faktorom 0,6 propusti 60% sunčeve topline u prostoriju; ostatak se odbije ili upije u samo staklo.',
-          'Standardno dvostruko staklo s niskoemisijskim premazom ima g-faktor otprilike 0,5 do 0,65. Posebna stakla za kontrolu sunca spuštaju ga na otprilike 0,25 do 0,35 — propuste manje od polovice te topline.',
+          'Kod nas je standardni paket dvostrukog stakla s niskoemisijskim premazom i argonom g-faktor oko 0,39 — znači da već "iz tvornice" propusti manje od polovice sunčeve topline, bez doplate za posebnu solarnu zaštitu. Kod drugih proizvođača i sastava stakla standardna vrijednost može biti i viša, često između 0,4 i 0,65, pa taj broj uvijek vrijedi provjeriti za baš onaj paket koji se nudi, ne pretpostaviti ga.',
           'Visok g-faktor je dobar na sjevernoj strani ili zimi, kad želimo da nas sunce grije. Isti visok g-faktor na velikom staklu okrenutom jugu ili zapadu ljeti pretvara prostoriju u staklenik.',
         ],
       },
@@ -1627,7 +1627,7 @@ const en: FaqClanak[] = [
         naslov: 'The g-value — how much solar heat gets in',
         odlomci: [
           'The g-value, also called the solar factor, says what percentage of the solar energy hitting the glass actually gets through as heat. Glass with a g-value of 0.6 lets 60% of the sun’s heat into the room; the rest is reflected or absorbed by the glass itself.',
-          'Standard double glazing with a low-emissivity coating has a g-value of roughly 0.5 to 0.65. Special solar-control glass brings it down to around 0.25 to 0.35 — letting through less than half that heat.',
+          'Our standard double-glazed package, with a low-emissivity coating and argon fill, has a g-value of around 0.39 — meaning it already lets through less than half the sun’s heat as standard, with no extra charge for solar protection. With other manufacturers and glass build-ups the standard figure can run higher, often between 0.4 and 0.65, so it is always worth checking the actual number for the specific package being quoted rather than assuming it.',
           'A high g-value is welcome on a north-facing window, or in winter, when you want the sun to warm the room. The same high g-value on a large south- or west-facing pane turns the room into a greenhouse in summer.',
         ],
       },
