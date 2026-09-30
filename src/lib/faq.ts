@@ -784,7 +784,7 @@ const hr: FaqClanak[] = [
       {
         odlomci: [
           'Tri broja govore najviše o staklu. Ug govori koliko dobro staklo zadržava toplinu, g-faktor koliko sunčeve topline propusti unutra, a LT (ili Tv) koliko dnevnog svjetla propusti. Kod Ug-a vrijedi jednostavno pravilo — manji broj je uvijek bolji. Kod g-faktora i LT-a "bolje" ovisi o tome kamo prozor gleda i koliko sunca hvata.',
-          'Ovaj tekst ne daje savjet što naručiti — objašnjava što ti brojevi znače, da vam bude jasno što stoji u ponudi i zašto. Kako se to stvarno rješava u praksi opisano je na kraju članka.',
+          'Ovaj tekst ne daje savjet što naručiti — objašnjava što ti brojevi znače. Na ponudi koju dobijete od nas obično ne stoje ispisani, jer se nalaze u tehničkoj dokumentaciji profila, ali ih znamo i rado kažemo na upit. Kako se to stvarno rješava u praksi opisano je na kraju članka.',
         ],
       },
       {
@@ -828,7 +828,7 @@ const hr: FaqClanak[] = [
         odlomci: [
           'U praksi gotovo nitko ne kupuje različito staklo za svaki prozor u kući — bira se jedno standardno staklo za cijelu kuću, s istim Ug, g-faktorom i LT vrijednostima posvuda.',
           'Razlika u izloženosti suncu rješava se vanjskom zaštitom po pojedinom otvoru, ne mijenjanjem stakla — roletama, griljama, škurama ili tendama. Veliki zapadni prozor tako dobije isto staklo kao mali sjeverni, ali uz vanjsku roletu ili grilju koja se spusti kad sunce najjače grije.',
-          'Ovi brojevi su zato prije svega korisni da razumijete što piše u ponudi i što neka oznaka zapravo znači — ne kao popis onoga što treba mijenjati od prozora do prozora.',
+          'Ovi brojevi su zato prije svega korisni da razumijete što neka oznaka zapravo znači kad je čujete ili je negdje pročitate — ne kao popis onoga što treba mijenjati od prozora do prozora. Ako vas zanima koja je vrijednost za baš ono što naručujete, samo pitajte.',
         ],
       },
     ],
@@ -1613,7 +1613,7 @@ const en: FaqClanak[] = [
       {
         odlomci: [
           'Three numbers say the most about a pane of glass. Ug says how well the glass holds heat, the g-value says how much solar heat it lets through into the room, and LT (or Tv) says how much daylight it lets through. With Ug the rule is simple — a lower number is always better. With the g-value and LT, "better" depends on which way the window faces and how much sun it gets.',
-          'This isn’t advice on what to order — it explains what these numbers mean, so a quote actually makes sense to you. How this is actually handled in practice is covered at the end of the article.',
+          'This isn’t advice on what to order — it explains what these numbers mean. They usually aren’t printed on the quote you get from us, since they sit in the profile’s technical documentation, but we know them and are happy to tell you on request. How this is actually handled in practice is covered at the end of the article.',
         ],
       },
       {
@@ -1657,7 +1657,7 @@ const en: FaqClanak[] = [
         odlomci: [
           'In practice, almost nobody buys different glass for every window in a house — a house gets one standard glass throughout, with the same Ug, g-value and LT everywhere.',
           'Differences in sun exposure are handled with external shading on the individual opening, not by changing the glass — roller shutters, louvred shutters, external blinds or awnings. A large west-facing window ends up with the same glass as a small north-facing one, just with an external shutter that comes down when the sun is strongest.',
-          'These numbers are mainly useful, then, for understanding what a quote actually says and what a spec label means — not as a list of things to vary from window to window.',
+          'These numbers are mainly useful, then, for understanding what a spec label actually means when you hear or read it somewhere — not as a list of things to vary from window to window. If you want to know the figure for what you’re actually ordering, just ask.',
         ],
       },
     ],
