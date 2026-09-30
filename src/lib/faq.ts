@@ -813,7 +813,7 @@ const hr: FaqClanak[] = [
         naslov: 'Refleksija i boja — ono što tablica s brojevima ne pokazuje',
         odlomci: [
           'Premaz koji upravlja toplinom i svjetlom mijenja i kako staklo izgleda. Izvana zna dati blago zrcalni, srebrnkasti odsjaj, a iznutra ponekad lagano oboji ono što se kroz njega gleda — bijeli zid, drvo, tkaninu.',
-          'Te razlike se ne vide u tablici s brojevima, a fizički uzorak stakla na uvid u praksi se teško dobije — na hrvatskom tržištu to gotovo nitko ne nudi. Najbolje što možete napraviti jest tražiti točan naziv i tehnički list baš onog stakla koje vam se nudi, ne opisnu frazu poput "toplinsko staklo" ili "staklo protiv sunca" — proizvođač profila ima podatke o refleksiji, ne samo o Ug, g-faktoru i LT-u.',
+          'Te razlike se ne vide u tablici s brojevima, a fizički uzorak stakla na uvid u praksi se teško dobije — na hrvatskom tržištu to gotovo nitko ne nudi. Za većinu kupaca to u praksi nije problem — razlike su suptilne i najviše se primijete kad se staklo s posebnim premazom usporedi izravno pored običnog. Ovo je prije svega informacija da se zna zašto neka stakla izgledaju malo drugačije, ne razlog za brigu pri naručivanju.',
         ],
       },
       {
@@ -1642,7 +1642,7 @@ const en: FaqClanak[] = [
         naslov: 'Reflection and colour — what the numbers on a spec sheet don’t show',
         odlomci: [
           'A coating that manages heat and light also changes how the glass looks. From outside it can take on a faint mirror-like, silvery sheen, and from inside it can slightly tint whatever you view through it — a white wall, timber, fabric.',
-          'A spec sheet doesn’t show any of that, and getting an actual physical sample to look at beforehand is hard in practice — almost nobody on the Croatian market offers that. The best you can do is ask for the exact product name and technical data sheet for the glass actually being quoted, rather than a descriptive phrase like "thermal glass" or "solar glass" — the profile manufacturer holds reflection data too, not just Ug, g-value and LT.',
+          'A spec sheet doesn’t show any of that, and getting an actual physical sample to look at beforehand is hard in practice — almost nobody on the Croatian market offers that. For most buyers this isn’t an issue in practice — the differences are subtle and most noticeable when a coated pane is compared side by side with plain glass. This is mainly here so you know why some panes look slightly different, not a reason for concern when ordering.',
         ],
       },
       {
