@@ -567,6 +567,7 @@ const hr: FaqClanak[] = [
     povezano: [
       { slug: 'alu-ili-pvc-prozori', tekst: 'Alu ili PVC prozori — što odabrati' },
       { slug: 'cijena-prozora-i-vrata', tekst: 'Cijena PVC i ALU prozora i vrata' },
+      { slug: 'staklene-klizne-stijene', tekst: 'Staklene klizne stijene — vrste i cijena' },
     ],
   },
   {
@@ -835,6 +836,82 @@ const hr: FaqClanak[] = [
     povezano: [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Dvostruko ili trostruko staklo — što se isplati' },
       { slug: 'buka-i-zvucna-izolacija-prozora', tekst: 'Zvučna izolacija prozora — što stvarno pomaže' },
+    ],
+  },
+  {
+    slug: 'staklene-klizne-stijene',
+    naslov: 'Staklene klizne stijene — za terase, dnevni boravak i zatvaranje balkona',
+    seoNaslov: 'Staklene klizne stijene po mjeri — vrste i cijena',
+    sazetak:
+      'Staklene stijene radimo isključivo u aluminiju i po mjeri, u tri izvedbe: klizne stijene za terase i dnevne boravke, fiksne staklene stijene i zatvaranje balkona, s okvirom ili bez okvira. Cijena ovisi o veličini, broju kliznih i fiksnih polja, staklu i boji profila, pa se računa nakon izmjere.',
+    slika: '/gallery/staklena-stijena.jpeg',
+    slikaOpis: 'Aluminijska staklena stijena s kliznim i fiksnim poljima na novogradnji u Grobniku',
+    sadrzaj: [
+      {
+        odlomci: [
+          'Staklena stijena je velika ostakljena ploha u aluminijskom profilu koja zamjenjuje zid ili niz prozora i vrata. Radimo tri izvedbe: klizne stijene, fiksne stijene i zatvaranje balkona, s okvirom ili bez okvira. Sve su od aluminija i rade se po mjeri konkretnog otvora, bez standardnih dimenzija.',
+          'U praksi se izvedbe često kombiniraju na istom otvoru: klizna polja služe za prolaz na terasu, a fiksna polja sa strane ili iznad njih daju više svjetla. Primjere stijena koje smo ugradili u Rijeci, Grobniku i na Krku možete vidjeti u galeriji na naslovnoj stranici.',
+        ],
+      },
+      {
+        naslov: 'Klizne stijene — za terase i dnevni boravak',
+        odlomci: [
+          'Kod klizne stijene krila se otvaraju tako da klize po vodilicama usporedno sa zidom, umjesto da se zakreću prema unutra. Zato ne zauzimaju prostor ni kad su otvorena: namještaj može stajati uz samo staklo, a prolaz na terasu ostaje širok i bez krila koje smeta.',
+          'Najčešće se ugrađuju kao izlaz iz dnevnog boravka na terasu, vrt ili balkon. Za uži otvor ista se izvedba zove i klizna staklena vrata. Radi se o istom sustavu, samo s manje polja.',
+          'Klizno krilo brtvi nešto slabije od klasičnog krila koje se pri zatvaranju pritisne na brtvu, jer mora moći kliziti. Kod dobro ugrađene stijene to se u svakodnevnom korištenju ne osjeti, ali zato se kod jako izloženih pozicija, npr. na vjetrovitoj strani uz more, posebno pazi na brtvljenje i ugradnju.',
+        ],
+      },
+      {
+        naslov: 'Fiksne staklene stijene',
+        odlomci: [
+          'Fiksna stijena se ne otvara, to je staklo u okviru. Budući da nema okova ni pomičnih dijelova, na istoj površini daje najviše stakla, najbolje brtvi i jednostavnija je od klizne.',
+          'Rijetko stoji sama. Obično se kombinira s kliznim poljima, kao nadsvjetlo iznad njih ili kao bočna polja, pa cijela ploha izgleda kao jedan stakleni zid, a otvara se samo ondje gdje se prolazi. Unaprijed vrijedi razmisliti samo o tome kako će se fiksno staklo prati s vanjske strane, osobito na katu.',
+        ],
+      },
+      {
+        naslov: 'Zatvaranje balkona — s okvirom ili bez okvira',
+        odlomci: [
+          'Balkon se može zatvoriti na dva načina i razlika nije samo u izgledu. Kod stambene zgrade zatvaranje balkona mijenja izgled pročelja, pa je prije narudžbe dobro to provjeriti s upraviteljem zgrade ili suvlasnicima.',
+        ],
+        natuknice: [
+          'S okvirom: svako staklo je u aluminijskom profilu, kao kod klasične stijene. Ovakva izvedba bolje brtvi i može se raditi s izolacijskim staklom, pa balkon štiti i od hladnoće, ne samo od vjetra i kiše.',
+          'Bez okvira: između stakala nema okomitih profila, staklo se drži samo u gornjoj i donjoj vodilici. Pogled je gotovo neprekinut i balkon izvana izgleda gotovo kao da je ostao otvoren. Takvi sustavi štite od vjetra, kiše i prašine, ali nisu zamišljeni kao toplinska izolacija poput prozora.',
+        ],
+      },
+      {
+        naslov: 'Zašto samo aluminij',
+        odlomci: [
+          'Staklene stijene radimo samo u aluminiju. Aluminij nosi velike i teške staklene plohe uz uzak profil, pa stijena ima više stakla, a manje okvira. PVC na tim dimenzijama traži sve više čeličnog ojačanja i profil postaje debeo i težak, zato se za velike stijene u pravilu bira aluminij.',
+          'Za stijenu prema grijanom prostoru koristi se aluminijski profil s prekinutim toplinskim mostom: vanjski i unutarnji dio profila spojeni su trakama koje ne provode toplinu, pa se okvir zimi ne hladi i ne rosi iznutra. Profil može biti u različitim RAL bojama ili u imitaciji drva.',
+        ],
+      },
+      {
+        naslov: 'Dimenzije — sve se radi po mjeri',
+        odlomci: [
+          'Staklene stijene nemaju standardne veličine poput "300x200". Svaka se radi prema izmjeri konkretnog otvora, pa jednako može zatvoriti uski izlaz na balkon kao i cijelu stranu dnevnog boravka.',
+          'Granice ne postavlja katalog, nego struka: težina pojedinog stakla, nosivost okova i statika otvora određuju koliko veliko može biti jedno polje. Ako je otvor velik, jednostavno se podijeli na više kliznih i fiksnih polja.',
+        ],
+      },
+      {
+        naslov: 'O čemu ovisi cijena',
+        odlomci: [
+          'Kao i kod prozora i vrata, jedinstvena cijena staklene stijene ne postoji dok se ne znaju mjere. Na nju najviše utječu:',
+        ],
+        natuknice: [
+          'Veličina i broj polja: ukupna površina stakla i na koliko je polja podijeljena.',
+          'Omjer kliznih i fiksnih polja: fiksno polje je jednostavnije i povoljnije jer nema okova ni vodilica.',
+          'Staklo: dvostruko ili trostruko, i treba li sigurnosno (kaljeno ili laminirano) staklo, što je čest slučaj kod velikih ploha do poda.',
+          'Boja i obrada profila: RAL boja ili imitacija drva.',
+          'Kod zatvaranja balkona: izvedba s okvirom ili bez okvira.',
+          'Ugradnja: pristup, kat i stanje otvora na koji se stijena montira.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'alu-ili-pvc-vrata', tekst: 'Alu ili PVC vrata — i kad je bolja staklena stijena' },
+      { slug: 'cijena-prozora-i-vrata', tekst: 'Cijena PVC i ALU prozora i vrata' },
+      { slug: 'vrste-komarnika', tekst: 'Vrste komarnika — koji odabrati' },
+      { slug: 'ug-g-faktor-i-propusnost-svjetla', tekst: 'Ug, g-faktor i LT — kako čitati vrijednosti stakla' },
     ],
   },
   /*{
@@ -1396,6 +1473,7 @@ const en: FaqClanak[] = [
     povezano: [
       { slug: 'alu-ili-pvc-prozori', tekst: 'Aluminium or PVC windows — how to choose' },
       { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
+      { slug: 'staklene-klizne-stijene', tekst: 'Sliding glass walls — types and price' },
     ],
   },
   {
@@ -1664,6 +1742,82 @@ const en: FaqClanak[] = [
     povezano: [
       { slug: 'dvostruko-ili-trostruko-staklo', tekst: 'Double or triple glazing — which one pays off' },
       { slug: 'buka-i-zvucna-izolacija-prozora', tekst: 'Window sound insulation — what actually helps' },
+    ],
+  },
+  {
+    slug: 'staklene-klizne-stijene',
+    naslov: 'Sliding glass walls — for terraces, living rooms and balcony enclosures',
+    seoNaslov: 'Sliding glass walls made to measure — types and price',
+    sazetak:
+      'We make glass walls only in aluminium and always to measure, in three versions: sliding glass walls for terraces and living rooms, fixed glass walls, and balcony enclosures, framed or frameless. The price depends on size, the number of sliding and fixed panels, the glass and the profile finish, so it is worked out after measuring.',
+    slika: '/gallery/staklena-stijena.jpeg',
+    slikaOpis: 'Aluminium glass wall with sliding and fixed panels on a new build in Grobnik',
+    sadrzaj: [
+      {
+        odlomci: [
+          'A glass wall is a large glazed surface in an aluminium frame that takes the place of a wall or a row of windows and doors. We make three versions: sliding walls, fixed walls and balcony enclosures, framed or frameless. All of them are aluminium and made to measure for the specific opening, with no standard sizes.',
+          'In practice the versions are often combined on the same opening: sliding panels for getting out onto the terrace, and fixed panels beside or above them for more light. You can see examples of walls we’ve installed in Rijeka, Grobnik and on Krk in the gallery on the home page.',
+        ],
+      },
+      {
+        naslov: 'Sliding walls — for terraces and living rooms',
+        odlomci: [
+          'On a sliding wall the panels open by sliding along tracks parallel to the wall, rather than swinging inwards. That means they take up no room even when open: furniture can stand right up against the glass, and the way out to the terrace stays wide, with no open leaf in the way.',
+          'They are most often fitted as the exit from a living room to a terrace, garden or balcony. For a narrower opening the same thing is also called a sliding glass door. It is the same system, just with fewer panels.',
+          'A sliding panel seals slightly less tightly than a conventional leaf that presses onto its seal when closed, because it has to be able to slide. On a well-installed wall you won’t notice this in everyday use, but it is why extra care goes into sealing and installation on very exposed positions, such as a windy, sea-facing side.',
+        ],
+      },
+      {
+        naslov: 'Fixed glass walls',
+        odlomci: [
+          'A fixed wall doesn’t open; it is glass in a frame. With no hardware or moving parts, it gives the most glass for the same area, seals best and is simpler than a sliding one.',
+          'It rarely stands on its own. It is usually combined with sliding panels, as a fanlight above them or as side panels, so the whole surface reads as one glass wall that only opens where people walk through. The one thing worth thinking about in advance is how the fixed glass will be cleaned from the outside, especially on an upper floor.',
+        ],
+      },
+      {
+        naslov: 'Balcony enclosures — framed or frameless',
+        odlomci: [
+          'A balcony can be enclosed in two ways, and the difference isn’t only in how it looks. On an apartment building, enclosing a balcony changes the look of the façade, so it is a good idea to check with the building manager or the other co-owners before ordering.',
+        ],
+        natuknice: [
+          'Framed: each pane sits in an aluminium profile, as on a standard glass wall. This version seals better and can take insulating glass, so the balcony is protected from the cold, not just from wind and rain.',
+          'Frameless: there are no vertical profiles between the panes; the glass is held only in a top and bottom track. The view is almost uninterrupted, and from outside the balcony looks almost as if it were still open. These systems keep out wind, rain and dust, but they aren’t designed as thermal insulation the way a window is.',
+        ],
+      },
+      {
+        naslov: 'Why aluminium only',
+        odlomci: [
+          'We make glass walls in aluminium only. Aluminium carries large, heavy panes of glass with a slim profile, so the wall is more glass and less frame. At those sizes PVC needs more and more steel reinforcement and the profile becomes thick and heavy, which is why aluminium is the usual choice for large glass walls.',
+          'For a wall facing a heated space, an aluminium profile with a thermal break is used: the outer and inner parts of the profile are joined by strips that don’t conduct heat, so the frame doesn’t get cold in winter or collect condensation on the inside. The profile can be finished in a range of RAL colours or in a wood-look finish.',
+        ],
+      },
+      {
+        naslov: 'Sizes — everything is made to measure',
+        odlomci: [
+          'Glass walls don’t come in standard sizes like "300x200". Each one is made to the measurements of the specific opening, so it can close off a narrow balcony exit just as well as an entire side of a living room.',
+          'The limits come from good practice, not a catalogue: the weight of each pane, the load capacity of the hardware and the structure of the opening decide how large a single panel can be. If the opening is large, it is simply split into more sliding and fixed panels.',
+        ],
+      },
+      {
+        naslov: 'What the price depends on',
+        odlomci: [
+          'As with windows and doors, there is no single price for a glass wall until the measurements are known. The main factors are:',
+        ],
+        natuknice: [
+          'Size and number of panels: the total glass area and how many panels it is split into.',
+          'The ratio of sliding to fixed panels: a fixed panel is simpler and cheaper, with no hardware or tracks.',
+          'Glass: double or triple, and whether safety glass (toughened or laminated) is needed, which is common on large panes down to floor level.',
+          'Profile colour and finish: a RAL colour or a wood-look finish.',
+          'For balcony enclosures: framed or frameless.',
+          'Installation: access, floor level and the condition of the opening the wall is fitted into.',
+        ],
+      },
+    ],
+    povezano: [
+      { slug: 'alu-ili-pvc-vrata', tekst: 'Aluminium or PVC doors — and when a glass wall is better' },
+      { slug: 'cijena-prozora-i-vrata', tekst: 'PVC and aluminium window and door prices' },
+      { slug: 'vrste-komarnika', tekst: 'Types of insect screens — which to choose' },
+      { slug: 'ug-g-faktor-i-propusnost-svjetla', tekst: 'Ug, g-value and LT — how to read glass performance numbers' },
     ],
   },
   /*{
