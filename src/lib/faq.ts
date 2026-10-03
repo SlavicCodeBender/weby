@@ -844,8 +844,8 @@ const hr: FaqClanak[] = [
     seoNaslov: 'Staklene klizne stijene po mjeri — vrste i cijena',
     sazetak:
       'Staklene stijene radimo isključivo u aluminiju i po mjeri, u tri izvedbe: klizne stijene za terase i dnevne boravke, fiksne staklene stijene i zatvaranje balkona, s okvirom ili bez okvira. Cijena ovisi o veličini, broju kliznih i fiksnih polja, staklu i boji profila, pa se računa nakon izmjere.',
-    slika: '/gallery/staklena-stijena.jpeg',
-    slikaOpis: 'Aluminijska staklena stijena s kliznim i fiksnim poljima na novogradnji u Grobniku',
+    slika: '',
+    slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
@@ -1750,8 +1750,8 @@ const en: FaqClanak[] = [
     seoNaslov: 'Sliding glass walls made to measure — types and price',
     sazetak:
       'We make glass walls only in aluminium and always to measure, in three versions: sliding glass walls for terraces and living rooms, fixed glass walls, and balcony enclosures, framed or frameless. The price depends on size, the number of sliding and fixed panels, the glass and the profile finish, so it is worked out after measuring.',
-    slika: '/gallery/staklena-stijena.jpeg',
-    slikaOpis: 'Aluminium glass wall with sliding and fixed panels on a new build in Grobnik',
+    slika: '',
+    slikaOpis: '',
     sadrzaj: [
       {
         odlomci: [
