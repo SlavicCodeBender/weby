@@ -1,0 +1,37 @@
+# Jednom tjedno pošalje probni upit kroz FormSubmit, istim putem kao obrazac
+# na stranici. Ako FormSubmit ne potvrdi primitak (npr. obrazac treba ponovnu
+# aktivaciju nakon promjene domene), provjera padne i GitHub pošalje mail.
+# Ako prođe, u sandučić stigne mail "TEST — automatska provjera obrasca".
+# Ručno se pokreće na GitHubu: Actions → Tjedna provjera obrasca → Run workflow.
+name: Tjedna provjera obrasca
+
+on:
+  schedule:
+    # Ponedjeljkom u 6:00 UTC (8:00 po ljetnom, 7:00 po zimskom vremenu).
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  provjera:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pošalji probni upit
+        run: |
+          response=$(curl -s -w '\n%{http_code}' --max-time 60 \
+            -X POST "https://formsubmit.co/ajax/ilan.leopold.ivesic@gmail.com" \
+            -H 'Content-Type: application/json' \
+            -H 'Accept: application/json' \
+            -H 'Origin: https://www.ilanprozori.com' \
+            -H 'Referer: https://www.ilanprozori.com/' \
+            -d '{"_subject":"TEST — automatska provjera obrasca","Poruka":"Automatski tjedni test. Ako je ovaj mail stigao, obrazac za upit radi. Ne treba odgovarati."}')
+          body=$(echo "$response" | head -n -1)
+          code=$(echo "$response" | tail -n 1)
+          echo "HTTP $code"
+          echo "$body"
+          if [ "$code" != "200" ] || ! echo "$body" | grep -Eq '"success" *: *"?true'; then
+            echo "::error::Obrazac za upit ne radi. Provjerite Gmail za FormSubmit mail 'Activate Form' i pošaljite probni upit sa stranice."
+            exit 1
+          fi
