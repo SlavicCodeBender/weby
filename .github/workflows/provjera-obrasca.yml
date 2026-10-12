@@ -26,7 +26,7 @@ jobs:
             -H 'Accept: application/json' \
             -H 'Origin: https://www.ilanprozori.com' \
             -H 'Referer: https://www.ilanprozori.com/' \
-            -d '{"_subject":"TEST — automatska provjera obrasca","Poruka":"Automatski tjedni test. Ako je ovaj mail stigao, obrazac za upit radi. Ne treba odgovarati."}')
+            -d '{"_subject":"TEST — automatska provjera obrasca","Ime i Prezime":"TEST (automatska provjera)","Email ili broj telefona":"-","Trebaju":"TEST","Poruka":"Automatski tjedni test. Ako je ovaj mail stigao, obrazac za upit radi. Ne treba odgovarati."}')
           body=$(echo "$response" | head -n -1)
           code=$(echo "$response" | tail -n 1)
           echo "HTTP $code"
