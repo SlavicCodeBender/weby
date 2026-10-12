@@ -148,7 +148,7 @@ const privatnostHr: LegalDokument = {
     {
       naslov: 'Kako podaci putuju',
       odlomci: [
-        'Kad pošaljete obrazac, otvara se vaš vlastiti program za e-poštu s već ispunjenom porukom. Poruku šaljete vi, izravno na našu adresu. Podaci pritom ne prolaze kroz ovu stranicu niti se na njoj pohranjuju.',
+        'Kad pošaljete obrazac, upit prolazi kroz FormSubmit (formsubmit.co), vanjski servis za slanje obrazaca, koji ga prosljeđuje na našu e-mail adresu. Na ovoj stranici se podaci ne pohranjuju.',
       ],
     },
     {
@@ -160,7 +160,7 @@ const privatnostHr: LegalDokument = {
     {
       naslov: 'S kim dijelimo podatke',
       odlomci: [
-        'Podatke iz obrasca za upit ne prodajemo, ne ustupamo i ne šaljemo nikome izvan Europskog gospodarskog prostora. Iznimka su anonimizirani statistički podaci o posjetima koje, ako na to pristanete, obrađuje Google u sklopu Google Analyticsa — vidi odjeljak "Analitika i kolačići".',
+        'Podatke iz obrasca za upit ne prodajemo i ne ustupamo nikome. Osim nas do njih dolazi samo FormSubmit, koji upit prosljeđuje na našu e-mail adresu. Anonimizirane statističke podatke o posjetima, ako na to pristanete, obrađuje Google u sklopu Google Analyticsa — vidi odjeljak "Analitika i kolačići".',
       ],
     },
     {
@@ -228,7 +228,7 @@ const privatnostEn: LegalDokument = {
     {
       naslov: 'How the data travels',
       odlomci: [
-        'When you submit the form, your own email program opens with the message already filled in. You send it yourself, directly to our address. The data does not pass through this website and is not stored on it.',
+        'When you submit the form, your enquiry passes through FormSubmit (formsubmit.co), an external form-sending service, which forwards it to our email address. The data is not stored on this website.',
       ],
     },
     {
@@ -240,7 +240,7 @@ const privatnostEn: LegalDokument = {
     {
       naslov: 'Who we share it with',
       odlomci: [
-        'We do not sell, pass on, or transfer your enquiry-form data outside the European Economic Area. The exception is anonymised visit statistics which, if you consent, are processed by Google as part of Google Analytics — see "Analytics and cookies".',
+        'We do not sell or pass on your enquiry-form data to anyone. Apart from us, only FormSubmit handles it, to forward the enquiry to our email address. Anonymised visit statistics, if you consent, are processed by Google as part of Google Analytics — see "Analytics and cookies".',
       ],
     },
     {

@@ -80,7 +80,7 @@ export interface Dict {
     hurry: string
     errorText: string
     close: string
-    errors: { name: string; reach: string; service: string; consent: string }
+    errors: { name: string; reach: string; reachInvalid: string; service: string; consent: string }
   }
   faq: {
     eyebrow: string
@@ -263,11 +263,12 @@ const hr: Dict = {
     successTitle: 'Hvala na upitu!',
     successText: 'Javljamo se u najkraćem mogućem roku.',
     hurry: 'Ako vam se žuri, nazovite',
-    errorText: 'Slanje nije uspjelo. Pokušajte ponovno ili nas nazovite.',
+    errorText: 'Upit se nije uspio poslati zbog tehničke greške. Molimo nazovite nas ili nam pišite izravno:',
     close: 'Zatvori',
     errors: {
       name: 'Upišite ime i prezime.',
       reach: 'Upišite telefon ili e-mail.',
+      reachInvalid: 'Upišite ispravan broj telefona ili e-mail adresu.',
       service: 'Odaberite uslugu.',
       consent: 'Potrebna je vaša privola.',
     },
@@ -463,11 +464,12 @@ const en: Dict = {
     successTitle: 'Thanks for your enquiry!',
     successText: 'We get back to you as soon as we can.',
     hurry: 'In a hurry? Call us',
-    errorText: 'Sending failed. Please try again or give us a call.',
+    errorText: 'Your enquiry could not be sent because of a technical error. Please call us or email us directly:',
     close: 'Close',
     errors: {
       name: 'Please enter your full name.',
       reach: 'Please enter a phone number or email.',
+      reachInvalid: 'Please enter a valid phone number or email address.',
       service: 'Please select a service.',
       consent: 'Your consent is required.',
     },

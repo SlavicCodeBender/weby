@@ -1,12 +1,15 @@
 /**
  * Podaci koje traže tražilice i AI asistenti kad čitaju stranicu.
  *
- * VAŽNO: `SITE_URL` je adresa na kojoj stranica živi (https://ilanprozori.com) —
+ * VAŽNO: `SITE_URL` je adresa na kojoj stranica živi (https://www.ilanprozori.com) —
  * iz nje se računaju sitemap.xml, robots.txt i canonical adrese. Ako se domena
  * ikad promijeni, mijenja se SAMO ovdje. Može se preskočiti i bez diranja koda,
  * varijablom NEXT_PUBLIC_SITE_URL na hostingu (za lokalni razvoj i sl.).
+ *
+ * Mora biti ista adresa koju koristi GitHub Pages (Custom domain). FormSubmit
+ * aktivaciju obrasca veže uz tu adresu, pa promjena domene traži novu aktivaciju.
  */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ilanprozori.com').replace(
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.ilanprozori.com').replace(
   /\/$/,
   '',
 )
