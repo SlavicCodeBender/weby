@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { dict, DEFAULT_LANG } from '../lib/i18n'
 import { SITE_URL } from '../lib/site'
 import './globals.css'
+import ClickTracking from '@/components/ClickTracking'
 import CookieConsent from '@/components/CookieConsent'
 import MailchimpConnect from '@/components/MailchimpConnect'
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MailchimpConnect />
         {children}
         <CookieConsent />
+        <ClickTracking />
       </body>
     </html>
   )
