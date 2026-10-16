@@ -63,9 +63,9 @@ const hr: FaqClanak[] = [
   {
     slug: 'ugradnja-prozora',
     naslov: 'Koliko traje ugradnja prozora — od demontaže do čišćenja',
-    seoNaslov: 'Koliko traje ugradnja prozora',
+    seoNaslov: 'Koliko traje ugradnja prozora? 2–3 sata po prozoru',
     sazetak:
-      'Ugradnja jednog prozora traje otprilike 2-3 sata, a prosječan stan se u pravilu završi u 1-2 dana, uz uključivanje demontažei i čiščenja',
+      'Jedan prozor ugrađuje se otprilike 2 do 3 sata, a prosječan stan gotov je za 1 do 2 dana, uključujući demontažu starih prozora i čišćenje. Evo kako izgleda dan ugradnje.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
@@ -93,18 +93,18 @@ const hr: FaqClanak[] = [
         naslov: 'Ugradnja i brtvljenje',
         odlomci: [
           'Novi okvir se postavlja na podmetače, poravnava vodoravno i okomito, i mehanički pričvršćuje vijcima kroz okvir. Tek kad je okvir učvršćen i provjeren, ide brtvljenje.',
-          'Brtvljenje se radi sa pur pjenom koja služi kao izolacija',
+          'Brtvljenje se radi PUR pjenom, koja služi i kao toplinska izolacija.',
         ],
       },
       {
         naslov: 'Što ostaje nakon ugradnje',
         odlomci: [
-          'Nakon ugradnje ostaju špalete koje treba zagletati i oličiti, i spoj okvira i zida koji nekad potrebno silikonirati. Taj dio radi zidar ili se dogovori kao dodatna usluga, obično dan ili dva kasnije, kad se pjena stegne.',
+          'Nakon ugradnje ostaju špalete koje treba zagletati i oličiti, i spoj okvira i zida koji je ponekad potrebno silikonirati. Taj dio radi zidar ili se dogovori kao dodatna usluga, obično dan ili dva kasnije, kad se pjena stegne.',
           'Prije nego ekipa ode, provjeri se otvara li se i zatvara li se svako krilo bez zapinjanja, drži li nagib i jesu li odvodni otvori na donjem dijelu okvira prohodni.',
         ],
         natuknice: [
-          'Zaštitnu foliju s profila skini u roku od nekoliko dana — na suncu se zapeče i teško se skida.',
-          'Prvo čišćenje radi mekom krpom i vodom sa sapunicom, bez otapala.',
+          'Zaštitnu foliju s profila skinite u roku od nekoliko dana — na suncu se zapeče i teško se skida.',
+          'Prvo čišćenje napravite mekom krpom i vodom sa sapunicom, bez otapala.',
           'Ako se ugrađuje zimi, prozračujte prostoriju češće idućih tjedan dana — u pjeni i žbuci ima puno vlage.',
         ],
       },
@@ -891,9 +891,9 @@ const en: FaqClanak[] = [
   {
     slug: 'ugradnja-prozora',
     naslov: 'How long a window installation takes — from removal to clean-up',
-    seoNaslov: 'How long a window installation takes',
+    seoNaslov: 'How long does window installation take? 2–3 hours each',
     sazetak:
-      'Fitting a single window takes roughly two to three hours, and an average flat is usually finished in one to two working days.',
+      'Fitting one window takes roughly two to three hours, and an average flat is done in one to two days, including removing the old windows and cleaning up. Here is what installation day looks like.',
     slika: '',
     slikaOpis: '',
     sadrzaj: [
