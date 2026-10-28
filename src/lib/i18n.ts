@@ -18,7 +18,6 @@ export interface Dict {
     paragraphs: string[]
     areaTitle: string
     area: string[]
-    quote: string
   }
   services: { eyebrow: string; title: string; items: { title: string; desc: string }[] }
   gallery: {
@@ -136,13 +135,12 @@ const hr: Dict = {
     title: 'Obiteljski posao, dvije generacije',
     paragraphs: [
       'ILAN je 2006. u Rijeci pokrenuo Josip Ivešić — obiteljska proizvodnja i ugradnja aluminijske i PVC stolarije, bez posrednika između vas i ljudi koji rade posao. Izmjera, savjet i ugradnja ostaju u istim rukama od ponude do gotovog posla.',
-      'Dvadeset godina kasnije princip je isti: osoban pristup, izravan dogovor i rješenje skrojeno za svaki otvor, ne univerzalni katalog. Do sada nismo potrošili ni kunu, a kasnije ni euro, na oglašavanje — posao dolazi preporukom zadovoljnih kupaca, susjeda i majstora s kojima smo prije surađivali.',
+      'Dvadeset godina kasnije princip je isti: osoban pristup, izravan dogovor i rješenje skrojeno za svaki otvor, ne univerzalni katalog. Posao nam i danas većinom dolazi preporukom zadovoljnih kupaca, susjeda i majstora s kojima smo prije surađivali.',
       'Podjednako rado dolazimo na sitan popravak kvake ili brtve u obiteljskoj kući kao i na veći projekt kompletne stolarije za novogradnju ili poslovni prostor.',
       'Uz Josipa u proizvodnji i na terenu danas sve više radi i sin Leopold, koji se poslu priključio postupno — prvo uz studij, potom sve više, sve dok nije ostao raditi s punim radnim vremenom. Modernizacija poslovanja, uključujući i ovu stranicu, njegov je doprinos poslu koji je Josip pokrenuo 2006.',
     ],
     areaTitle: 'Područje rada',
     area: ['Rijeka i Primorsko-goranska županija', 'Otoci Krk i Cres', 'Istarska županija', 'Zadar i okolica'],
-    quote: 'Bez oglašavanja. Isključivo preporukom.',
   },
   services: {
     eyebrow: 'Što nudimo',
@@ -331,7 +329,7 @@ const en: Dict = {
     title: 'A family business, two generations',
     paragraphs: [
       'ILAN was founded in Rijeka in 2006 by Josip Ivešić — a family workshop making and installing aluminium and PVC joinery, with no middleman between you and the people doing the work. Measuring, advice and installation all stay with the same hands from quote to finished job.',
-      'Twenty years on, the principle hasn’t changed: a personal approach, a direct conversation, and a solution built for the actual opening — not a catalogue part. We haven’t spent a single kuna, or since the switch a single euro, on advertising in that time; the work comes by word of mouth, from satisfied customers, neighbours and other tradespeople we’ve worked alongside.',
+      'Twenty years on, the principle hasn’t changed: a personal approach, a direct conversation, and a solution built for the actual opening — not a catalogue part. Most of our work still comes by word of mouth, from satisfied customers, neighbours and other tradespeople we’ve worked alongside.',
       'We’re just as happy to come out for a single loose handle or a worn seal in a family home as we are to fit out the joinery for a whole new build or a business premises.',
       'These days Josip’s son Leopold works alongside him in the workshop and on site more and more, having eased into the business gradually — first around his studies, then more and more, until he stayed on full-time. Modernising the business, this website included, is his contribution to the company Josip started in 2006.',
     ],
@@ -342,7 +340,6 @@ const en: Dict = {
       'Istria County',
       'Zadar and the surrounding area',
     ],
-    quote: 'No advertising. Word of mouth only.',
   },
   services: {
     eyebrow: 'What we offer',

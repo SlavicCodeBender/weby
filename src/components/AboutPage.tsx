@@ -26,8 +26,6 @@ export default function AboutPage() {
         </div>
 
         <div className={styles.panel}>
-          <p className={styles.quote}>{t.about.quote}</p>
-
           <h2>{t.about.areaTitle}</h2>
           <ul>
             {t.about.area.map((mjesto) => (

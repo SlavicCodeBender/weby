@@ -51,16 +51,6 @@
   margin-top: 2rem;
 }
 
-.quote {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  line-height: 1.35;
-  color: var(--deep);
-  margin-bottom: 1.75rem;
-  padding-bottom: 1.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
 .panel h2 {
   font-size: 0.78rem;
   font-weight: 500;
